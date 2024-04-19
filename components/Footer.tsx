@@ -12,18 +12,32 @@ const Footer = () => {
       <p>MIDAS Investment<br/>Centrum Metal Odczynniki Chemiczne</p>
     </aside> 
     <nav>
-      <h6 className="footer-title">Services</h6> 
-      <a className="link link-hover">Branding</a>
-      <a className="link link-hover">Design</a>
-      <a className="link link-hover">Marketing</a>
-      <a className="link link-hover">Advertisement</a>
+      <h6 className="footer-title">Przydatne linki</h6> 
+      <a className="link link-hover">O nas</a>
+      <a className="link link-hover">Nasze produkty</a>
+      <a className="link link-hover">Certyfikaty</a>
+      <a className="link link-hover">Kariera</a>
+      <a className="link link-hover">Aktualności</a>
     </nav> 
     <nav>
       <h6 className="footer-title">Kontakt</h6> 
-      <a className="link link-hover">About us</a>
-      <a className="link link-hover">Contact</a>
-      <a className="link link-hover">Jobs</a>
-      <a className="link link-hover">Press kit</a>
+      
+      <div className="flex items-center">
+        <img src='home-contact.svg' width="22" height="22" className='mr-2'></img>
+        <a className="link link-hover">05-090 Falenty , ul. Opackiego 46A/11</a>
+      </div>
+      
+      <div className="flex items-center">
+        <img src='phone-contact.svg' width="21" height="21" className='mr-2'></img>
+        <a className="link link-hover">tel. +48 81 746 49 51 </a>
+        <a className='ml-2'> +48 81 746 20 11</a>
+      </div>
+
+      <div className="flex items-center">
+        <img src='mail-contact.svg' width="20" height="20" className='mr-2'></img>
+        <a className="link link-hover">inf@odczynniki.com.pl</a>
+      </div>
+      
     </nav> 
     
   </footer>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Slider = () => {
   return (
-    <section >
+    <section className='flex' >
        <div className="carousel w-full max-h-[600px]">
   <div id="slide1" className="carousel-item relative w-full">
     <img src="/farm2.jpg" className="w-full object-cover z-5" />

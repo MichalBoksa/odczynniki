@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.className}>
       <body >
         <Navbar/>
-         {children}
+         {/* {children} */}
         <Footer/>
       </body>
     </html>

@@ -7,9 +7,9 @@ const News = () => {
     <section className='max-container padding-container mb-6'>
         <h1 className='font-bold text-6xl'>Aktualności</h1>
 
-        <div className='flex mt-10 items-center'>
+        <div className='flex mt-6 items-center gap-8 min-h-[600px]'>
            <div className='flex-1'>
-            <Image className='rounded-lg' src="/farm4.jpg" alt="Farm" width={500} height={300} objectFit="cover"/>
+            <Image className='rounded-lg min-h-[600px]' src="/farm4.jpg" alt="Farm" width={500} height={600} objectFit="cover"/>
             </div> 
             <div className=' flex-1'>
                 <h1 className='font-bold text-xl mb-6 text-left'>Tytuł post</h1>

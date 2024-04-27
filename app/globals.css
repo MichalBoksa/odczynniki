@@ -27,9 +27,11 @@ body {
   font-size: 20px;
   line-height: 1.5;
   background-color: #f7fafc;
-  width:75%;
+  width:100%;
+ 
   
 }
+
 
 @layer utilities {
   .btn_white { 

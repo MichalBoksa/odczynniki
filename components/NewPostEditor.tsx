@@ -1,13 +1,15 @@
 "use client";
+import dynamic from 'next/dynamic';
 import Image from 'next/image'
-import React, { useState } from 'react'
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css'; 
+import React, { useMemo, useState } from 'react'
+import 'react-quill/dist/quill.bubble.css'; 
 
 const NewPostEditor = () => {
 
     const [open, setOpen] = useState(false);
-    const [value, setValue] = useState('')
+    const [value, setValue] = useState('');
+    const ReactQuill = useMemo(() => dynamic(() => import('react-quill'), { ssr: false }),[]);
+
 
   return (
    <section className='max-container padding-container '>

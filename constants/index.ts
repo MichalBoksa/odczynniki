@@ -42,3 +42,33 @@ export const NAV_LINKS = [
       symbol: 'AG',
       name: 'Srebro'},
     ];
+
+    //Molybdenum products
+    export const MOLYBDENUM_PRODUCTS_PL = [
+      {
+        name: 'Sodu Molibdenian',
+        symbol: 'Na₂MoO₄',
+        use:['dodatek do pasz dla zwierząt', 'przemysł nawozowy', 'pigmenty', 'uzdatnianie wody', 'inhibitor korozji', 'środek przeciw zamarzaniu i chłodziwa do silników']
+      },
+
+      {
+        name: 'Amonu Heptamolibdenian',
+        symbol:'(NH₄)₆Mo₇O₂₄·4H₂O',
+        use: ['przemysł nawozowy', 
+          'katalizator', 
+          'inhibitor korozji', 
+          'chemia analityczna'
+          ]
+      },
+
+      {
+        name: 'Amonu Dimolibdenian ',
+        symbol: '(NH₄)₂Mo₂O₇',
+        use:['pigmenty', 
+          'produkcja katalizatorów', 
+          'opóźniacze spalania', 
+          'środki przeciwdziałające pożarom'
+        ]
+      },
+     
+    ];

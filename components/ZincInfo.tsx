@@ -1,25 +1,25 @@
 "use client";
-import { MOLYBDENUM_PRODUCTS_PL } from '@/constants';
+import { ZINC_PRODUCTS_PL } from '@/constants';
 
-const MolybdenumInfo = () => {
+const ZincInfo = () => {
 
 return (
     <section className='padding-container'>
-             <h1 className='text-8xl w-full mb-10'>Molibden </h1>
+             <h1 className='text-8xl w-full mb-10'>Cynk</h1>
                     <div className='flex gap-12 w-full mb-20 mt-20'>
                             <div className="flex flex-1 flex-col card w-96 h-60 ml-4 mb-6 bg-base-100 border-primary border-2 items-center justify-center">
                                             <div className='flex flex-col'>
-                                                    <h1 className='text-xl'>42</h1>
-                                                    <p className='text-primary text-8xl font-bold'>Mo</p>
+                                                    <h1 className='text-xl'>30</h1>
+                                                    <p className='text-primary text-8xl font-bold'>Zn</p>
                                             </div>
 
                                             <div className="flex w-full card-actions mr-8 justify-end">
-                                                    <p className="text-xl ">95.95</p>
+                                                    <p className="text-xl ">65.38</p>
                                                 </div>
                                      </div>
 
                             <div className='flex-2 flex mt-10'>
-                                    <p className='px-10 font-normal text-lg'>Pierwiastek chemiczny z grupy metali przejściowych. Czysty molibden jest srebrzystobiały, bardzo twardy i ma jedną z najwyższych temperatur topnienia spośród pierwiastków. Stosowany jest przede wszystkim w metalurgii, głównie w produkcji stali, jako pigmenty, nawozy czy w przemyśle chemicznym jako katalizatory.</p>
+                                    <p className='px-10 font-normal text-lg'>Niebieskawoszary pierwiastek chemiczny, metal przejściowy z grupy cynkowców. Cynk i jego stopy znajdują zastosowanie do ocynkowania płaskich wyrobów stalowych, w celu ochrony przed korozją, jako dodatek stopowy przy produkcji mosiądzów.</p>
                             </div>
                     </div>
                     
@@ -31,8 +31,8 @@ return (
                             </div>
                             
                             <div className='flex flex-col gap-10 mt-6'>
-                                    {MOLYBDENUM_PRODUCTS_PL.map((product,index) => (
-                                            <div key={product.symbol} className={`flex gap-7 items-center justify-center ${index !== MOLYBDENUM_PRODUCTS_PL.length - 1 ? 'border-b-2 border-b-gray-300' : ''}`} >
+                                    {ZINC_PRODUCTS_PL.map((product,index) => (
+                                            <div key={product.symbol} className={`flex gap-7 items-center justify-center ${index !== ZINC_PRODUCTS_PL.length - 1 ? 'border-b-2 border-b-gray-300' : ''}`} >
                                                     <div  className='flex card w-48 h-20 bg-base-100 border-primary border-2 justify-center items-center'  >
                                                             <div className=''>
                                                                     <h2 className='text-neutral font-light text-lg'>{product.symbol}</h2>
@@ -61,4 +61,4 @@ return (
 )
 }
 
-export default MolybdenumInfo
+export default ZincInfo

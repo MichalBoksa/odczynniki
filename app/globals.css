@@ -28,8 +28,10 @@ body {
   line-height: 1.5;
   background-color: #f7fafc;
   width:100%;
- 
-  
+}
+
+.right-05{
+  right: 1px;
 }
 
 

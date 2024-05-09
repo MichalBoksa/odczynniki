@@ -1,9 +1,8 @@
-import CooperInfo from '@/components/CooperInfo'
 import React from 'react'
 
 const page = () => {
   return (
-    <CooperInfo/>
+    <div>page</div>
   )
 }
 

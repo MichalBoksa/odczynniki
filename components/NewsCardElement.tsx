@@ -18,7 +18,7 @@ const NewsCardElement = () => {
         </div>
         <div className=' flex mt-12 items-center justify-center gap-8'>
             <div className=' flex-none'>
-                <Image src="/farm.jpg" width={350} height={300} alt="post image" className=' h-full cover rounded-lg' />
+                <Image src="/farm2.jpg" width={350} height={300} alt="post image" className=' h-full cover rounded-lg' />
             </div>
             <div className=' flex-1'>
                 <span>11.04.2024</span>
@@ -30,7 +30,7 @@ const NewsCardElement = () => {
         </div>
         <div className=' flex mt-12 items-center justify-center gap-8'>
             <div className=' flex-none'>
-                <Image src="/farm.jpg" width={350} height={300} alt="post image" className='cover rounded-lg' />
+                <Image src="/farm3.jpg" width={350} height={300} alt="post image" className='cover rounded-lg' />
             </div>
             <div className=' flex-1'>
                 <span>11.04.2024</span>

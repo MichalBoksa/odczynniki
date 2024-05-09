@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer p-10 bg-base-200 text-base-content">
     <aside>
         <Link href="/" >
-            <Image className='rounded' src="/logo.png" alt="INORG Logo" width={150} height={90} objectFit="cover"/>
+            <Image className='rounded object-cover' src="/logo.png" alt="INORG Logo" width={150} height={90} />
         </Link>
       <p>MIDAS Investment<br/>Centrum Metal Odczynniki Chemiczne</p>
     </aside> 

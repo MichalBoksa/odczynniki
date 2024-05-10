@@ -16,26 +16,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-start max-container relative z-30 py-5 mb-6">
+    <nav className="flex items-start max-container relative z-30 py-5 mb-6 gap-3">
         <div className="mr-auto justify-start">
-
             <Link href="/" >
                <Image src="/logo.png" alt="INORG Logo" width={150} height={90} className="object-cover"/>
             </Link>
         </div>
 
         <div className="border-b-2 border-b-primary">
-            <ul className="hidden lg:flex h-full gap-10 space-x-4">
+            <ul className="hidden lg:flex h-full md:gap-5 lg:gap-6 space-x-2">
               {NAV_LINKS.map((link) => link.key !== 'products'? ( 
-                <Link key="{link.label}" href={link.href}  onClick={handleClick} className="lg:bold-18 text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
-                  <li key="{link.href}">{link.label} </li>
+                <Link key={link.label} href={link.href}  onClick={handleClick} className="lg:text-nowrap lg:text-lg lg:font-bold text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
+                  {link.label}
                 </Link>
               ) :
-              (<div className="dropdown dropdown-hover ">
+              (<div key={link.label} className="dropdown dropdown-hover ">
               <div tabIndex={0} className="lg:bold-18 text-default cursor-pointer ">{link.label}</div>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                 {PRODUCTS_PL.map((product) => (
-                  <Link href={product.href} key={product.name}> <li key={product.symbol} onClick={handleClick} className="flexCenter  text-wrap cursor-pointer pb-1.5 text-lg  "><p>{product.name}</p></li></Link>
+                  <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter  text-wrap cursor-pointer pb-1.5 text-lg  "><p>{product.name}</p></li></Link>
                 ))}
               </ul>
             </div>)
@@ -65,7 +64,8 @@ const Navbar = () => {
             src="/menu.svg"
             alt="Menu"
             width={30}
-            height={26}/>
+            height={26}
+            className="w-full h-full"/>
         </div>
        
     </nav>

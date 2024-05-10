@@ -9,6 +9,7 @@ export const NAV_LINKS = [
     { href: '/career', key: 'career', label: 'KARIERA' },
     { href: '/news', key: 'news ', label: 'AKTUALNOŚCI' },
     { href: '/contactUs', key: 'contact_us', label: 'KONTAKT' },
+    { href: '/euFunds', key: 'euFunds', label: 'FUNDUSZE EUROPEJSKIE' },
   ];
 
 

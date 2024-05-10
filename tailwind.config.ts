@@ -12,9 +12,11 @@ module.exports = {
           
     "primary": "#e11d48",
 
-    "primary2":"#ef4444",
+    "primary-content": "#e4252d",
           
     "secondary": "#f3f4f6",
+    "secondary-content": "#8C92AC",
+
           
     "accent": "#ffe4e6",
           
@@ -29,18 +31,26 @@ module.exports = {
     "warning": "#00ff00",
           
     "error": "#ff0000",
+  
           },
           
         },
+
+        
         
       ],
 },
 theme: {
+  
   extend: {
     flex: {
       '2': '2 2 0%',
       '3': '3 3 0%'
     }
+  },
+
+  colors:{
+    "jetblack": "#212121",
   }
 },
   plugins: [require("daisyui")],

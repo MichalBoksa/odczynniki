@@ -6,3 +6,4 @@ export const page = () => {
     <NickelInfo/>
   )
 }
+export default page

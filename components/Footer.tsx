@@ -23,18 +23,18 @@ const Footer = () => {
       <h6 className="footer-title">Kontakt</h6> 
       
       <div className="flex items-center">
-        <img src='home-contact.svg' width="22" height="22" className='mr-2'></img>
+        <img src='/home-contact.svg' width="22" height="22" className='mr-2'></img>
         <a className="link link-hover">05-090 Falenty , ul. Opackiego 46A/11</a>
       </div>
       
       <div className="flex items-center">
-        <img src='phone-contact.svg' width="21" height="21" className='mr-2'></img>
+        <img src='/phone-contact.svg' width="21" height="21" className='mr-2'></img>
         <a className="link link-hover">tel. +48 81 746 49 51 </a>
         <a className='ml-2'> +48 81 746 20 11</a>
       </div>
 
       <div className="flex items-center">
-        <img src='mail-contact.svg' width="20" height="20" className='mr-2'></img>
+        <img src='/mail-contact.svg' width="20" height="20" className='mr-2'></img>
         <a className="link link-hover">inf@odczynniki.com.pl</a>
       </div>
       

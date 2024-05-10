@@ -7,7 +7,6 @@ import { useState } from "react"
 const Navbar = () => {
 
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleClick = () => {
     const elem = document.activeElement as HTMLElement;
@@ -28,15 +27,15 @@ const Navbar = () => {
         <div className="border-b-2 border-b-primary">
             <ul className="hidden lg:flex h-full gap-10 space-x-4">
               {NAV_LINKS.map((link) => link.key !== 'products'? ( 
-                <Link href={link.href} key={link.key} onClick={handleClick} className="lg:bold-18 text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
-                  {link.label}
+                <Link key="{link.label}" href={link.href}  onClick={handleClick} className="lg:bold-18 text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
+                  <li key="{link.href}">{link.label} </li>
                 </Link>
               ) :
               (<div className="dropdown dropdown-hover ">
               <div tabIndex={0} className="lg:bold-18 text-default cursor-pointer ">{link.label}</div>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                 {PRODUCTS_PL.map((product) => (
-                  <Link href={product.href} > <li key={product.symbol} onClick={handleClick} className="flexCenter  text-wrap cursor-pointer pb-1.5 text-lg  "><p>{product.name}</p></li></Link>
+                  <Link href={product.href} key={product.name}> <li key={product.symbol} onClick={handleClick} className="flexCenter  text-wrap cursor-pointer pb-1.5 text-lg  "><p>{product.name}</p></li></Link>
                 ))}
               </ul>
             </div>)

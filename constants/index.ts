@@ -181,46 +181,74 @@ export const NAV_LINKS = [
         export const COPPER_PRODUCTS_PL = [
           
           {
-            name: 'Manganu Azotan',
-            symbol: 'Mn(NO₃)₂',
-            cas: '10377-66-9',
-            use: [ 'przemysł petrochemiczny', 
-                    'nawozy', 
-                  'galwaniczne'            
+            name: 'Miedzi Azotan',
+            symbol: 'Cu(NO₃)₂',
+            cas: '3251-23-8',
+            use: [ 'nawozy', 
+              'katalizatory', 
+              'galwaniczne', 
+              'pigmenty', 
+              'obróbka powierzchni niemetalowych'
+                        
               ]
             },
 
             {
-              name: 'Manganu Chlorek ',
-              symbol: 'MnCl₂',
-              cas: '7773-01-5',
-              use: [ 'dodatek do pasz dla zwierząt', 
-                'do produkcji baterii', 
+              name: 'Miedzi Chlorek',
+              symbol: 'CuCl₂',
+              cas: '7447-39-4',
+              use: [ 'przemysł chemiczny', 
                 'nawozy', 
-                'odczynniki chemiczne'  
+                'odczynniki do analiz', 
+                'jako katalizator w chemii organicznej'
                 ]
               },
 
-              {
-                name: 'Manganu Octan',
-                symbol: 'Mn(CH₃COO)₂•4H₂O ',
-                cas: '6156-78-1',
-                use: [ 'odczynniki do syntez', 
-                  'dodatek do nawozów', 
-                  'dodatek do pasz', 
-                  'przemysł petrochemiczny'
-                  ]
-                },
+            {
+              name: 'Miedzi Siarczan',
+              symbol: 'CuSO₄•5H₂O',
+              cas: '7758-99-8',
+              use: ['dodatek do nawozów i pestycydów', 
+                'dodatek do pasz', 
+                'jako środek bakteriobójczy', 
+                'do produkcji absorbentów', 
+                'galwanizacja', 
+                'pigmenty'
+                ]
+            },
 
-                {
-                  name: 'Manganu Siarczan',
-                  symbol: 'MnSO₄•H₂O',
-                  cas: '10034-96-5',
-                  use: [ 'nawozy', 
-                    'dodatek do pasz', 
-                    'odczynniki do syntez'
-                    ]
-                  },
+            {
+              name: 'Miedzi Octan',
+              symbol: 'Cu(CH₃COO)₂•H₂O',
+              cas: '6046-93-1',
+              use: ['zastosowanie laboratoryjne', 
+                'pigmenty'
+                ]
+            },
+
+            {
+              name: 'Miedzi Węglan',
+              symbol: 'CuCO₃•Cu(OH)₂',
+              cas: '12069-69-1',
+              use: ['odczynniki do syntezy', 
+                'dodatek do nawozów' 
+                ]
+            },
+
+            {
+              name: "Miedzi Wodorotlenek",
+              symbol: 'Cu(OH)₂',
+              cas: '20427-59-2',
+              use: ['nawozy', 
+                'galwanizacja : powłoki/tusze', 
+                'ceramika', 
+                'uzdatnianie wody', 
+                'katalizatory', 
+                'chemia budowlana'
+                ]
+            }
+
+           
         ];
 
 
@@ -257,7 +285,8 @@ export const NAV_LINKS = [
             name: 'Cynku Siarczan - 1h',
             symbol: 'ZnSO₄•H₂O',
             cas: '7446-19-7',
-            case: ['nawozy,pasze']
+            use: ['nawozy',
+            'pasze']
           },
 
           {
@@ -270,7 +299,7 @@ export const NAV_LINKS = [
               'do impregnacji drewna', 
               'wypełniacz gum, kauczuków, tworzyw sztucznych'
           ]
-          }
+          },
         ];
 
         //Manganese products

@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <section className='mb-4'>
+    <section className=''>
     <div className="flex justify-center mb-10 mt-6" >
          <h1 className='text-primary font-bold text-3xl lg:text-6xl '>Kim jesteśmy</h1>
     </div>
@@ -11,8 +11,8 @@ const AboutUs = () => {
        
        <div className='flex flex-col max-w-[60%] '>
           
-           <div className=' text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-14 mt-10 '>
-               <p className='text-center font-bold text-m lg:text-2xl '>Nasza historia</p>
+           <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-14 mt-10 '>
+               <p className='text-left font-bold text-m lg:text-2xl '>Nasza historia</p>
            </div>
 
            <div className='text-jetblack flex lg:px-20 px-30 ml-12 mr-12 '>
@@ -73,8 +73,8 @@ Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, wł
        
        <div className='flex flex-col max-w-[60%] '>
           
-           <div className=' text-primary flex lg:px-40 px-30 ml-8 mr-8 mb-14 mt-10 '>
-               <p className='text-center font-bold text-m lg:text-2xl '>Innowacje i zrównoważony rozwój - kluczowe filary</p>
+           <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-14 mt-10 '>
+               <p className='text-left font-bold text-m lg:text-2xl '>Innowacje i zrównoważony rozwój - kluczowe filary</p>
            </div>
 
            <div className='text-black flex lg:px-20 px-30 ml-12 mr-12 pb-6'>
@@ -101,7 +101,7 @@ Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, wł
                <p className=' text-center font-bold text-m lg:text-2xl '>Doskonała jakość i rzetelność - nasze filary sukcesu</p>
            </div>
            <div className='flex flex-col px-8'>
-               <p className=' text-justify  text-m lg:text-l mb-10 '>
+               <p className=' text-justify font-medium text-m lg:text-l mb-10 '>
                Posiadając bogate doświadczenie zdobyte w procesach restrukturyzacji strategicznej i organizacyjnej oferujemy naszym Klientom unikalny warsztat oraz dostęp do najlepszych praktyk w zakresie rozwiązywania problemów organizacyjnych.
                </p>
 

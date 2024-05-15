@@ -1,7 +1,7 @@
 import NickelInfo from '@/components/NickelInfo'
 import React from 'react'
 
-export const page = () => {
+ const page = () => {
   return (
     <NickelInfo/>
   )

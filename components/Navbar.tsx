@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { NAV_LINKS, PRODUCTS_PL } from "@/constants"
-import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { CldImage } from 'next-cloudinary';
 
 const Navbar = () => {
 
@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="flex items-start max-container relative z-30 py-5 mb-6 gap-3">
         <div className="mr-auto justify-start">
             <Link href="/" >
-               <Image src="/logo.png" alt="INORG Logo" width={150} height={90} className="object-cover"/>
+               <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/f5065d6a7ulp9pww81ux.png" alt="INORG Logo" width={150} height={90} className="object-cover" />
             </Link>
         </div>
 
@@ -60,12 +60,12 @@ const Navbar = () => {
          )}
         
         <div className="flex cursor-pointer items-right lg:hidden ml-auto" onClick={() => setSideMenuOpen(!sideMenuOpen) }>
-            <Image
-            src="/menu.svg"
+            <CldImage
+            src="https://res.cloudinary.com/dozgr1muo/image/upload/v1715596117/midas/yasjrmzm8nb1naka6xcq.svg"
             alt="Menu"
             width={30}
             height={26}
-            className="w-full h-full"/>
+            className="w-full h-full" />
         </div>
        
     </nav>

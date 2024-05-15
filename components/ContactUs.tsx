@@ -1,5 +1,6 @@
-import Image from 'next/image'
+"use client";
 import React from 'react'
+import { CldImage } from 'next-cloudinary';
 
 const ContactUs = () => {
   return (
@@ -13,7 +14,11 @@ const ContactUs = () => {
             {/* <p className="mt-3 text-secondary-content ">Napisz do nas!</p> */}
         </div>
 
-        <Image className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96" width={1500} height={400} src="/contact-bg2.jpg" alt=""/>
+        <CldImage className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96" width={1500} height={400} src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/twnplqvxuw7e1ucig6g3.jpg" alt="contact-bg" 
+            crop={{
+              type: 'auto',
+              source: true
+            }}/>
         
         <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2 ">
             <div className="p-4 rounded-lg bg-blue-50 md:p-6 ">

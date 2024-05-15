@@ -1,4 +1,6 @@
+"use client";
 import React from 'react'
+import { CldImage } from 'next-cloudinary';
 
 const AboutUs = () => {
   return (
@@ -17,13 +19,13 @@ const AboutUs = () => {
 
            <div className='text-jetblack flex lg:px-20 px-30 ml-12 mr-12 '>
                <p className='text-justify font-bold text-m lg:text-l  '>Firma „Centrum Metal Odczynniki Chemiczne Midas-Investment Sp. z o.o.” Spółka Komandytowa, w skrócie CMOCMI, została założona w roku 2005 i stanowiła rozwinięcie wcześniejszej działalności biznesowej założycieli - handel międzynarodowy produktami chemicznymi. 
-Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, właściciele firmy zdecydowali się rozpocząć działalność produkcyjną, na bazie której, zostały stworzone solidne podstawy funkcjonowania i rozwoju.
-</p>
+                     Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, właściciele firmy zdecydowali się rozpocząć działalność produkcyjną, na bazie której, zostały stworzone solidne podstawy funkcjonowania i rozwoju.
+                </p>
            </div>
      </div>
 
        <div className='flex max-w-[40%] max-h-[600px]' >
-         <img src='/farm3.jpg' alt='farm' className='w-full ' />
+            <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/zjwnndqtnefow5c5cakz.jpg" className="w-full object-cover z-5" alt='' height={600} width={800} />
        </div>
    </div>
 
@@ -42,7 +44,7 @@ Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, wł
 <div className='flex max-container w-full max-w-[60%] max-h-[700px]'>
        
        <div className='flex max-w-[60%] max-h-[600px]' >
-         <img src='/farm2.jpg' alt='joinUs' className='w-full ' />
+         <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/dqh1dsj3f82k7cgzbctj.jpg" className="w-full object-cover z-5" alt='' height={600} width={1000}/>
        </div>
        
 
@@ -86,7 +88,7 @@ Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, wł
      </div>
 
        <div className='flex max-w-[40%] max-h-[600px]' >
-         <img src='/farm.jpg' alt='joinUs' className='w-full ' />
+            <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ktse4ncusqnwaycyxltw.jpg" className="w-full object-cover z-5" alt='' height={1020} width={1900} />
        </div>
    </div>
 

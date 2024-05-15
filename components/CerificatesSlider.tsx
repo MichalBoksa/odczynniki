@@ -1,4 +1,5 @@
-import Image from 'next/image'
+"use client";
+import { CldImage } from 'next-cloudinary';
 import React from 'react'
 
 const CerificatesSlider = () => {
@@ -10,10 +11,10 @@ const CerificatesSlider = () => {
 
     <div className="carousel w-full max-h-[700px]">
   <div id="item1" className="carousel-item w-full">
-    <Image src="/cert_pl.jpg" width={450} height={550} alt="" className=' mr-auto ml-auto'/>
+    <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/jgnsjhoxomyio4unnl4b.jpg" width={450} height={550} alt="" className=' mr-auto ml-auto'/>
   </div> 
   <div id="item2" className="carousel-item w-full">
-    <Image  src="/cert_pl2.jpg" width={450} height={550} alt="" className="mr-auto ml-auto" />
+    <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aub3f6kxlaap4mfgyjre.jpg" width={450} height={550} alt="" className="mr-auto ml-auto" />
   </div> 
 
 </div> 

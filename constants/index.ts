@@ -56,6 +56,10 @@ export const NAV_LINKS = [
         symbol: '',
         name: 'Pozostałe',
         href: '/products/other',},
+        {
+          symbol: '',
+          name: 'Certyfikaty',
+          href: '/certificates',},
     ];
 
     //Molybdenum products
@@ -348,7 +352,7 @@ export const NAV_LINKS = [
         ];
 
         //OTHER PRODUCTS
-      [
+    export const OTHER_PRODUCTS_PL = [
         {
           name: 'Żelaza Azotan',
           symbol: 'Fe(NO₃)₃',

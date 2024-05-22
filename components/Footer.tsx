@@ -10,7 +10,7 @@ const Footer = () => {
         <Link href="/" >
             <CldImage className='rounded object-cover' src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/d0aiktzryueeujazncph.png" alt="INORG Logo" width={70} height={70} />
         </Link>
-      <p>MIDAS Investment<br/>Centrum Metal Odczynniki Chemiczne</p>
+      <p>Centrum Metal Odczynniki Chemiczne<br/>MIDAS Investment</p>
     </aside> 
     <nav>
       <h6 className="footer-title">Przydatne linki</h6> 

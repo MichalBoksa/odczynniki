@@ -25,7 +25,7 @@ const News = ({ latestPost }: { latestPost: any }) => {
         <div className='flex-1'>
           <h1 className='font-bold text-xl mb-6 text-left'>{latestPost.title}</h1>
           <p>{latestPost.desc}</p>
-          <button className='flex btn-active btn-primary btn-sm rounded-lg items-center mt-3 ml-auto'>
+          <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 ml-auto'>
             Czytaj więcej
           </button>
         </div>

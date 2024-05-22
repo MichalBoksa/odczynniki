@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
+import Link from 'next/link';
 
 const CareersInfo = () => {
   return (
@@ -16,8 +17,34 @@ const CareersInfo = () => {
             </div>
         </div>
 
-        <div className='flex gap-6'>
-            
+        <div className='flex flex-col mb-20'>
+            <div className=''>
+              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral'>Aktualnie poszukujemy osób na dane stanowiska:</h1>
+            </div>
+            <div className='flex ml-auto mr-32'>
+              <div className='flex gap-10 mt-5'>
+              <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Pracownik do Działu księgowo-rachunkowego w firmie produkcyjnej</h2>
+                
+                  <div className="card-actions justify-end">
+                   <Link href="jobOffer"> <button className="btn btn-primary text-cream">Zobacz szczegóły</button></Link>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Aparatowy procesów chemicznych</h2>
+                    <p> </p>
+                  <div className="card-actions justify-end">
+                  <Link href="jobOffer2"><button className="btn btn-primary text-cream">Zobacz szczegóły</button></Link>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
         </div>
     </section>
   )

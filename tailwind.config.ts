@@ -51,6 +51,8 @@ theme: {
 
   colors:{
     "jetblack": "#212121",
+    "cream": "#FFFFF5",
+    "dark-white": "#DCDEE6"
   }
 },
   plugins: [require("daisyui")],

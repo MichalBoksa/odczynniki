@@ -7,7 +7,7 @@ const NewsCardElement = () => {
     <div>
         <div className='flex mt-7 items-center justify-center gap-8 '>
             <div className='flex-none'>
-                <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ztkkzanymgcsua5kadl1.jpg" width={350} height={300} alt="post image" className='cover rounded-lg' />
+                <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ztkkzanymgcsua5kadl1.jpg" width={350} height={300} alt="post image" className='object-cover rounded-lg' />
             </div>
             <div className=' flex-1'>
                 <span className='text-gray-400'>11.04.2024</span>
@@ -19,7 +19,7 @@ const NewsCardElement = () => {
         </div>
         <div className='flex mt-12 items-center justify-center gap-8'>
             <div className=' flex-none'>
-                <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ktse4ncusqnwaycyxltw.jpg" width={350} height={300} alt="post image" className=' h-full cover rounded-lg' />
+                <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ktse4ncusqnwaycyxltw.jpg" width={350} height={300} alt="post image" className=' h-full object-cover rounded-lg' />
             </div>
             <div className=' flex-1'>
                 <span>11.04.2024</span>
@@ -31,7 +31,7 @@ const NewsCardElement = () => {
         </div>
         <div className=' flex mt-12 items-center justify-center gap-8'>
             <div className=' flex-none'>
-                <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/zjwnndqtnefow5c5cakz.jpg" width={350} height={300} alt="post image" className='cover rounded-lg' />
+                <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/zjwnndqtnefow5c5cakz.jpg" width={350} height={300} alt="post image" className='object-cover rounded-lg' />
             </div>
             <div className='flex-1'>
                 <span>11.04.2024</span>

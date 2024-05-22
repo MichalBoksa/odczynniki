@@ -3,6 +3,7 @@ import "./globals.css";
 import { GeistSans } from 'geist/font/sans';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AuthProvider from "@/providers/AuthProvider";
 
 
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body >
-        <Navbar/>
-         {children}
-        <Footer/>
+       
+          <Navbar/>
+          {children}
+          <Footer/>
+        
       </body>
     </html>
   );

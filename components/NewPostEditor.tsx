@@ -1,17 +1,37 @@
 "use client";
 
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import 'react-quill/dist/quill.bubble.css'; 
 import { CldImage } from 'next-cloudinary';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
+
 
 const NewPostEditor = () => {
 
+    const { data: session, status } = useSession();
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState('');
     const ReactQuill = useMemo(() => dynamic(() => import('react-quill'), { ssr: false }),[]);
 
+    const router = useRouter();
+  
+    useEffect(() => {
+      if (status === 'unauthenticated') {
+        router.push('/login');
+      }
+    }, [status, router]);
+  
+    if (status === 'loading') {
+      return <div>Loading...</div>;
+    }
+  
+    if (!session) {
+      return <div>Redirecting...</div>;
+    }
+
+    
 
   return (
    <section className='max-container padding-container '>

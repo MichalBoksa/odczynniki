@@ -56,7 +56,7 @@ const AboutUs = () => {
                <p className=' text-center font-bold text-md lg:text-2xl'>W tym się specjalizujemy</p>
            </div>
            <div className='flex px-8 mb-8 text-cream'>
-               <p className=' text-justify lg:font-medium text-l lg:text-l'>Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i innych.
+               <p className=' text-justify lg:font-medium text-l lg:text-l'>Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu.
                 CMOCMI jest jedynym w Polsce i wiodącym w Europie producentem sodu molibdenianu i amonu heptamolibdenianu oraz liczącym się w Europie producentem sodu seleninu. 
                 Poza działalnością produkcyjną firma prowadzi również międzynarodową działalność handlową w zakresie specjalistycznych związków chemicznych.
                 Firma posiada certyfikaty ISO 9001 i 14001, GMP+, dzięki czemu produkty mogą trafiać do najbardziej wymagających odbiorców z wielu branż przemysłowych oraz producentów pasz i artykułów spożywczych.

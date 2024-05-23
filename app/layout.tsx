@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body >
-       
+       <AuthProvider>
           <Navbar/>
           {children}
           <Footer/>
-        
+        </AuthProvider>
       </body>
     </html>
   );

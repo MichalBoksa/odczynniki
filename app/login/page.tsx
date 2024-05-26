@@ -1,9 +1,9 @@
-import OtherProductInfo from '@/components/OtherProductInfo'
+import LoginPage from '@/components/LoginPage'
 import React from 'react'
 
 const page = () => {
   return (
-    <OtherProductInfo/>
+    <LoginPage />
   )
 }
 

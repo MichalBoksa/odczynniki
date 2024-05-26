@@ -1,24 +1,25 @@
 "use client";
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
+import CerificatesSlider from './CerificatesSlider';
 
 const AboutUs = () => {
   return (
-    <section className=''>
+    <section className='mb-10'>
     <div className="flex justify-center mb-10 mt-6" >
          <h1 className='text-primary font-bold text-3xl lg:text-6xl '>Kim jesteśmy</h1>
     </div>
 
-   <div className='flex max-container w-full lg:min-h-[300px]'>
+   <div className='flex max-container w-full lg:min-h-[300px] tracking-wide'>
        
-       <div className='flex flex-col max-w-[60%] '>
+       <div className='flex flex-col bg-dark-ivory max-w-[60%] '>
           
-           <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-14 mt-10 '>
+           <div className='text-secondary-content  flex lg:px-40 px-30 ml-8 mr-8 mb-8 mt-10 '>
                <p className='text-left font-bold text-m lg:text-2xl '>Nasza historia</p>
            </div>
 
            <div className='text-jetblack flex lg:px-20 px-30 ml-12 mr-12 '>
-               <p className='text-justify font-bold text-m lg:text-l  '>Firma „Centrum Metal Odczynniki Chemiczne Midas-Investment Sp. z o.o.” Spółka Komandytowa, w skrócie CMOCMI, została założona w roku 2005 i stanowiła rozwinięcie wcześniejszej działalności biznesowej założycieli - handel międzynarodowy produktami chemicznymi. 
+               <p className='text-justify font-bold text-m lg:text-l'>Firma „Centrum Metal Odczynniki Chemiczne Midas-Investment Sp. z o.o.” Spółka Komandytowa, w skrócie CMOCMI, została założona w roku 2005 i stanowiła rozwinięcie wcześniejszej działalności biznesowej założycieli - handel międzynarodowy produktami chemicznymi. 
                      Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, właściciele firmy zdecydowali się rozpocząć działalność produkcyjną, na bazie której, zostały stworzone solidne podstawy funkcjonowania i rozwoju.
                 </p>
            </div>
@@ -48,14 +49,14 @@ const AboutUs = () => {
        </div>
        
 
-       <div className='bg-neutral text-white flex flex-col max-w-[40%] lg:px-8' >
+       <div className='bg-dark-gray  flex flex-col max-w-[40%] lg:px-8' >
 
        <div className='flex flex-col '>
-           <div className="flex justify-center mb-8 mt-8 lg:px-16 text-center" >
-               <p className=' text-center font-bold text-md lg:text-2xl '>W tym się specjalizujemy</p>
+           <div className="flex justify-center mb-8 mt-8 lg:px-16 text-center text-cream" >
+               <p className=' text-center font-bold text-md lg:text-2xl'>W tym się specjalizujemy</p>
            </div>
-           <div className='flex px-8 mb-8'>
-               <p className=' text-justify lg:font-medium text-l lg:text-l'>Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i innych.
+           <div className='flex px-8 mb-8 text-cream'>
+               <p className=' text-justify lg:font-medium text-l lg:text-l'>Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu.
                 CMOCMI jest jedynym w Polsce i wiodącym w Europie producentem sodu molibdenianu i amonu heptamolibdenianu oraz liczącym się w Europie producentem sodu seleninu. 
                 Poza działalnością produkcyjną firma prowadzi również międzynarodową działalność handlową w zakresie specjalistycznych związków chemicznych.
                 Firma posiada certyfikaty ISO 9001 i 14001, GMP+, dzięki czemu produkty mogą trafiać do najbardziej wymagających odbiorców z wielu branż przemysłowych oraz producentów pasz i artykułów spożywczych.
@@ -73,9 +74,9 @@ const AboutUs = () => {
 
    <div className='flex max-container w-full lg:min-h-[300px]'>
        
-       <div className='flex flex-col max-w-[60%] '>
+       <div className='flex flex-col max-w-[60%] bg-dark-ivory'>
           
-           <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-14 mt-10 '>
+           <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-8 mt-10 '>
                <p className='text-left font-bold text-m lg:text-2xl '>Innowacje i zrównoważony rozwój - kluczowe filary</p>
            </div>
 
@@ -91,30 +92,6 @@ const AboutUs = () => {
             <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ktse4ncusqnwaycyxltw.jpg" className="w-full object-cover z-5" alt='' height={1020} width={1900} />
        </div>
    </div>
-
-
-   <div className='flex max-container w-full '>
-       
-
-       <div className='bg-neutral text-white flex flex-col lg:px-8 max-w-[60%]' >
-
-       <div className='flex flex-col'>
-           <div className="flex justify-center mb-8 mt-8 lg:px-16 text-center" >
-               <p className=' text-center font-bold text-m lg:text-2xl '>Doskonała jakość i rzetelność - nasze filary sukcesu</p>
-           </div>
-           <div className='flex flex-col px-8'>
-               <p className=' text-justify font-medium text-m lg:text-l mb-10 '>
-               Posiadając bogate doświadczenie zdobyte w procesach restrukturyzacji strategicznej i organizacyjnej oferujemy naszym Klientom unikalny warsztat oraz dostęp do najlepszych praktyk w zakresie rozwiązywania problemów organizacyjnych.
-               </p>
-
-           </div>
-
-           </div>
-
-       </div>
-
-   </div>
-
    
   </section>
   )

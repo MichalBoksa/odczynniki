@@ -5,8 +5,7 @@ import { use } from "react";
 export const NAV_LINKS = [
     { href: '/aboutUs', key: 'aboutUs', label: 'O NAS' },
     { href: '/products', key: 'products', label: 'NASZE PRODUKTY' },
-    { href: '/certificates', key: 'certificates', label: 'CERTYFIKATY' },
-    { href: '/career', key: 'career', label: 'KARIERA' },
+    { href: '/careers', key: 'careers', label: 'KARIERA' },
     { href: '/news', key: 'news ', label: 'AKTUALNOŚCI' },
     { href: '/contactUs', key: 'contact_us', label: 'KONTAKT' },
     { href: '/euFunds', key: 'euFunds', label: 'FUNDUSZE EUROPEJSKIE' },
@@ -57,6 +56,10 @@ export const NAV_LINKS = [
         symbol: '',
         name: 'Pozostałe',
         href: '/products/other',},
+        {
+          symbol: '',
+          name: 'Certyfikaty',
+          href: '/certificates',},
     ];
 
     //Molybdenum products
@@ -349,7 +352,7 @@ export const NAV_LINKS = [
         ];
 
         //OTHER PRODUCTS
-      [
+    export const OTHER_PRODUCTS_PL = [
         {
           name: 'Żelaza Azotan',
           symbol: 'Fe(NO₃)₃',

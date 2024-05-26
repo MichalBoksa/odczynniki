@@ -1,9 +1,9 @@
-import OtherProductInfo from '@/components/OtherProductInfo'
+import SingleNewsPage from '@/components/SingleNewsPage'
 import React from 'react'
 
 const page = () => {
   return (
-    <OtherProductInfo/>
+    <SingleNewsPage/>
   )
 }
 

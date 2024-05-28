@@ -4,25 +4,24 @@ import News from '@/components/News';
 
 interface NewsProps {
   posts: Post[];
+  count: number;
   page: number;
 }
 
 
- const getData = async ({page}: {page: any}) => {
+ const getData = async ({page}: {page: number}) => {
   try {
-    const posts = await fetch(`http://localhost:3000/api/posts?page=${page}`,{
+    const data = await fetch(`http://localhost:3000/api/news?page=${page}`,{
       cache: "no-store",
     });
     // const latestPost = posts.sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())[0];
-    if (!posts.ok) {
+    if (!data.ok) {
       throw new Error("Failed");
     }
-    const data = await posts.json();
-    const postsCasted: Post[] = data.posts;
-    // console.log("postsCasted" +posts);
-    return postsCasted;
-    
-   // return posts;
+    const dataJson = await data.json();
+    const postsCasted: Post[] = dataJson.posts;
+    const count:number = dataJson.count;
+    return {postsCasted, count};
   } 
   catch (err) {
     console.log(err);
@@ -35,11 +34,12 @@ interface NewsProps {
 export default async function NewsPage({searchParams}: {searchParams: any}) {
 
   const page = parseInt(searchParams.page) || 1
-  const testPost:Post[] = await getData({page});
+  const {postsCasted,count} = await getData({page});
  // console.log("testPost" + JSON.stringify(testPost));
-  const postData: { posts: Post[]; page: number } ={
-    posts:testPost,
+  const postData: { posts: Post[]; count:number; page: number } ={
+    posts:postsCasted,
+    count:count,
     page:page
   } 
-  return <News posts={testPost} page={page} />
+  return <News posts={postsCasted} page={page} count={count}/>
 }

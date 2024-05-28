@@ -1,0 +1,19 @@
+import { PrismaClient } from '@prisma/client';
+import { NextApiRequest, NextApiResponse } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
+
+const prisma = new PrismaClient();
+export const GET = async (req: NextRequest, {params}:{params:{slug:string}}) => {
+    const slug = params.slug;
+    try{
+        const post = await prisma.post.findUnique({
+            where: {slug} ,
+        });
+        return NextResponse.json(post, { status: 200 });
+    }
+
+    catch (error) {
+    console.log(error);
+    return new NextResponse(JSON.stringify({ message: 'Something went wrong while fetching posts' }), { status: 500 });
+}
+};

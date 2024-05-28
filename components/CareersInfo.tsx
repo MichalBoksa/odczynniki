@@ -13,7 +13,7 @@ const CareersInfo = () => {
             </div>
 
             <div className='w-3/5'>
-                <CldImage className='h-full object-cover' src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ktse4ncusqnwaycyxltw.jpg" alt="Farm" width={1200} height={700} />
+                <CldImage className='h-full object-fill' src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/sncanqm2jh7mdjslfrng.jpg" alt="Farm" width={1000} height={700} />
             </div>
         </div>
 

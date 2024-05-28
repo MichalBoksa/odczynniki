@@ -22,6 +22,6 @@ export const GET = async (req:NextRequest) => {
       return new NextResponse(JSON.stringify({ posts,count }), { status: 200 });
 } catch (error) {
     console.log(error);
-    return new NextResponse(JSON.stringify({ message: 'Something went wrong while fetching posts routets' }), { status: 500 });
+    return new NextResponse(JSON.stringify({ message: 'Something went wrong while fetching posts routes' }), { status: 500 });
 }
 };

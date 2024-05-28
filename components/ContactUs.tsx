@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
+import { TRADE_TEAM } from '@/constants';
 
 const ContactUs = () => {
   return (
@@ -20,7 +21,7 @@ const ContactUs = () => {
               source: true
             }}/>
         
-        <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2 ">
+        {/* <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3 sm:grid-cols-2 ">
             <div className="p-4 rounded-lg bg-blue-50 md:p-6 ">
                 <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
@@ -31,9 +32,9 @@ const ContactUs = () => {
                 <h2 className="mt-4 text-base font-medium text-jetblack ">Napisz do nas </h2>
                 <p className="mt-2 text-sm text-jeetblack">Skontaktuj się z naszym zespołem.</p>
                 <p className="mt-2 text-sm text-primary ">inf@odczynniki.com.pl</p>
-            </div>
+            </div> */}
 
-            <div className="p-4 rounded-lg bg-blue-50 md:p-6 ">
+            {/* <div className="p-4 rounded-lg bg-blue-50 md:p-6 ">
                 <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -57,8 +58,75 @@ const ContactUs = () => {
                 <p className="mt-2 text-sm text-jetblack">Poniedziałek-Piątek od 8:00 do 17:00.</p>
                 <p className="mt-2 text-sm text-primary"> +48 81 746 49 51</p>
             </div>
+        </div> */}
+
+        <div className='flex flex-col mt-5'>
+            <div className='flex items-center justify-center'>
+                <h1 className='font-semibold text-6xl mt-5 ml-6 text-neutral items-center justify-center'>Nasze biura</h1>
+            </div>
+            <div className='flex justify-around mt-5'> 
+                   <div className="p-4 rounded-lg bg-blue-50 md:p-6 ">
+                    <span className="inline-block p-3 rounded-lg bg-blue-100/80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                    </span>
+                
+                    <h2 className="mt-4 text-base font-medium text-jetblack ">Odwiedź nas</h2>
+                    <p className="mt-2 text-md text-secondary-content">20-234 Lublin, ul. Metalurgiczna 15 E, 17 D</p>
+                    <p className="mt-2 text-md text-jetblack">Czynne poniedziałek - piątek od 7:00 do 15:00</p>
+                 </div>
+
+                 <div className="p-4 rounded-lg bg-blue-50 md:p-6 ">
+                    <span className="inline-block p-3 rounded-lg bg-blue-100/80 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                    </span>
+                
+                    <h2 className="mt-4 text-base font-medium text-jetblack ">Odwiedź nas</h2>
+                    <p className="mt-2 text-md text-secondary-content">20-234 Lublin, ul. Metalurgiczna 15 E, 17 D</p>
+                    <p className="mt-2 text-md text-jetblack">Czynne poniedziałek - piątek od 7:00 do 15:00</p>
+                 </div>
+            </div>
+        </div>
+
+        <div className='flex flex-col mt-5 px-10'>
+                        <div className='flex items-center justify-left mb-6'>
+                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>Nasz zespół handlowców</h1>
+                         </div>
+
+                    <div className='flex flex-wrap gap-20'>
+                        {/* TODO make component to team meameber */}
+                        {TRADE_TEAM.map((member) => (
+                            <div className="flex flex-col justify-center items-center px-7">
+                                <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
+                                <div className='flex flex-col justify-center items-center '>
+                                    <h2 className="mt-4 text-base font-medium text-jetblack  ">{member.name}</h2>
+                                    <p className="mt-2 text-md text-secondary-content mb-2">{member.department}</p>
+                                    <div className="flex items-center mb-2 mr-auto">
+                                            <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1716937855/midas/wjqxac2mvdwabd6cd3fo.svg' width={20} height={20} alt='home icon' className='mr-2'/>
+                                            <a className="text-sm">{member.market}</a>
+                                    </div>
+                                    <div className="flex items-center mb-2 mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
+                                        <a className="text-sm text-secondary-content">{member.email}</a>
+                                    </div>
+                                    
+                                    <div className="flex items-center mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={20} height={20} alt='phone icon' className='mr-2'/>
+                                        <a className='text-sm '>{member.mobile}</a>         
+                                    </div>
+                                  
+                            </div>
+                     </div>
+                    ))}
+                </div>
         </div>
     </div>
+            
 </section>
   )
 }

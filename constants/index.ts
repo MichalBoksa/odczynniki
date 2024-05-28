@@ -396,4 +396,81 @@ export const NAV_LINKS = [
       ];
 
 
+      //CONTACT US TEAMS
+
+      // TRADE TEAM
+      export const TRADE_TEAM = [
+        {
+          name: "Małgorzata Wilczewski",
+          department: "Sprzedaż",
+          market: "Niemcy",
+          email: "mwiklczewski@odczynniki.com.pl",
+          mobile: "+48 505 498 884 / +49 178 676 0903"
+        },
+        {
+          name: "Aleksandra Simon",
+          department: "Sprzedaż",
+          market: "Francja, Belgia",
+          email: "asimon@odczynniki.com.pl",
+          mobile: "+48 508 218 947"
+        },
+        {
+          name: "Anna Mróz",
+          department: "Sprzedaż",
+          market: "Hiszpania",
+          email: "amroz@odczynniki.com.pl",
+          mobile: "+48 508 218 900"
+        },
+        {
+          name: "Nairy Chaglasyan",
+          department: "Sprzedaż",
+          market: "Hiszpania, Portugalia",
+          email: "nchaglasyan@odczynniki.com.pl",
+          mobile: "+34 639 314 391"
+        },
+        {
+          name: "Agnieszka Piątkowska",
+          department: "Sprzedaż",
+          market: "Ukraina",
+          email: "apiatkowska@odczynniki.com.pl",
+          mobile: "+48 885 785 007"
+        },
+        {
+          name: "Waldemar Piątkowski",
+          department: "Zakupy, sprzedaż, logistyka",
+          market: "wszystkie lokalizacje",
+          email: "wpiatkowski@odczynniki.com.pl",
+          mobile: "+48 508 218 838"
+        },
+        {
+          name: "Piotr Topolski",
+          department: "Zakupy",
+          market: "wszystkie lokalizacje",
+          email: "ptopolski@odczynniki.com.pl",
+          mobile: "+48 885 785 011"
+        }
+      ];
+
+      //SETTLEMENT TEAM
+
+      export const SETTLEMENT_TEAM = [
+        {
+          name: "Agnieszka Piątkowska",
+          email: "apiatkowska@odczynniki.com.pl",
+          mobile: "+48 885 785 007"
+        },
+        {
+          name: "Małgorzata Kopniak",
+          email: "mkopniak@odczynniki.com.pl",
+          mobile: "+48 793 419 215"
+        },
+        {
+          name: "Ewelina Buszko",
+          email: "ebuszko@odczynniki.com.pl",
+          mobile: "+48 885 785 002"
+        }
+      ];
+    
+
+
 

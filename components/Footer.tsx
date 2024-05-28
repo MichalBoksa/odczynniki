@@ -25,18 +25,20 @@ const Footer = () => {
       
       <div className="flex items-center">
         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ijt9xa0obuhvt6sbw2o3.svg' width={22} height={22} alt='home icon' className='mr-2'/>
-        <a className="link link-hover">05-090 Falenty , ul. Opackiego 46A/11</a>
+        <a className="link link-hover">20-234 Lublin, ul. Metalurgiczna 15 E, 17 D</a>
       </div>
       
       <div className="flex items-center">
         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={21} height={21} alt='phone icon' className='mr-2'/>
-        <a className="link link-hover">tel. +48 81 746 49 51 </a>
-        <a className='ml-2'> +48 81 746 20 11</a>
+        <a className="link link-hover">tel.+48 81 746 20 11 </a>
+        <a className='ml-2'> +48 81 746 36 82</a>
+        <a className='ml-2 float-left clear-left'> fax: +48 81 458 39 88</a>
+        
       </div>
 
       <div className="flex items-center">
         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
-        <a className="link link-hover">inf@odczynniki.com.pl</a>
+        <a className="link link-hover">han@odczynniki.com.pl</a>
       </div>
       
     </nav> 

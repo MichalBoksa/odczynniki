@@ -1,6 +1,6 @@
 "use client";
 import { CldImage } from 'next-cloudinary';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NewsCardList from './NewsCardList';
 import { Post } from '@prisma/client';
 import Pagination from './Pagination/Pagination';
@@ -11,11 +11,14 @@ interface NewsProps {
   page: number;
 }
 
+
 const News: React.FC<NewsProps> = ({posts,page,count}) => {
-  const latestPost:Post =  posts[0];
-  const POST_PER_PAGE = 2;  
+  const latestPost = posts[0];
+
+  const POST_PER_PAGE = 3;  
   const hasPrevious = POST_PER_PAGE  * (page-1) > 0;
   const hasNext = POST_PER_PAGE * page <= count;
+
   return (
     <section className='max-container padding-container mb-6'>
       <h1 className='font-bold text-6xl'>Aktualności</h1>
@@ -46,8 +49,11 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
           </button>
         </div>
       </div>
-
-      <NewsCardList posts={posts} />
+      {page && page > 1 ? (
+        <NewsCardList posts={posts.slice(1)} />
+      ) : (
+        <NewsCardList posts={posts.slice(2)} />
+      )}
       <Pagination page={page} hasPrevious={hasPrevious} hasNext={hasNext} />
     </section>
   );

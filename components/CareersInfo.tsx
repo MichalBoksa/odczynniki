@@ -17,6 +17,38 @@ const CareersInfo = () => {
             </div>
         </div>
 
+        <div className='flex mb-10 justify-around mt-20'>
+            <div className='flex flex-col w-1/2 pl-2'>
+                <h1 className='font-semibold text-xl ml-5 text-neutral'>Czekamy na Twoje CV!</h1>
+                <p className='text-md text-secondary-content mt-6 px-14'>Czy posiadasz unikalne umiejętności i szukasz miejsca, gdzie Twoje talenty zostaną docenione i rozwinięte? Jeśli tak, to jesteś we właściwym miejscu! Nasza firma dynamicznie się rozwija i zawsze poszukuje utalentowanych osób, które chcą dołączyć do naszego zespołu.</p>
+            </div>
+            
+             
+              <div className="flex flex-col justify-center items-center px-7 mr-7">
+
+                          <div className='flex flex-col items-center justify-start'>
+                            <h1 className="font-semibold text-2xl mb-5">Nasze biuro kadr</h1>
+                          </div>
+
+                                <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
+                                <div className='flex flex-col justify-center items-center '>
+                                    <h2 className="mt-3 mb-3 text-base font-medium text-jetblack">Agnieszka Tęcza </h2>
+                                   
+                                    <div className="flex items-center mb-1 mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
+                                        <a className="text-sm text-secondary-content">atecza@odczynniki.com.pl</a>
+                                    </div>
+                                    
+                                    <div className="flex items-center mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={20} height={20} alt='phone icon' className='mr-2'/>
+                                        <a className='text-sm '>+48 503 089 563</a>         
+                                    </div>
+                                  
+                            </div>
+                        </div>
+                        
+        </div>
+        <div className='flex items-center border-b-2 border-b-secondary-content w-3/5 mt-6'></div>
         <div className='flex flex-col mb-20'>
             <div className=''>
               <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral'>Aktualnie poszukujemy osób na dane stanowiska:</h1>
@@ -38,14 +70,21 @@ const CareersInfo = () => {
                 <div className="card-body">
                   <h2 className="card-title">Aparatowy procesów chemicznych</h2>
                     <p> </p>
-                  <div className="card-actions justify-end">
-                  <Link href="jobOffer2"><button className="btn btn-primary text-cream">Zobacz szczegóły</button></Link>
-                  </div>
+                    <div className="card-actions justify-end">
+                      <Link href="jobOffer2"><button className="btn btn-primary text-cream">Zobacz szczegóły</button></Link>
+                    </div>
+                 </div>
                 </div>
+               
               </div>
-              </div>
+
+             
           </div>
+         
         </div>
+
+
+       
     </section>
   )
 }

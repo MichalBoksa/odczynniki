@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
-import { TRADE_TEAM } from '@/constants';
+import { SETTLEMENT_TEAM, TRADE_TEAM } from '@/constants';
 
 const ContactUs = () => {
   return (
@@ -105,7 +105,7 @@ const ContactUs = () => {
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>
                                     <h2 className="mt-4 text-base font-medium text-jetblack  ">{member.name}</h2>
-                                    <p className="mt-2 text-md text-secondary-content mb-2">{member.department}</p>
+                                    <p className="text-md text-secondary-content mb-2">{member.department}</p>
                                     <div className="flex items-center mb-2 mr-auto">
                                             <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1716937855/midas/wjqxac2mvdwabd6cd3fo.svg' width={20} height={20} alt='home icon' className='mr-2'/>
                                             <a className="text-sm">{member.market}</a>
@@ -124,6 +124,37 @@ const ContactUs = () => {
                      </div>
                     ))}
                 </div>
+
+
+
+                <div className='flex flex-col mt-16 px-10'>
+                        <div className='flex items-center justify-left mb-6'>
+                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>Zespół rozliczeń transakcji handlowych</h1>
+                         </div>
+
+                    <div className='flex flex-wrap gap-20'>
+                        {/* TODO make component to team meameber */}
+                        {SETTLEMENT_TEAM.map((member) => (
+                            <div className="flex flex-col justify-center items-center px-7">
+                                <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
+                                <div className='flex flex-col justify-center items-center '>
+                                    <h2 className="mt-4 text-base font-medium text-jetblack  ">{member.name}</h2>
+                                   
+                                    <div className="flex items-center mb-2 mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
+                                        <a className="text-sm text-secondary-content">{member.email}</a>
+                                    </div>
+                                    
+                                    <div className="flex items-center mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={20} height={20} alt='phone icon' className='mr-2'/>
+                                        <a className='text-sm '>{member.mobile}</a>         
+                                    </div>
+                                  
+                            </div>
+                     </div>
+                    ))}
+                </div>
+            </div>
         </div>
     </div>
             

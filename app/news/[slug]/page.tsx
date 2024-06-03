@@ -12,7 +12,7 @@ const getData = async (slug:string)  => {
     if (!data.ok) {
       throw new Error("Failed");
     }
-    const dataJson:Post= await data.json();
+    const dataJson:Post[]= await data.json();
     return dataJson;
 
   } 
@@ -25,9 +25,9 @@ const getData = async (slug:string)  => {
 
 const page = async ({params}:{params:{slug:string}}) => {
   const slug = params.slug;
-  const post =await getData(slug);
+  const posts =await getData(slug);
   return (
-    <SingleNewsPage post={post}/>
+    <SingleNewsPage posts={posts}/>
   )
 }
 

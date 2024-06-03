@@ -9,7 +9,14 @@ export const GET = async (req: NextRequest, {params}:{params:{slug:string}}) => 
         const post = await prisma.post.findUnique({
             where: {slug} ,
         });
-        return NextResponse.json(post, { status: 200 });
+
+        const recentPosts = await prisma.post.findMany({
+            take: 3,
+            
+          });
+
+          const posts = [post, ...recentPosts];
+        return NextResponse.json(posts, { status: 200 });
     }
 
     catch (error) {

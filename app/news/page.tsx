@@ -33,13 +33,9 @@ interface NewsProps {
 
 export default async function NewsPage({searchParams}: {searchParams: any}) {
 
-  const page = parseInt(searchParams.page) || 1
+  const page = parseInt(searchParams.page) || 1;
   const {postsCasted,count} = await getData({page});
- // console.log("testPost" + JSON.stringify(testPost));
-  const postData: { posts: Post[]; count:number; page: number } ={
-    posts:postsCasted,
-    count:count,
-    page:page
-  } 
-  return <News posts={postsCasted} page={page} count={count}/>
+ 
+  
+  return <News posts={postsCasted} page={page} count={count} />
 }

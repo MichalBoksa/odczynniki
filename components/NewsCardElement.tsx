@@ -5,8 +5,9 @@ import { Post } from '@prisma/client';
 import Link from 'next/link';
 interface NewsProps {
     post: Post;
+    recentPosts: Post[];
   }
-const NewsCardElement: React.FC<NewsProps> = (post) => {
+const NewsCardElement: React.FC<NewsProps> = (post,recentPosts) => {
   console.log("cardElementPost" + post.post.slug)
   return (
     <Link href={`/news/${post.post.slug}`}> <div>

@@ -17,7 +17,7 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
 
   const POST_PER_PAGE = 3;  
   const hasPrevious = POST_PER_PAGE  * (page-1) > 0;
-  const hasNext = POST_PER_PAGE * page <= count;
+  const hasNext = POST_PER_PAGE * page < count;
 
   return (
     <section className='max-container padding-container mb-6'>
@@ -43,7 +43,7 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
           {latestPost && (
             <h1 className='font-bold text-xl mb-6 text-left'>{latestPost.title}</h1>
           )}
-          <p className='px-20'>{latestPost?.desc.substring(0,120)}...</p>
+          <div className='px-20' dangerouslySetInnerHTML={{__html: latestPost.desc.substring(0,120)}}/>
           <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 ml-auto'>
             Czytaj więcej
           </button>

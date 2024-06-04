@@ -101,7 +101,7 @@ const ContactUs = () => {
                     <div className='flex flex-wrap gap-20'>
                         {/* TODO make component to team meameber */}
                         {TRADE_TEAM.map((member) => (
-                            <div className="flex flex-col justify-center items-center px-7">
+                            <div key={member.email} className="flex flex-col justify-center items-center px-7">
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>
                                     <h2 className="mt-4 text-base font-medium text-jetblack  ">{member.name}</h2>

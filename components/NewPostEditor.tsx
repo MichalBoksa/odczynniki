@@ -3,12 +3,16 @@
 import dynamic from 'next/dynamic';
 import React, { useEffect, useMemo, useState } from 'react'
 import 'react-quill/dist/quill.bubble.css'; 
-import { CldImage, CldUploadWidget, cloudinaryLoader, CloudinaryUploadWidgetInfo } from 'next-cloudinary';
+import { CldImage, CldUploadWidget, cloudinaryLoader, CloudinaryUploadWidgetInfo, CloudinaryUploadWidgetResults } from 'next-cloudinary';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { title } from 'process';
 
-
+interface CloudinaryResource {
+  public_id: string;
+  secure_url: string;
+  [key: string]: any; // Add any other fields that may be included in the resource
+}
 
 const NewPostEditor = () => {
     const cloudinary = require('cloudinary').v2;
@@ -16,7 +20,7 @@ const NewPostEditor = () => {
       secure: true
     });
     const { data: session, status } = useSession();
-    const [resource, setResource] = useState<string |CloudinaryUploadWidgetInfo | undefined>();
+    const [resource, setResource] = useState<string | undefined>(undefined);
     const [openOptions, setOpenOptions] = useState(false);
     const [value, setValue] = useState('');
     const ReactQuill = useMemo(() => dynamic(() => import('react-quill'), { ssr: false }),[]);
@@ -39,16 +43,30 @@ const NewPostEditor = () => {
       return <div>Redirecting...</div>;
     }
 
+    const slugify = (str: string): string => {
+      return str
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/[\s_-]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    };
+
     const handleOnSubmit = async () => {
-      const imgUrl = resource ? (resource as CloudinaryUploadWidgetInfo).url : '';
+      // const imgUrl = JSON.parse(resource).secure_url;
+       //console.log(imgUrl);
         const res = await fetch('/api/news', {
           method:'POST',
           body: JSON.stringify(
             {
-              // title
+              title: title,
+              desc: value,
+              img: resource,
+              slug:slugify(title),
             }
-          )
-      })
+          ),
+      });
+      console.log(res);
     }
     
 
@@ -64,11 +82,11 @@ const NewPostEditor = () => {
               <div className='flex flex-row gap-4 '>
 
                
-                <CldUploadWidget signatureEndpoint="/api/sign-cloudinary-params" onSuccess={(result, { widget }) => {
-                  setResource(result.info);
-                  // console.log(result.info)
-                  console.log(JSON.stringify((resource as CloudinaryUploadWidgetInfo)?.secure_url)); // Add null check for 'resource'
-                  widget.close();
+                <CldUploadWidget signatureEndpoint="/api/sign-cloudinary-params" onSuccess={(result) => {
+                  if (result.info) {
+                    setResource((result.info as CloudinaryUploadWidgetInfo).secure_url);
+                  }
+                
                 }}>
                 {({ open }) => {
                   return(

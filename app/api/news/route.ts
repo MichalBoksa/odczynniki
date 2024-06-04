@@ -15,14 +15,14 @@ const skip = (parseInt(page as string) - 1) * POST_PER_PAGE;
 try {
   const firstPost = await prisma.post.findFirst({
     orderBy: {
-      createdAt: 'asc',
+      createdAt: 'desc',
     },});
   
     const paginatedPosts = await prisma.post.findMany({
     take: POST_PER_PAGE,
     skip,
     orderBy: {
-      createdAt: 'asc',
+      createdAt: 'desc',
     }
   });
 
@@ -42,14 +42,15 @@ catch (error) {
 };
 
 export const POST = async (req: NextRequest ) => {
-  const session = await getSession();
+  // const session = await getSession();
+  // console.log(session);
 
-  if (!session) {
-    return new NextResponse(
-      JSON.stringify({ message: 'Unauthorized' }),
-      { status: 401 }
-    );
-  }
+  // if (!session) {
+  //   return new NextResponse(
+  //     JSON.stringify({ message: 'Unauthorized' }),
+  //     { status: 401 }
+  //   );
+  // }
 
   try {
     const body = await req.json();

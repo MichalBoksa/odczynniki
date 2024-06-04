@@ -25,9 +25,7 @@ const SingleNewsPage: React.FC<NewsProps> = async (posts) => {
       </div>
     
     <div className='flex gap-12 mb-10'>
-      <div className='mt-20 px-14 lg:px-20 mb-4 w-4/5'>
-        <p className='pr-4'>{firstPost.desc}</p>
-        </div>    
+      <div className='mt-20 px-14 lg:px-20 mb-4 w-4/5' dangerouslySetInnerHTML={{__html: firstPost.desc}}/> 
         <RecentPosts recentPosts={recentPosts}/>
       </div>
 

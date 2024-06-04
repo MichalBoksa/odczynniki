@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import { NextApiRequest, NextApiResponse } from 'next';
+import { getSession } from 'next-auth/react';
 import { NextRequest, NextResponse } from 'next/server';
 import React from 'react'
 
@@ -9,21 +10,6 @@ export const GET = async (req:NextRequest) => {
     const page = searchParams.get('page');
 
     const POST_PER_PAGE = 3;
-
-//     const query = {
-//         take: POST_PER_PAGE,
-//         skip: (parseInt(page as string) - 1) * POST_PER_PAGE,
-//     }
-
-//     try {
-//       const [posts,count] = await prisma.$transaction([
-//         prisma.post.findMany(query),
-//         prisma.post.count()]) ;   
-//       return new NextResponse(JSON.stringify({ posts,count }), { status: 200 });
-// } catch (error) {
-//     console.log(error);
-//     return new NextResponse(JSON.stringify({ message: 'Something went wrong while fetching posts routes' }), { status: 500 });
-// }
 
 const skip = (parseInt(page as string) - 1) * POST_PER_PAGE;
 try {
@@ -54,3 +40,28 @@ catch (error) {
 }
 
 };
+
+export const POST = async (req: NextRequest ) => {
+  const session = await getSession();
+
+  if (!session) {
+    return new NextResponse(
+      JSON.stringify({ message: 'Unauthorized' }),
+      { status: 401 }
+    );
+  }
+
+  try {
+    const body = await req.json();
+    const post = await prisma.post.create({
+      data: { ...body },
+    });
+    return new NextResponse(JSON.stringify(post), { status: 200 });
+  } catch (error) {
+    console.log(error);
+    return new NextResponse(
+      JSON.stringify({ message: 'Something went wrong while creating post' }),
+      { status: 500 }
+    );
+  }
+}

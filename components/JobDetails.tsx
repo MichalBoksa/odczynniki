@@ -45,7 +45,7 @@ const JobDetails = () => {
         </ul>
       </div>
       <div className="mt-6 mr-auto ml-auto">
-       <Link href="/contactUs"> <button className="btn btn-primary text-cream">Zgłoś się do nas!</button></Link>
+       <Link href="/careers#office"> <button className="btn btn-primary text-cream">Zgłoś się do nas!</button></Link>
       </div>
         </div>
       </div>

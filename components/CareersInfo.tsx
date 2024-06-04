@@ -1,9 +1,29 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
 
 const CareersInfo = () => {
+
+  const careersOffice = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const hash = window.location.hash;
+      if (hash === '#careersOffice') {
+        careersOffice.current?.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    handleScroll();
+    window.addEventListener('hashchange', handleScroll); 
+
+    return () => {
+      window.removeEventListener('hashchange', handleScroll);
+    };
+  }, []);
+
+
   return (
     <section className='max-container'>
         <div className='bg-base-200 max-h-[350px] w-full flex'>
@@ -12,7 +32,7 @@ const CareersInfo = () => {
                 <p className='text-md text-secondary-content mt-6 px-14'>Dołącz do zespołu CMOCMI - wiodącego producenta chemikaliów nieorganicznych w Europie. Poszukujemy osób z pasją do chemii, gotowych do pracy w dynamicznym środowisku i rozwijania się razem z nami. Oferujemy możliwość pracy z wykwalifikowanym zespołem, nowoczesne zaplecze techniczne i stabilne warunki zatrudnienia. Aplikuj już dziś i wspólnie kształtuj przyszłość branży chemicznej</p>
             </div>
 
-            <div className='w-3/5'>
+            <div id="office" ref={careersOffice} className='w-3/5'>
                 <CldImage className='h-full object-fill' src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/sncanqm2jh7mdjslfrng.jpg" alt="Farm" width={1000} height={700} />
             </div>
         </div>

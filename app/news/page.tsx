@@ -14,7 +14,6 @@ interface NewsProps {
     const data = await fetch(`http://localhost:3000/api/news?page=${page}`,{
       cache: "no-store",
     });
-    // const latestPost = posts.sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())[0];
     if (!data.ok) {
       throw new Error("Failed");
     }

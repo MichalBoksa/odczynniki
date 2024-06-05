@@ -24,17 +24,18 @@ const Navbar = () => {
         </div>
 
         <div className="border-b-2 border-b-primary">
-            <ul className="hidden lg:flex h-full md:gap-5 lg:gap-6 space-x-2">
+            <ul className="hidden lg:flex h-full md:gap-3 lg-gap-3 xl:gap-6">
               {NAV_LINKS.map((link) => link.key !== 'products'? ( 
-                <Link key={link.label} href={link.href}  onClick={handleClick} className="lg:text-nowrap lg:text-lg lg:font-bold text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
+                <Link key={link.label} href={link.href}  onClick={handleClick} > <div className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
                   {link.label}
+                  </div>
                 </Link>
               ) :
-              (<div key={link.label} className="dropdown dropdown-hover ">
-              <div tabIndex={0} className="lg:bold-18 text-default cursor-pointer ">{link.label}</div>
+              (<div key={link.label} className=" dropdown dropdown-hover">
+              <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4">{link.label}</div>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                 {PRODUCTS_PL.map((product) => (
-                  <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter  text-wrap cursor-pointer pb-1.5 text-lg  "><p>{product.name}</p></li></Link>
+                  <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
                 ))}
               </ul>
             </div>)
@@ -59,12 +60,12 @@ const Navbar = () => {
          </div>
          )}
         
-        <div className="flex cursor-pointer items-right lg:hidden ml-auto" onClick={() => setSideMenuOpen(!sideMenuOpen) }>
+        <div className="flex cursor-pointer items-right lg:hidden ml-auto items-center justify-center mr-5 mt-4" onClick={() => setSideMenuOpen(!sideMenuOpen) }>
             <CldImage
             src="https://res.cloudinary.com/dozgr1muo/image/upload/v1715596117/midas/yasjrmzm8nb1naka6xcq.svg"
             alt="Menu"
-            width={30}
-            height={26}
+            width={35}
+            height={30}
             className="w-full h-full" />
         </div>
        

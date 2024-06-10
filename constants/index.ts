@@ -438,14 +438,14 @@ export const NAV_LINKS = [
         {
           name: "Waldemar Piątkowski",
           department: "Zakupy, sprzedaż, logistyka",
-          market: "wszystkie lokalizacje",
+          market: "Polska",
           email: "wpiatkowski@odczynniki.com.pl",
           mobile: "+48 508 218 838"
         },
         {
           name: "Piotr Topolski",
           department: "Zakupy",
-          market: "wszystkie lokalizacje",
+          market: "Wszystkie lokalizacje",
           email: "ptopolski@odczynniki.com.pl",
           mobile: "+48 885 785 011"
         }

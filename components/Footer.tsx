@@ -38,7 +38,7 @@ const Footer = () => {
 
       <div className="flex items-center">
         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
-        <a className="link link-hover">han@odczynniki.com.pl</a>
+        <a className="link link-hover">inf@odczynniki.com.pl</a>
       </div>
       
     </nav> 

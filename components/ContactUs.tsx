@@ -37,6 +37,7 @@ const ContactUs = () => {
                 
                     <h2 className="mt-4 text-base font-medium text-jetblack ">Odwiedź nas</h2>
                     <p className="mt-2 text-md text-secondary-content">20-234 Lublin, ul. Metalurgiczna 15 E, 17 D</p>
+                    
                     <p className="mt-2 text-md text-jetblack">Czynne poniedziałek - piątek od 7:00 do 15:00</p>
                  </div>
 

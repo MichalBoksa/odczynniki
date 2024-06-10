@@ -109,7 +109,7 @@ const NewPostEditor = () => {
               </div>
             )}
             <ReactQuill theme='bubble' placeholder='Treść posta...' value={value} onChange={setValue}/>
-            <button className='flex btn-active btn-primary btn-sm rounded-lg items-center ml-auto mr-[25%]' onClick={handleOnSubmit}>Dodaj wpis</button>
+            <button className='flex btn-active btn-primary btn-sm rounded-lg text-cream items-center ml-auto mr-[25%]' onClick={handleOnSubmit}>Dodaj wpis</button>
         </div> 
         
     </section>

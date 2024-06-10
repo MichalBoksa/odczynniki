@@ -12,7 +12,7 @@ interface NewsProps {
 
 const SingleNewsPage: React.FC<NewsProps> = async (posts) => {
   const firstPost = posts.posts[0]; 
-  const recentPosts = posts.posts.slice(1);
+  const recentPostsData = posts.posts.slice(1);
   return (
    <section className='max-container padding-container'>
     <div className='flex gap-12 items-center justify-center'>
@@ -26,7 +26,7 @@ const SingleNewsPage: React.FC<NewsProps> = async (posts) => {
     
     <div className='flex gap-12 mb-10'>
       <div className='mt-20 px-14 lg:px-20 mb-4 w-4/5' dangerouslySetInnerHTML={{__html: firstPost.desc}}/> 
-        <RecentPosts recentPosts={recentPosts}/>
+        <RecentPosts recentPosts={recentPostsData}/>
       </div>
 
       

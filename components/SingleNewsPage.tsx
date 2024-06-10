@@ -1,4 +1,3 @@
-
 "use client";
 import Image from 'next/image'
 import React from 'react'
@@ -10,9 +9,9 @@ interface NewsProps {
   posts: Post[];
 }
 
-const SingleNewsPage: React.FC<NewsProps> = async (posts) => {
-  const firstPost = posts.posts[0]; 
-  const recentPostsData = posts.posts.slice(1);
+const SingleNewsPage: React.FC<NewsProps> = ({ posts }) => {
+  const firstPost = posts[0]; 
+  const recentPostsData = posts.slice(1);
   return (
    <section className='max-container padding-container'>
     <div className='flex gap-12 items-center justify-center'>

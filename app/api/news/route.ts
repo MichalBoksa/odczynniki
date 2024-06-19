@@ -1,10 +1,7 @@
-import { PrismaClient } from '@prisma/client';
-import { NextApiRequest, NextApiResponse } from 'next';
-import { getSession } from 'next-auth/react';
+import prisma from "../../../utils/connect";
 import { NextRequest, NextResponse } from 'next/server';
-import React from 'react'
 
-const prisma = new PrismaClient();
+
 export const GET = async (req:NextRequest) => {
     const {searchParams} = new URL(req.url);
     const page = searchParams.get('page');

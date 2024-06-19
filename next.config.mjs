@@ -7,6 +7,9 @@ const nextConfig = {
       chunks: 'all',
     },
   },
+  experimental: {
+    appDir: true,
+  },
   trailingSlash: true,
   env: {
     NEXT_PUBLIC_JWT_SECRET: process.env.JWT_SECRET,
@@ -19,9 +22,10 @@ const nextConfig = {
 // };
 webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   config.resolve.fallback = { fs: false };
-  config.plugins.push(new webpack.DefinePlugin({
-    'process.env.BUILD_ID': JSON.stringify(buildId),
-  }));
+  config.optimization.minimize = false;
+  // config.plugins.push(new webpack.DefinePlugin({
+  //   'process.env.BUILD_ID': JSON.stringify(buildId),
+  // }));
   return config;
 },
 onDemandEntries: {

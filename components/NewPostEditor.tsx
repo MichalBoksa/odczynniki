@@ -3,10 +3,10 @@
 import dynamic from 'next/dynamic';
 import React, { useEffect, useMemo, useState } from 'react'
 import 'react-quill/dist/quill.bubble.css'; 
-import { CldImage, CldUploadWidget, cloudinaryLoader, CloudinaryUploadWidgetInfo, CloudinaryUploadWidgetResults } from 'next-cloudinary';
+import { CldImage, CldUploadWidget, CloudinaryUploadWidgetInfo } from 'next-cloudinary';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
-import { title } from 'process';
+
 
 interface CloudinaryResource {
   public_id: string;

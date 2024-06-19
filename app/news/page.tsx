@@ -1,5 +1,4 @@
-import { Post, PrismaClient } from '@prisma/client';
-import { NextResponse } from "next/server";
+import { Post } from '@prisma/client';
 import News from '@/components/News'; 
 
 interface NewsProps {

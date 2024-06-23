@@ -78,7 +78,7 @@ const EuFunds = () => {
                 </Link>
             </div>
         </div>
-        <div className='flex items-center border-b-2 border-b-secondary-content w-3/5 mt-3'></div>
+           <div className='flex items-center border-b-2 border-b-secondary-content w-3/5 mt-3'></div>
        </div>
 
 

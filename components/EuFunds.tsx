@@ -41,14 +41,14 @@ const EuFunds = () => {
            <div className='flex flex-col'>
               <h3 className='font-bold mt-2'>Załączniki:</h3>
               <div className='flex flex-col items-start ml-3'>
-                <button className='link link-hover' onClick={() => downloadPdf('zapytanie_ofertowe.pdf')}>
-                Zapytania ofertowe
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('zapytanie_ofertowe.pdf')}>
+                    ➱ Zapytania ofertowe
                 </button>
-                <button className='link link-hover' onClick={() => downloadPdf('oswiadczenie3.doc')}>
-                Oświadczenie
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('oswiadczenie3.doc')}>
+                   ➱ Oświadczenie
                 </button>
-                <button className='link link-hover' onClick={() => downloadPdf('zakonczenie.pdf')}>
-                Informaja o zakończeniu postępowania przetargowego
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('zakonczenie.pdf')}>
+                  ➱ Informaja o zakończeniu postępowania przetargowego
                 </button>
                 
             </div>
@@ -65,15 +65,15 @@ const EuFunds = () => {
            <div className='flex flex-col'>
               <h3 className='font-bold mt-2'>Załączniki:</h3>
               <div className='flex flex-col items-start ml-3'>
-                <button className='link link-hover' onClick={() => downloadPdf('oswiadczenie2.doc')}>
-                Załącznik nr 1 - Oświadczenie
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('oswiadczenie2.doc')}>
+                    ➱ Załącznik nr 1 - Oświadczenie
                 </button>
-                <button className='link link-hover' onClick={() => downloadPdf('oferta.doc')}>
-                Załącznik nr 2 - Wzór oferty 
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('oferta.doc')}>
+                   ➱Załącznik nr 2 - Wzór oferty 
                 </button>
                 <Link  href="/protokol_komisji_przetargowej.jpg" legacyBehavior>
-                  <a className='link link-hover' target="_blank" rel="noopener noreferrer">
-                    Protokół Komisji Przetargowej
+                  <a className='ml-2 link link-hover' target="_blank" rel="noopener noreferrer">
+                     ➱Protokół Komisji Przetargowej
                   </a>
                 </Link>
             </div>
@@ -88,14 +88,14 @@ const EuFunds = () => {
            <div className='flex flex-col'>
               <h3 className='font-bold mt-2'>Załączniki:</h3>
               <div className='flex flex-col items-start ml-3'>
-                <button className='link link-hover' onClick={() => downloadPdf('ogloszenie.doc')}>
-                  Informacje o ogłoszeniu - Oświadczenie
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('ogloszenie.doc')}>
+                   ➱ Informacje o ogłoszeniu - Oświadczenie
                 </button>
-                <button className='link link-hover' onClick={() => downloadPdf('oferta.doc')}>
-                Załącznik nr 1 - Wzór oferty 
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('oferta.doc')}>
+                   ➱ Załącznik nr 1 - Wzór oferty 
                 </button>
-                <button className='link link-hover' onClick={() => downloadPdf('oswiadczenia.doc')}>
-                Załącznik nr 2 - Oświadczenia
+                <button className='ml-2 link link-hover' onClick={() => downloadPdf('oswiadczenia.doc')}>
+                  ➱ Załącznik nr 2 - Oświadczenia
                 </button>
             </div>
         </div>

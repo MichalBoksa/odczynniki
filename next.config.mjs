@@ -28,6 +28,10 @@ webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   // }));
   return config;
 },
+i18n: {
+  locales:['pl','en','fr','ru'],
+  defaultLocale: 'pl',
+},
 onDemandEntries: {
   // Make sure entries are not getting stuck
   maxInactiveAge: 15 * 1000,

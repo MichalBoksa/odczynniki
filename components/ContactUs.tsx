@@ -2,15 +2,18 @@
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
 import { SETTLEMENT_TEAM, TRADE_TEAM } from '@/constants';
+import { useLocale } from '../lang/LocaleContext';
+
 
 const ContactUs = () => {
+    const { data } = useLocale() || {};
   return (
     <section className="bg-white">
     <div className="container px-6 py-12 mx-auto">
         <div className="text-center ">
-            <p className="font-medium text-jetblack">Skontaktuj się z nami</p>
+            <p className="font-medium text-jetblack">{data?.CONTACT_US}</p>
 
-            <h1 className="mt-2 text-2xl font-semibold text-primary md:text-3xl ">Chętnie odpowiemy na Państwa pytania</h1>
+            <h1 className="mt-2 text-2xl font-semibold text-primary md:text-3xl ">{data?.ANSWEAR_QUESTIONS}</h1>
 
             {/* <p className="mt-3 text-secondary-content ">Napisz do nas!</p> */}
         </div>
@@ -24,7 +27,7 @@ const ContactUs = () => {
 
         <div className='flex flex-col mt-5'>
             <div className='flex items-center justify-center'>
-                <h1 className='font-semibold text-6xl mt-5 ml-6 text-neutral items-center justify-center'>Nasze biuro</h1>
+                <h1 className='font-semibold text-6xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_OFFICE}</h1>
             </div>
             <div className='flex  mt-5 justify-center items-center'> 
                    <div className="flex flex-col p-4 rounded-lg bg-blue-50 md:p-6 justify-center items-center ">
@@ -35,10 +38,10 @@ const ContactUs = () => {
                         </svg>
                     </span>
                 
-                    <h2 className="mt-4 text-base font-medium text-jetblack ">Odwiedź nas</h2>
-                    <p className="mt-2 text-md text-secondary-content">20-234 Lublin, ul. Metalurgiczna 15 E, 17 D</p>
+                    <h2 className="mt-4 text-base font-medium text-jetblack ">{data?.VISIT_US}</h2>
+                    <p className="mt-2 text-md text-secondary-content">{data?.OFFICE_ADDRESS}</p>
                     
-                    <p className="mt-2 text-md text-jetblack">Czynne poniedziałek - piątek od 7:00 do 15:00</p>
+                    <p className="mt-2 text-md text-jetblack">{data?.OPEN_HOURS}</p>
                  </div>
 
             </div>
@@ -46,7 +49,7 @@ const ContactUs = () => {
 
         <div className='flex flex-col mt-5 px-10'>
                         <div className='flex items-center justify-left mb-6'>
-                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>Nasz zespół handlowców</h1>
+                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_TRADE_TEAM}</h1>
                          </div>
 
                     <div className='flex flex-wrap gap-20'>
@@ -80,7 +83,7 @@ const ContactUs = () => {
 
                 <div className='flex flex-col mt-16 px-10'>
                         <div className='flex items-center justify-left mb-6'>
-                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>Zespół rozliczeń transakcji handlowych</h1>
+                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_SETTLEMENT_TEAM}</h1>
                          </div>
 
                     <div className='flex flex-wrap gap-20'>

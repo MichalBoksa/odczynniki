@@ -1,13 +1,14 @@
 "use client";
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
-import CerificatesSlider from './CerificatesSlider';
+import { useLocale } from '../lang/LocaleContext';
 
 const AboutUs = () => {
+    const { data } = useLocale() || {};
   return (
     <section >
     <div className="flex justify-center mb-10 mt-6" >
-         <h1 className='text-primary font-bold text-5xl lg:text-6xl '>Kim jesteśmy</h1>
+         <h1 className='text-primary font-bold text-5xl lg:text-6xl '>{data?.ABOUT_US}</h1>
     </div>
 
    <div className='flex flex-col md:flex-row max-container w-full lg:min-h-[300px] tracking-wide'>
@@ -15,13 +16,11 @@ const AboutUs = () => {
        <div className='flex flex-col bg-dark-ivory md:max-w-[60%] '>
           
            <div className='text-secondary-content  flex lg:px-40 px-30 ml-8 mr-8 mb-8 mt-10 '>
-               <p className='text-left font-bold text-xl lg:text-2xl '>Nasza historia</p>
+               <p className='text-left font-bold text-xl lg:text-2xl '>{data?.HISTORY}</p>
            </div>
 
            <div className='text-jetblack flex lg:px-20 px-30 ml-12 mr-12 pb-4 '>
-               <p className='text-justify font-bold text-sm lg:text-l '>Firma „Centrum Metal Odczynniki Chemiczne - Midas Investment Sp. z o.o.” Spółka Komandytowa, w skrócie CMOCMI, została założona w roku 2005 i stanowiła rozwinięcie wcześniejszej działalności biznesowej założycieli - handel międzynarodowy produktami chemicznymi. 
-                     Bazując na wiedzy o rynku oraz doświadczeniu w handlu, tworząc Spółkę, właściciele firmy zdecydowali się rozpocząć działalność produkcyjną, na bazie której, zostały stworzone solidne podstawy funkcjonowania i rozwoju.
-                </p>
+               <p className='text-justify font-bold text-sm lg:text-l '>{data?.HISTORY_DESC}</p>
            </div>
      </div>
 
@@ -53,14 +52,10 @@ const AboutUs = () => {
 
        <div className='flex flex-col '>
            <div className="flex justify-center mb-8 mt-8 lg:px-16 text-center text-cream" >
-               <p className=' text-left font-bold  md:text-md lg:text-2xl'>W tym się specjalizujemy</p>
+               <p className=' text-left font-bold  md:text-md lg:text-2xl'>{data?.SPECIALIZATION}</p>
            </div>
            <div className='flex px-8 mb-8 text-cream'>
-               <p className=' text-justify lg:font-medium text-sm lg:text-l'>Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu.
-                CMOCMI jest jedynym w Polsce i wiodącym w Europie producentem sodu molibdenianu i amonu heptamolibdenianu oraz liczącym się w Europie producentem sodu seleninu. 
-                Poza działalnością produkcyjną firma prowadzi również międzynarodową działalność handlową w zakresie specjalistycznych związków chemicznych.
-                Firma posiada certyfikaty ISO 9001 i 14001, GMP+, dzięki czemu produkty mogą trafiać do najbardziej wymagających odbiorców z wielu branż przemysłowych oraz producentów pasz i artykułów spożywczych.
-                </p>
+               <p className=' text-justify lg:font-medium text-sm lg:text-l'>{data?.SPECIALIZATION_DESC}</p>
            </div>
 
            </div>
@@ -82,14 +77,11 @@ const AboutUs = () => {
        <div className='flex flex-col md:max-w-[60%] bg-dark-ivory'>
           
            <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-8 mt-10 '>
-               <p className='text-left font-bold text-xl lg:text-2xl '>Innowacje i zrównoważony rozwój - kluczowe filary</p>
+               <p className='text-left font-bold text-xl lg:text-2xl '>{data?.INNOVATIONS}</p>
            </div>
 
            <div className='text-black flex lg:px-20 px-30 ml-12 mr-12 pb-6'>
-               <p className='text-justify font-bold text-sm lg:text-l  '>
-               Obecnie firma posiada nowoczesne zaplecze techniczne i technologiczne do produkcji związków chemicznych o pożądanych przez klientów parametrach. CMOCMI od wielu lat współpracuje z wiodącymi krajowymi jednostkami badawczymi oraz z uczelniami wyższymi i Polska Akademią Nauk. 
-                Z uwagi na ograniczoną podaż niezbędnych do produkcji surowców zawierających molibden, selen i inne metale znajdujące się na listach krytycznych i deficytowych, CMOCMI od lat specjalizuje się w ich pozyskiwaniu ze źródeł odpadowych lub surowców pierwotnych o niskiej jakości. Dzięki innowacyjnym procesom hydrometalurgicznym firma uzyskuje dostęp do takich surowców, z których jest w stanie wytworzyć produkty o wysokiej czystości - na czym buduje swoją pozycję konkurencyjną wpisując się jednocześnie w filozofię Gospodarki Obiegu Zamkniętego.
-             </p>
+               <p className='text-justify font-bold text-sm lg:text-l '>{data?.INNOVATIONS_DESC} </p>
            </div>
      </div>
 

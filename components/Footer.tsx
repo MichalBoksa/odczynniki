@@ -17,7 +17,7 @@ const Footer = () => {
     </aside> 
     <nav>
       <h6 className="footer-title">{data?.LINKS}</h6> 
-     <Link href="/aboutUs" className="link link-hover">O nas</Link>
+     <Link href="/aboutUs" className="link link-hover">{data?.ABOUT_US}</Link>
      <Link href="/certificates" className="link link-hover">{data?.OUR_CERTIFICATES}</Link>
      <Link href="/carerrs" className="link link-hover">{data?.CAREERS}</Link>
      <Link href="/news" className="link link-hover">{data?.NEWS}</Link>

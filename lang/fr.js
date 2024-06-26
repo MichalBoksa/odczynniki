@@ -370,6 +370,7 @@ export const OFFICE_ADDRESS = '20-234 Lublin, ul. Metalurgiczna 15 E, 17 D';
 export const OPEN_HOURS = 'Ouvert du lundi au vendredi de 7h00 à 15h00';
 export const OUR_TRADE_TEAM = 'Notre équipe commerciale';
 export const OUR_SETTLEMENT_TEAM = 'Équipe de règlement des transactions commerciales';
+export const ADMINISTRATION = 'Administration et gestion';
 
 // ÉQUIPES DE CONTACT
 
@@ -385,7 +386,7 @@ export const TRADE_TEAM = [
   {
       name: "Aleksandra Simon",
       department: "Ventes",
-      market: "France, Belgique",
+      market: "Pays du Benelux",
       email: "asimon@odczynniki.com.pl",
       mobile: "+48 508 218 947"
   },

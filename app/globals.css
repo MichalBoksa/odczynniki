@@ -183,3 +183,8 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.svg-icon {
+  height: 40px; /* Set the height you prefer */
+  width: auto;  /* Maintain aspect ratio */
+}
+

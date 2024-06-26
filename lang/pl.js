@@ -504,6 +504,8 @@ export const NAV_LINKS = [
         export const OPEN_HOURS = 'Czynne poniedziałek - piątek od 7:00 do 15:00';
         export const OUR_TRADE_TEAM = 'Nasz zespół handlowców';
         export const OUR_SETTLEMENT_TEAM = 'Zespół rozliczeń transakcji handlowych';
+        export const ADMINISTRATION = 'Zarządzanie i administracja';
+        
 
 
       //CONTACT US TEAMS

@@ -370,6 +370,7 @@ export const OFFICE_ADDRESS = '20-234 Люблин, ул. Металургиче
 export const OPEN_HOURS = 'Открыто с понедельника по пятницу с 7:00 до 15:00';
 export const OUR_TRADE_TEAM = 'Наша торговая команда';
 export const OUR_SETTLEMENT_TEAM = 'Команда по расчетам торговых операций';
+export const ADMINISTRATION = 'Администрация и управление';
 
 //КОМАНДА ПО КОНТАКТАМ
 
@@ -385,7 +386,7 @@ export const TRADE_TEAM = [
   {
       name: "Александра Саймон",
       department: "Продажи",
-      market: "Франция, Бельгия",
+      market: "Страны Бенилюкса",
       email: "asimon@odczynniki.com.pl",
       mobile: "+48 508 218 947"
   },

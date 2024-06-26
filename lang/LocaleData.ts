@@ -79,6 +79,7 @@ export interface LocaleData {
   OPEN_HOURS: string;
   OUR_TRADE_TEAM: string;
   OUR_SETTLEMENT_TEAM: string;
+  ADMINISTRATION: string;
 
   // CONTACT US TEAMS
   TRADE_TEAM: TradeTeamMember[];

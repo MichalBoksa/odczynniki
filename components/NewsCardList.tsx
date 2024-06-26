@@ -1,4 +1,4 @@
-
+"use client";
 import React from 'react'
 import NewsCardElement from './NewsCardElement'
 import { Post } from '@prisma/client'

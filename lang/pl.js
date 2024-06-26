@@ -490,6 +490,8 @@ export const NAV_LINKS = [
       export const OFFICE_EMAIL = 'inf@odczynniki.com.pl';
       export const CMOC = 'Centrum Metal Odczynniki Chemiczne';
       export const MI = 'MIDAS Investment';
+      export const LINKS = 'Przydatne linki';
+      export const CAREERS = 'Kariera';
 
 
 
@@ -579,6 +581,47 @@ export const NAV_LINKS = [
         }
       ];
     
+      //CERTIFICATES
+      export const OUR_CERTIFICATES = 'Nasze certyfikaty'
 
+      export const USAGE ='Zastosowanie:';
 
+      //COBALT
+      export const COBALT = 'Kobalt';
+      export const COBALT_DESC = 'Pierwiastek chemiczny z grupy niemetali przejściowych powszechnie występującym w przyrodzie. Minerały mają bardzo niską zawartość kobaltu, a kobalt jest zawsze kojarzony z innymi metalami. Stosowany w przemyśle metalurgicznym, ceramicznym, chemicznym, akumulatorowym i hodowli zwierząt.'
 
+      //COPPER
+      export const COPPER = 'Miedź';
+      export const COPPER_DESC = 'Pierwiastek chemiczny z grupy metali przejściowych w kolorze czerwonobrązowym. Jest odporna na korozję, wytrzymała, ciągliwa, skutecznie przewodzi prąd i ciepło, łatwo tworzy stopy. Miedź stosowany m.in. w rolnictwie, uzdatnianiu wody, paszach dla zwierząt ale również w pigmentach i ceramice, szkle, galwanizacji oraz  katalizatorach.'
+
+      //MANGANESE
+      export const MANGANESE = 'Mangan';
+      export const MANGANESE_DESC = 'To srebrzystoszary o niebieskim połysku pierwiastek chemiczny należący do grupy metali przejściowych. Wykorzystywany jest do produkcji stali, w tym stali nierdzewnej. Dodawany jest również do stopów z aluminium, poprawiając jego odporność na korozję. Oprócz metalurgii, mangan dodawany jest do paliw, cementu, szkła, farb, nawozów.'
+
+      //MOLYBDENUM
+      export const MOLYBDENUM = 'Molibden';
+      export const MOLYBDENUM_DESC = 'Pierwiastek chemiczny z grupy metali przejściowych. Czysty molibden jest srebrzystobiały, bardzo twardy i ma jedną z najwyższych temperatur topnienia spośród pierwiastków. Stosowany jest przede wszystkim w metalurgii, głównie w produkcji stali, jako pigmenty, nawozy czy w przemyśle chemicznym jako katalizatory.'
+
+      //NICKEL
+      export const NICKEL = 'Nikiel';
+      export const NICKEL_DESC = 'Jest biało-srebrzystym metalem o lekkim złotym zabarwieniu. Nikiel należy do grupy metali przejściowych. Nikiel wykorzystywany jest przede wszystkim jako dodatek stopowy do stali. W ten sposób produkuje się stal żaroodporną, kwasoodporną oraz nierdzewną. Z niklu wykonuje się także elementy grzejne oraz komponenty elektroniczne'
+
+      //SELENIUM
+      export const SELENIUM = 'Selen';
+      export const SELENIUM_DESC = 'Pierwiastek chemiczny z grupy niemetali, który ma trzy odmiany alotropowe: odmiana α to tzw. selen szary lub metaliczny, o kolorze srebrzystoszarym, kruchy; odmiana β (selen czerwony) jest czerwonym ciałem bezpostaciowym; odmiana γ jest szklistym szaroróżowym ciałem stałym. Stosowany przede wszystkim w rolnictwie i jako dodatek do pasz dla zwierząt, a ponadto w produkcji szkła czy galwanizacji.'
+    
+      //ZINC
+      export const ZINC = 'Cynk';
+      export const ZINC_DESC ='Niebieskawoszary pierwiastek chemiczny, metal przejściowy z grupy cynkowców. Cynk i jego stopy znajdują zastosowanie do ocynkowania płaskich wyrobów stalowych, w celu ochrony przed korozją, jako dodatek stopowy przy produkcji mosiądzów.';
+
+      //OTHER_PRODUCTS
+      export const OUR_OTHER_PRODUCTS = 'Nasze pozostałe produkty';
+      
+      //NEWS
+      export const NEWS = 'Aktualności';
+      export const READ_MORE = 'Czytaj więcej';
+      export const LATEST_NEWS = 'Ostatnie aktualności';
+      export const LATEST_NEWS2 = 'Najnowsze aktualności'
+
+      // SLIDER
+      export const SLIDER_TITLE = 'INNOWACJA NASZĄ DROGĄ DO CELU';

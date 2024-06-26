@@ -1,9 +1,9 @@
 const localesData = {
   en: () => import('../lang/en'),
-  fr: () => import('../lang/fr').then(mod => mod.default),
+  fr: () => import('../lang/fr'),
   pl: () => import('../lang/pl'),
-  de: () => import('../lang/de').then(mod => mod.default),
-  ru: () => import('../lang/ru').then(mod => mod.default),
+  de: () => import('../lang/de'),
+  ru: () => import('../lang/ru'),
 };
 
 export async function getLocaleData(locale) {

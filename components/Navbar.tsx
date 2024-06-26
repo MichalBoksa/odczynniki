@@ -1,13 +1,26 @@
 "use client";
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { CldImage } from 'next-cloudinary';
 import { useLocale } from '../lang/LocaleContext';
 import { Product, NavLink } from '../lang/LocaleData';
-const Navbar = () => {
+import { LANGUAGES } from '@/constants';
 
+const Navbar = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
-  const { data } = useLocale() || {};
+  const { data, setLocale, currentLocale  } = useLocale() || {};
+  const [currentLanguage, setCurrentLanguage] = useState('PL');
+
+  const handleLanguageChange = (lang: string) => {
+    const selectedLanguage = LANGUAGES.find(language => language.code === lang);
+    setLocale(lang);
+    setCurrentLanguage(selectedLanguage?.label || 'PL');
+  };
+
+  useEffect(() => {
+    const selectedLanguage = LANGUAGES.find(lang => lang.code === currentLocale);
+    setCurrentLanguage(selectedLanguage?.label || 'EN');
+  }, [currentLocale]);
 
   const handleClick = () => {
     const elem = document.activeElement as HTMLElement;
@@ -15,6 +28,7 @@ const Navbar = () => {
       elem?.blur();
     }
   };
+  
 
   return (
     <nav className="flex items-start max-container relative z-30 py-5 mb-6 gap-3">
@@ -32,8 +46,8 @@ const Navbar = () => {
                   </div>
                 </Link>
               ) :
-              (<div key={link.label} className=" dropdown dropdown-hover">
-              <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4">{link.label}</div>
+              (<div key={link.label} className=" dropdown dropdown-hover ">
+              <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                 {data?.PRODUCTS.map((product) => (
                   <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
@@ -41,9 +55,16 @@ const Navbar = () => {
               </ul>
               </div>)
               )}
-            
-
-              <p className="regular-20 text-black flexCenter ml-3 cursor-pointer pb-1.5 transition-all mr-4">PL/EN</p>
+            <div className="dropdown dropdown-hover">
+            <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{currentLanguage}</div>
+            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-18 right-05 ">
+              {LANGUAGES.map((lang) => (
+                <li key={lang.code} onClick={() => handleLanguageChange(lang.code)} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg">
+                  <p>{lang.label}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
             </ul>
         </div>
 
@@ -56,9 +77,17 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <p className="regular-20 text-black flexCenter ml-3 cursor-pointer pb-1.5 transition-all mr-4">PL/EN</p>
-            
-         </div>
+               <div className="dropdown dropdown-hover">
+            <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 left-8">{currentLanguage}</div>
+            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-18 right-05">
+              {LANGUAGES.map((lang) => (
+                <li key={lang.code} onClick={() => handleLanguageChange(lang.code)} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg">
+                <p>{lang.label}</p>
+              </li>
+              ))}
+            </ul>
+          </div>            
+         </div>       
          )}
         
         <div className="flex cursor-pointer items-right lg:hidden ml-auto items-center justify-center mr-5 mt-4" onClick={() => setSideMenuOpen(!sideMenuOpen) }>

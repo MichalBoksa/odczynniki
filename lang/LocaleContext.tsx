@@ -7,9 +7,10 @@ import { getLocaleData } from './i18n';
 interface LocaleContextProps {
   data: LocaleData | null;
   setLocale: (locale: string) => void;
+  currentLocale: string;
 }
 
-const LocaleContext = createContext<LocaleContextProps>({ data: null, setLocale: () => {} });
+const LocaleContext = createContext<LocaleContextProps>({ data: null, setLocale: () => {},currentLocale: 'pl' });
 
 export const LocaleProvider: React.FC<{children: ReactNode}> = ({ children }) => {
   const router: any = useRouter(); // Update the type of 'router' to 'any'
@@ -22,20 +23,23 @@ export const LocaleProvider: React.FC<{children: ReactNode}> = ({ children }) =>
       if (currentLocale) {
         const localeData = await getLocaleData(currentLocale);
         setData(localeData);
-        console.log(localeData);
       }
     }
     loadData();
-    console.log(currentLocale);
   }, [currentLocale]);
 
   const setLocale = (newLocale: string) => {
     setCurrentLocale(newLocale);
-    router.push({ pathname, query }, asPath, { locale: newLocale });
-  };
-
+    // Check if pathname is defined. If not, default to '/' or handle as needed.
+    const safePathname = pathname || '/';
+    const queryString = new URLSearchParams(query).toString();
+    const newPath = queryString ? `${safePathname}?${queryString}` : safePathname;
+    const pushResult = router.push(newPath, asPath, { locale: newLocale });
+    if (pushResult && typeof pushResult.then === 'function') {
+      pushResult.catch(console.error);
+    }  };
   return (
-    <LocaleContext.Provider value={{ data, setLocale }}>
+    <LocaleContext.Provider value={{ data, setLocale, currentLocale }}>
       {children}
     </LocaleContext.Provider>
   );

@@ -1,9 +1,10 @@
 "use client";
 import React from 'react';
 import { CldImage } from 'next-cloudinary';
-
+import { useLocale } from '../lang/LocaleContext';
 
 const Slider = () => {
+  const { data } = useLocale() || {};
   return (
     <section className='flex' >
        <div className="carousel w-full max-h-[600px]">
@@ -24,7 +25,7 @@ const Slider = () => {
   <div id="slide1" className="carousel-item relative w-full">
    <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/lbi5sg9al1hjcjuhdxys.png" className="w-full object-fill z-5" alt='' height={1020} width={1900} />
     <div className='w-full absolute text-accent font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'5%', transform: 'translateY(-50%)'}}>
-         <h1 className='drop-shadow-md'>INNOWACJA NASZĄ DROGĄ DO CELU</h1>
+         <h1 className='drop-shadow-md'>{data?.SLIDER_TITLE}</h1>
       </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide2" className="btn btn-circle">❮</a> 
@@ -35,7 +36,7 @@ const Slider = () => {
   <div id="slide2" className="carousel-item relative w-full">
        <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/hk5a68trk9tu0ioordbf.jpg" className="w-full object-fill z-5" alt='' height={1020} width={1900} />
     <div className='w-full absolute text-accent font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'5%', transform: 'translateY(-50%)'}}>
-         <h1 className=''>INNOWACJA NASZĄ DROGĄ DO CELU</h1>
+         <h1 className=''>{data?.SLIDER_TITLE}</h1>
       </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 

@@ -16,12 +16,11 @@ const Footer = () => {
       <p>{data?.CMOC}<br/>{data?.MI}</p>
     </aside> 
     <nav>
-      <h6 className="footer-title">Przydatne linki</h6> 
-      <a className="link link-hover">O nas</a>
-      <a className="link link-hover">Nasze produkty</a>
-      <a className="link link-hover">Certyfikaty</a>
-      <a className="link link-hover">Kariera</a>
-      <a className="link link-hover">Aktualności</a>
+      <h6 className="footer-title">{data?.LINKS}</h6> 
+     <Link href="/aboutUs" className="link link-hover">O nas</Link>
+     <Link href="/certificates" className="link link-hover">{data?.OUR_CERTIFICATES}</Link>
+     <Link href="/carerrs" className="link link-hover">{data?.CAREERS}</Link>
+     <Link href="/news" className="link link-hover">{data?.NEWS}</Link>
     </nav> 
     <nav>
       <h6 className="footer-title">{data?.CONTACT}</h6> 

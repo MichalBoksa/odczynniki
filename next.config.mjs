@@ -29,7 +29,7 @@ webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   return config;
 },
 i18n: {
-  locales:['pl','en','fr','ru'],
+  locales:['pl','en','fr','ru','de'],
   defaultLocale: 'pl',
 },
 onDemandEntries: {

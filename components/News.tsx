@@ -5,6 +5,7 @@ import NewsCardList from './NewsCardList';
 import { Post } from '@prisma/client';
 import Pagination from './Pagination/Pagination';
 import Link from 'next/link';
+import { useLocale } from '../lang/LocaleContext';
 
 interface NewsProps {
   posts: Post[];
@@ -19,10 +20,10 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
   const POST_PER_PAGE = 3;  
   const hasPrevious = POST_PER_PAGE  * (page-1) > 0;
   const hasNext = POST_PER_PAGE * page < count;
-
+  const { data } = useLocale() || {};
   return (
     <section className='max-container padding-container mb-6'>
-      <h1 className='font-bold text-6xl'>Aktualności</h1>
+      <h1 className='font-bold text-6xl'>{data?.NEWS}</h1>
 
       <Link href={`/news/${latestPost.slug}`}>
         <div className='flex mt-6 items-center gap-8 min-h-[600px]'>
@@ -47,9 +48,7 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
               <h1 className='font-bold text-xl mb-6 text-left'>{latestPost.title}</h1>
             )}
             <div className='px-20' dangerouslySetInnerHTML={{__html: latestPost.desc.substring(0,120)}}/>
-            <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 ml-auto'>
-              Czytaj więcej
-            </button>
+            <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 ml-auto'>{data?.READ_MORE}</button>
           </div>
         </div>
       </Link>

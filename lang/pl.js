@@ -522,7 +522,7 @@ export const NAV_LINKS = [
         {
           name: "Aleksandra Simon",
           department: "Sprzedaż",
-          market: "Francja, Belgia",
+          market: "Kraje Beneluksu",
           email: "asimon@odczynniki.com.pl",
           mobile: "+48 508 218 947"
         },

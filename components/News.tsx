@@ -47,7 +47,7 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
             {latestPost && (
               <h1 className='font-bold text-xl mb-6 text-left'>{latestPost.title}</h1>
             )}
-            <div className='px-20' dangerouslySetInnerHTML={{__html: latestPost.desc.substring(0,120)}}/>
+            <div className='px-20' dangerouslySetInnerHTML={{__html: latestPost.desc.substring(0,120).concat(" . . .")}}/>
             <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 ml-auto'>{data?.READ_MORE}</button>
           </div>
         </div>

@@ -9,23 +9,19 @@ const nextConfig = {
   },
   experimental: {
     appDir: true,
+
+      workerThreads: false,
+      cpus: 1,
   },
   trailingSlash: true,
   env: {
     NEXT_PUBLIC_JWT_SECRET: process.env.JWT_SECRET,
   },
   webpack5: true,
-//   webpack: (config) => {
-//     config.resolve.fallback = { fs: false };
-//     return config;
-//   },
-// };
+
 webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   config.resolve.fallback = { fs: false };
   config.optimization.minimize = false;
-  // config.plugins.push(new webpack.DefinePlugin({
-  //   'process.env.BUILD_ID': JSON.stringify(buildId),
-  // }));
   return config;
 },
 i18n: {

@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/pl/404": "pages/pl/404.html",
+  "/en/404": "pages/en/404.html",
+  "/fr/404": "pages/fr/404.html",
+  "/ru/404": "pages/ru/404.html",
+  "/de/404": "pages/de/404.html",
+  "/pl/500": "pages/pl/500.html",
+  "/en/500": "pages/en/500.html",
+  "/fr/500": "pages/fr/500.html",
+  "/ru/500": "pages/ru/500.html",
+  "/de/500": "pages/de/500.html"
+}

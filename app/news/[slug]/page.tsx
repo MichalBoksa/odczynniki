@@ -6,7 +6,7 @@ import React from 'react'
 const getData = async (slug:string)  => {
   try {
     
-    const data = await fetch(`http://localhost:3000/api/news/${slug}`,{
+    const data = await fetch(`http://localhost:3001/api/news/${slug}`,{
       cache: "no-store",
     });
     if (!data.ok) {

@@ -10,7 +10,7 @@ interface NewsProps {
 
  const getData = async ({page}: {page: number}) => {
   try {
-    const data = await fetch(`http://localhost:3000/api/news?page=${page}`,{
+    const data = await fetch(`http://localhost:3001/api/news?page=${page}`,{
       cache: "no-store",
     });
     if (!data.ok) {

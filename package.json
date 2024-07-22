@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "cross-env NODE_OPTIONS='--max-old-space-size=8192' next build",
-    "start": "next start",
+    "start": "next start -p 3001",
     "prod": "next export"
   },
   "dependencies": {

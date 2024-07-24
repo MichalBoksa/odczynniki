@@ -1,1 +1,10 @@
-{}
+{
+  "/news/page": "app/news/page.js",
+  "/api/news/route": "app/api/news/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/aboutUs/page": "app/aboutUs/page.js",
+  "/page": "app/page.js",
+  "/products/other/page": "app/products/other/page.js",
+  "/news/[slug]/page": "app/news/[slug]/page.js",
+  "/api/news/[slug]/route": "app/api/news/[slug]/route.js"
+}

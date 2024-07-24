@@ -11,12 +11,12 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_JWT_SECRET: process.env.JWT_SECRET,
   },
-  webpack5: true,
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    config.resolve.fallback = { fs: false };
-    config.optimization.minimize = false;
-    return config;
-  },
+  // webpack5: true,
+  // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  //   config.resolve.fallback = { fs: false };
+  //   config.optimization.minimize = false;
+  //   return config;
+  // },
 };
 
 export default nextConfig;

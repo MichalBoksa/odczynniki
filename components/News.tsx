@@ -30,15 +30,15 @@ const News: React.FC<NewsProps> = ({posts,page,count}) => {
           <div className='flex-1'>
             {latestPost && (
               <CldImage
-                className='rounded-lg min-h-[450px] object-cover'
+                className='rounded-lg min-h-[450px] object-fill'
                 src={latestPost.img}
                 alt="img"
                 width={600}
-                height={450}
-                crop={{
-                  type: 'auto',
-                  source: true
-                }}
+                height={330}
+                // crop={{
+                //   type: 'auto',
+                //   source: true
+                // }}
               />
               
             )}

@@ -380,7 +380,7 @@ export const NAV_LINKS = [
         department: "Ventas",
         market: "Alemania, Austria, Suiza",
         email: "mwilczewski@odczynniki.com.pl",
-        mobile: " +49 178 676 0903"
+        mobile: "+49 178 676 0903"
     },
     {
         name: "Aleksandra Simon",

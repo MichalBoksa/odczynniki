@@ -517,7 +517,7 @@ export const NAV_LINKS = [
           department: "Sprzedaż",
           market: "Niemcy, Austria, Szwajcaria",
           email: "mwilczewski@odczynniki.com.pl",
-          mobile: " +49 178 676 0903"
+          mobile: "+49 178 676 0903"
         },
         {
           name: "Aleksandra Simon",

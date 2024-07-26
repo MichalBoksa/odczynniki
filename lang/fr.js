@@ -381,7 +381,7 @@ export const TRADE_TEAM = [
         department: "Ventes",
         market: "Allemagne, Autriche, Suisse",
         email: "mwilczewski@odczynniki.com.pl",
-        mobile: " +49 178 676 0903"
+        mobile: "+49 178 676 0903"
     },
     {
         name: "Aleksandra Simon",

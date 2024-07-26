@@ -67,7 +67,7 @@ const ContactUs = () => {
 
                     <div className='flex flex-wrap gap-20'>
                         {/* TODO make component to team meameber */}
-                        {TRADE_TEAM.map((member) => (
+                        {data?.TRADE_TEAM.map((member) => (
                             <div key={member.email} className="flex flex-col justify-center items-center px-7">
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>
@@ -101,7 +101,7 @@ const ContactUs = () => {
 
                     <div className='flex flex-wrap gap-20'>
                         {/* TODO make component to team meameber */}
-                        {SETTLEMENT_TEAM.map((member) => (
+                        {data?.SETTLEMENT_TEAM.map((member) => (
                             <div key={member.email} className="flex flex-col justify-center items-center px-7">
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>

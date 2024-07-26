@@ -1,13 +1,15 @@
 "use client";
 import { CldImage } from 'next-cloudinary';
 import React from 'react'
+import { useLocale } from '../lang/LocaleContext';
 
 const CerificatesSlider = () => {
+  const { data } = useLocale() || {};
   return (
     <div className='max-container'>
       <div className='bg-ivory w-3/5 mr-auto ml-auto '>
         <div className="flex justify-center mb-4 py-4" >
-            <h1 className='text-secondary-content font-bold text-m lg:text-4xl'>Nasze certyfikaty</h1>
+            <h1 className='text-secondary-content font-bold text-m lg:text-4xl'>{data?.OUR_CERTIFICATES}</h1>
         </div>
 
       <div className="carousel w-full max-h-[600px]">

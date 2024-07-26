@@ -1,5 +1,4 @@
-import exp from "constants";
-import { use } from "react";
+
 
 // NAVIGATION
 export const NAV_LINKS = [
@@ -9,6 +8,15 @@ export const NAV_LINKS = [
     { href: '/news', key: 'news ', label: 'AKTUALNOŚCI' },
     { href: '/contactUs', key: 'contact_us', label: 'KONTAKT' },
     { href: '/euFunds', key: 'euFunds', label: 'FUNDUSZE EUROPEJSKIE' },
+  ];
+  
+  export const LANGUAGES = [
+    { code: 'en', label: 'EN' },
+    { code: 'pl', label: 'PL' },
+    { code: 'fr', label: 'FR' },
+    { code: 'de', label: 'DE' },
+    { code: 'ru', label: 'RU' },
+    { code: 'es', label: 'ES' },
   ];
 
 

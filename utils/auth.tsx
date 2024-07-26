@@ -1,11 +1,12 @@
 
 import GoogleProvider from 'next-auth/providers/google';
 import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import { PrismaClient, User } from '@prisma/client';
 import { AuthOptions } from 'next-auth';
+import prisma from "./connect";
 
 const allowedEmail = process.env.ALLOWED_EMAIL;
-const prisma = new PrismaClient();
+
+const secret = process.env.SECRET;
 export const authOptions:AuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
@@ -14,6 +15,7 @@ export const authOptions:AuthOptions = {
       clientSecret: process.env.GOOGLE_SECRET!,
     }),
   ],
+  secret: secret,
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
       if (user.email === allowedEmail) {
@@ -23,6 +25,7 @@ export const authOptions:AuthOptions = {
       }
     },
   },
+  
   
 };
 

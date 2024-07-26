@@ -30,10 +30,6 @@ body {
   width:100%;
 }
 
-.right-05{
-  right: 1px;
-}
-
 
 @layer utilities {
   .btn_white { 
@@ -152,6 +148,9 @@ body {
   .bold-16 {
     @apply text-[16px] font-[700];
   }
+  .right-05{
+    right: 0.01rem;
+  }
 
   /* Hero */
   .hero-map {
@@ -184,3 +183,8 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.svg-icon {
+  height: 40px; /* Set the height you prefer */
+  width: auto;  /* Maintain aspect ratio */
+}
+

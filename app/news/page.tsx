@@ -1,5 +1,4 @@
-import { Post, PrismaClient } from '@prisma/client';
-import { NextResponse } from "next/server";
+import { Post } from '@prisma/client';
 import News from '@/components/News'; 
 
 interface NewsProps {
@@ -11,7 +10,7 @@ interface NewsProps {
 
  const getData = async ({page}: {page: number}) => {
   try {
-    const data = await fetch(`http://localhost:3000/api/news?page=${page}`,{
+    const data = await fetch(`http://localhost:3002/api/news?page=${page}`,{
       cache: "no-store",
     });
     if (!data.ok) {

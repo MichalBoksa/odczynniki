@@ -3,10 +3,14 @@ import React from 'react'
 import { CldImage } from 'next-cloudinary';
 import { SETTLEMENT_TEAM, TRADE_TEAM } from '@/constants';
 import { useLocale } from '../lang/LocaleContext';
+import Link from 'next/link';
 
 
 const ContactUs = () => {
     const { data } = useLocale() || {};
+    const address = 'Metalurgiczna 15e, 20-001 Lublin';
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+
   return (
     <section className="bg-white">
     <div className="container px-6 py-12 mx-auto">
@@ -34,12 +38,16 @@ const ContactUs = () => {
                 <div className='flex mt-5 justify-center items-center'> 
                     <div className="flex flex-col p-4 rounded-lg bg-blue-50 md:p-6 justify-center items-center ">
                         <div className='flex h-1/3  flex-col justify-center items-center'>
-                        <span className="inline-block p-3 rounded-lg bg-blue-100/80 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                            </svg>
-                        </span>
+                        <Link legacyBehavior href='https://www.google.com/maps/place/Midas+Investments+Sp.+z+o.o./@51.2371454,22.6406917,17z/data=!3m1!4b1!4m6!3m5!1s0x472256b8fa24c60b:0x9dfda562f34db9a9!8m2!3d51.2371454!4d22.643272!16s%2Fg%2F1hc1msss8?entry=ttu' className='cursor:pointer'>
+                            <a target="_blank" rel="noopener noreferrer">
+                                <span className="inline-block p-3 rounded-lg bg-blue-100/80 ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                    </svg>
+                                </span>
+                            </a>    
+                        </Link>
                     </div>
                     <div className='flex h-2/3 flex-col justify-center items-center '>
                         <h2 className="mt-4 text-base font-medium text-jetblack ">{data?.VISIT_US}</h2>

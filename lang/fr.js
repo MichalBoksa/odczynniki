@@ -490,3 +490,8 @@ export const LATEST_NEWS2 = 'Actualités récentes';
 
 // SLIDER
 export const SLIDER_TITLE = 'INNOVATION, NOTRE VOIE VERS L\'OBJECTIF';
+
+//COOKIES CONSENT
+export const COOKIES_CONSENT = 'Ce site utilise des cookies pour améliorer l’expérience utilisateur. En utilisant notre site, vous consentez à tous les cookies conformément à notre Politique de Cookies.';
+export const COOKIES_CONSENT_ACCEPT = 'Accepter';
+

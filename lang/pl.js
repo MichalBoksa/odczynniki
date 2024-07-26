@@ -627,3 +627,8 @@ export const NAV_LINKS = [
 
       // SLIDER
       export const SLIDER_TITLE = 'INNOWACJA NASZĄ DROGĄ DO CELU';
+
+        //COOKIES CONSENT
+        export const COOKIES_CONSENT = 'Ta strona używa plików cookies w celu poprawy komfortu użytkowania. Korzystając z naszej strony, wyrażasz zgodę na wszystkie pliki cookies zgodnie z naszą Polityką Cookies.';
+        export const COOKIES_CONSENT_ACCEPT = 'Akceptuję';
+        

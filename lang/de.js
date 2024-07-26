@@ -490,3 +490,8 @@ export const LATEST_NEWS2 = 'Aktuelle Nachrichten';
 
 // SLIDER
 export const SLIDER_TITLE = 'INNOVATION IST UNSER WEG ZUM ZIEL';
+
+//COOKIES CONSENT
+export const COOKIES_CONSENT = 'Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern. Durch die Nutzung unserer Website stimmen Sie allen Cookies gemäß unserer Cookie-Richtlinie zu.';
+export const COOKIES_CONSENT_ACCEPT = 'Akzeptieren';
+

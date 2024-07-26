@@ -128,6 +128,10 @@ export interface LocaleData {
 
   // SLIDER
   SLIDER_TITLE: string;
+
+  //COOKIES CONSENT
+  COOKIES_CONSENT: string;
+  COOKIES_CONSENT_ACCEPT: string;
 }
 
 export interface NavLink {

@@ -489,3 +489,7 @@ export const LATEST_NEWS2 = 'Recent news';
 
 // SLIDER
 export const SLIDER_TITLE = 'INNOVATION IS OUR WAY TO THE GOAL';
+
+//COOKIES CONSNET
+export const COOKIES_CONSENT = 'This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.';
+export const COOKIES_CONSENT_ACCEPT = 'Accept';

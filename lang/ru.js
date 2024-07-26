@@ -491,3 +491,9 @@ export const LATEST_NEWS2 = 'Самые последние новости';
 
 // СЛАЙДЕР
 export const SLIDER_TITLE = 'ИННОВАЦИЯ - НАШ ПУТЬ К ЦЕЛИ';
+
+//COOKIES CONSENT
+export const COOKIES_CONSENT = 'Этот веб-сайт использует файлы cookie для улучшения удобства пользователей. Используя наш сайт, вы соглашаетесь на использование всех файлов cookie в соответствии с нашей Политикой использования файлов cookie.';
+export const COOKIES_CONSENT_ACCEPT = 'Принять';
+
+

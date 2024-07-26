@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AuthProvider from "@/providers/AuthProvider";
 import { LocaleProvider } from '@/lang/LocaleContext';
+import CookieConsent from "@/components/CookieConsent";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
         <LocaleProvider>
           <Navbar/>
           {children}
+          <CookieConsent/>
           <Footer/>
         </LocaleProvider>
         </AuthProvider>

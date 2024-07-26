@@ -1,6 +1,8 @@
 {
+  "/news/page": "app/news/page.js",
+  "/contactUs/page": "app/contactUs/page.js",
+  "/aboutUs/page": "app/aboutUs/page.js",
+  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/api/news/route": "app/api/news/route.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/news/page": "app/news/page.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

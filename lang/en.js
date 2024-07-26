@@ -41,36 +41,45 @@ export const JOB_TITLE2 = 'Chemical process operator';
 
 //PRODUCTS
 export const PRODUCTS = [
+
+    {
+        symbol: 'Mo',
+        name: 'Molybdenum',
+        href: '/products/molybdenum',
+    },
+
+    {
+        symbol: 'Se',
+        name: 'Selenium',
+        href: '/products/selenium',
+    },
+
+    {
+        symbol: 'Cu',
+        name: 'Copper',
+        href: '/products/copper',
+    },
+
+    {
+        symbol: 'Mn',
+        name: 'Manganese',
+        href: '/products/manganese',
+    },
+
   {
       symbol: 'Zn',
       name: 'Zinc',
       href: '/products/zinc',
   },
-  {
-      symbol: 'Mn',
-      name: 'Manganese',
-      href: '/products/manganese',
-  },
-  {
-      symbol: 'Cu',
-      name: 'Copper',
-      href: '/products/copper',
-  },
-  {
-      symbol: 'Mo',
-      name: 'Molybdenum',
-      href: '/products/molybdenum',
-  },
+
+
+
   {
       symbol: 'Ni',
       name: 'Nickel',
       href: '/products/nickel',
   },
-  {
-      symbol: 'Se',
-      name: 'Selenium',
-      href: '/products/selenium',
-  },
+
   {
       symbol: 'Co',
       name: 'Cobalt',

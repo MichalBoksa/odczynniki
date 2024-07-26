@@ -41,51 +41,59 @@ export const JOB_TITLE2 = 'Opérateur de processus chimiques';
 
 // PRODUITS
 export const PRODUCTS = [
-  {
-      symbol: 'Zn',
-      name: 'Zinc',
-      href: '/products/zinc',
-  },
-  {
-      symbol: 'Mn',
-      name: 'Manganèse',
-      href: '/products/manganese',
-  },
-  {
-      symbol: 'Cu',
-      name: 'Cuivre',
-      href: '/products/copper',
-  },
-  {
-      symbol: 'Mo',
-      name: 'Molybdène',
-      href: '/products/molybdenum',
-  },
-  {
-      symbol: 'Ni',
-      name: 'Nickel',
-      href: '/products/nickel',
-  },
-  {
-      symbol: 'Se',
-      name: 'Sélénium',
-      href: '/products/selenium',
-  },
-  {
-      symbol: 'Co',
-      name: 'Cobalt',
-      href: '/products/cobalt',
-  },
-  {
-      symbol: '',
-      name: 'Autres',
-      href: '/products/other',
-  },
-  {
-      symbol: '',
-      name: 'Certificats',
-      href: '/certificates',
-  },
+    {
+        symbol: 'Mo',
+        name: 'Molybdène',
+        href: '/products/molybdenum',
+    },
+
+    {
+        symbol: 'Se',
+        name: 'Sélénium',
+        href: '/products/selenium',
+    },
+
+    {
+        symbol: 'Cu',
+        name: 'Cuivre',
+        href: '/products/copper',
+    },
+
+    {
+        symbol: 'Mn',
+        name: 'Manganèse',
+        href: '/products/manganese',
+    },
+
+    {
+        symbol: 'Zn',
+        name: 'Zinc',
+        href: '/products/zinc',
+    },
+
+
+    {
+        symbol: 'Ni',
+        name: 'Nickel',
+        href: '/products/nickel',
+    },
+
+    {
+        symbol: 'Co',
+        name: 'Cobalt',
+        href: '/products/cobalt',
+    },
+    {
+        symbol: '',
+        name: 'Autres',
+        href: '/products/other',
+    },
+    
+    {
+        symbol: '',
+        name: 'Certificats',
+        href: '/certificates',
+    },
 ];
 
 // Produits de molybdène

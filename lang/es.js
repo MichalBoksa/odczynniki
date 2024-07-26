@@ -42,35 +42,41 @@ export const NAV_LINKS = [
   //PRODUCTS
   export const PRODUCTS = [
     {
-        symbol: 'Zn',
-        name: 'Zinc',
-        href: '/products/zinc',
+        symbol: 'Mo',
+        name: 'Molibdeno',
+        href: '/products/molybdenum',
     },
+
     {
-        symbol: 'Mn',
-        name: 'Manganeso',
-        href: '/products/manganese',
+        symbol: 'Se',
+        name: 'Selenio',
+        href: '/products/selenium',
     },
+
     {
         symbol: 'Cu',
         name: 'Cobre',
         href: '/products/copper',
     },
     {
-        symbol: 'Mo',
-        name: 'Molibdeno',
-        href: '/products/molybdenum',
+        symbol: 'Mn',
+        name: 'Manganeso',
+        href: '/products/manganese',
     },
+
+    {
+        symbol: 'Zn',
+        name: 'Zinc',
+        href: '/products/zinc',
+    },
+
+
     {
         symbol: 'Ni',
         name: 'Níquel',
         href: '/products/nickel',
     },
-    {
-        symbol: 'Se',
-        name: 'Selenio',
-        href: '/products/selenium',
-    },
+
     {
         symbol: 'Co',
         name: 'Cobalto',

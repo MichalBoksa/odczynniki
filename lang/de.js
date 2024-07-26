@@ -41,36 +41,42 @@ export const JOB_TITLE2 = 'Chemieprozessbetreiber';
 
 //PRODUCTS
 export const PRODUCTS = [
+
+    {
+        symbol: 'Mo',
+        name: 'Molybdän',
+        href: '/products/molybdenum',
+    },
+
+    {
+        symbol: 'Se',
+        name: 'Selen',
+        href: '/products/selenium',
+    },
+
+    {
+        symbol: 'Cu',
+        name: 'Kupfer',
+        href: '/products/copper',
+    },
+    {
+        symbol: 'Mn',
+        name: 'Mangan',
+        href: '/products/manganese',
+    },
+
   {
       symbol: 'Zn',
       name: 'Zink',
       href: '/products/zinc',
   },
-  {
-      symbol: 'Mn',
-      name: 'Mangan',
-      href: '/products/manganese',
-  },
-  {
-      symbol: 'Cu',
-      name: 'Kupfer',
-      href: '/products/copper',
-  },
-  {
-      symbol: 'Mo',
-      name: 'Molybdän',
-      href: '/products/molybdenum',
-  },
+ 
   {
       symbol: 'Ni',
       name: 'Nickel',
       href: '/products/nickel',
   },
-  {
-      symbol: 'Se',
-      name: 'Selen',
-      href: '/products/selenium',
-  },
+
   {
       symbol: 'Co',
       name: 'Kobalt',

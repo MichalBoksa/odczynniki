@@ -41,36 +41,43 @@ export const JOB_TITLE2 = 'Оператор химических процесс�
 
 //ПРОДУКЦИЯ
 export const PRODUCTS = [
-  {
-    symbol: 'Zn',
-    name: 'Цинк',
-    href: '/products/zinc',
-  },
-  {
-    symbol: 'Mn',
-    name: 'Марганец',
-    href: '/products/manganese',
-  },
-  {
-    symbol: 'Cu',
-    name: 'Медь',
-    href: '/products/copper',
-  },
+
   {
     symbol: 'Mo',
     name: 'Молибден',
     href: '/products/molybdenum',
   },
-  {
-    symbol: 'Ni',
-    name: 'Никель',
-    href: '/products/nickel',
-  },
+  
   {
     symbol: 'Se',
     name: 'Селен',
     href: '/products/selenium',
   },
+
+  {
+    symbol: 'Cu',
+    name: 'Медь',
+    href: '/products/copper',
+  },
+
+  {
+    symbol: 'Mn',
+    name: 'Марганец',
+    href: '/products/manganese',
+  },
+
+  {
+    symbol: 'Zn',
+    name: 'Цинк',
+    href: '/products/zinc',
+  },
+
+  {
+    symbol: 'Ni',
+    name: 'Никель',
+    href: '/products/nickel',
+  },
+
   {
     symbol: 'Co',
     name: 'Кобальт',

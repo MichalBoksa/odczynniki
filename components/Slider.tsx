@@ -23,7 +23,7 @@ const Slider = () => {
     </div> */}
   {/* </div>  */}
   <div id="slide1" className="carousel-item relative w-full">
-   <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/lbi5sg9al1hjcjuhdxys.png" className="w-full object-fill z-5" alt='' height={1020} width={1900} />
+   <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/lbi5sg9al1hjcjuhdxys.png" className="w-full object-fill z-5" alt='' height={1020} width={800} />
     <div className='w-full absolute text-accent font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'5%', transform: 'translateY(-50%)'}}>
          <h1 className='drop-shadow-md'>{data?.SLIDER_TITLE}</h1>
       </div>

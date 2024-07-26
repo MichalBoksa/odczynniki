@@ -377,51 +377,58 @@ export const ADMINISTRATION = 'Администрация и управлени�
 // ТОРГОВАЯ КОМАНДА
 export const TRADE_TEAM = [
   {
-      name: "Малгожата Вильчевски",
+      name: "Małgorzata Wilczewski",
       department: "Продажи",
-      market: "Германия",
-      email: "mwiklczewski@odczynniki.com.pl",
-      mobile: "+48 505 498 884 / +49 178 676 0903"
+      market: "Германия, Австрия, Швейцария",
+      email: "mwilczewski@odczynniki.com.pl",
+      mobile: " +49 178 676 0903"
   },
   {
-      name: "Александра Саймон",
+      name: "Aleksandra Simon",
       department: "Продажи",
-      market: "Страны Бенилюкса",
+      market: "Страны Бенилюкс, Франция, Чехия, Англия",
       email: "asimon@odczynniki.com.pl",
       mobile: "+48 508 218 947"
   },
   {
-      name: "Анна Мроз",
+      name: "Anna Mróz",
       department: "Продажи",
-      market: "Испания",
+      market: "Испания, Страны Бенилюкс, Англия, Италия",
       email: "amroz@odczynniki.com.pl",
       mobile: "+48 508 218 900"
   },
   {
-      name: "Наири Чагласян",
+      name: "Nairy Chaglasyan",
       department: "Продажи",
       market: "Испания, Португалия",
       email: "nchaglasyan@odczynniki.com.pl",
       mobile: "+34 639 314 391"
   },
   {
-      name: "Агнешка Пятковска",
+      name: "Agnieszka Piątkowska",
       department: "Продажи",
       market: "Украина",
       email: "apiatkowska@odczynniki.com.pl",
       mobile: "+48 885 785 007"
   },
   {
-      name: "Вальдемар Пятковски",
+      name: "Renata Krawczyńska",
+      department: "Продажи",
+      market: "Польша",
+      email: "rkrawczynska@odczynniki.com.pl",
+      mobile: "+48 885 785 077"
+  },
+  {
+      name: "Waldemar Piątkowski",
       department: "Закупки, продажи, логистика",
       market: "Польша",
       email: "wpiatkowski@odczynniki.com.pl",
       mobile: "+48 508 218 838"
   },
   {
-      name: "Петр Топольски",
+      name: "Piotr Topolski",
       department: "Закупки",
-      market: "Все регионы",
+      market: "Все локации",
       email: "ptopolski@odczynniki.com.pl",
       mobile: "+48 885 785 011"
   }

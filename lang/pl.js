@@ -515,21 +515,21 @@ export const NAV_LINKS = [
         {
           name: "Małgorzata Wilczewski",
           department: "Sprzedaż",
-          market: "Niemcy",
-          email: "mwiklczewski@odczynniki.com.pl",
-          mobile: "+48 505 498 884 / +49 178 676 0903"
+          market: "Niemcy, Austria, Szwajcaria",
+          email: "mwilczewski@odczynniki.com.pl",
+          mobile: " +49 178 676 0903"
         },
         {
           name: "Aleksandra Simon",
           department: "Sprzedaż",
-          market: "Kraje Beneluksu",
+          market: "Kraje Beneluksu, Francja, Czechy, Anglia",
           email: "asimon@odczynniki.com.pl",
           mobile: "+48 508 218 947"
         },
         {
           name: "Anna Mróz",
           department: "Sprzedaż",
-          market: "Hiszpania",
+          market: "Hiszpania, Kraje Beneluksu, Anglia, Włochy",
           email: "amroz@odczynniki.com.pl",
           mobile: "+48 508 218 900"
         },
@@ -546,6 +546,13 @@ export const NAV_LINKS = [
           market: "Ukraina",
           email: "apiatkowska@odczynniki.com.pl",
           mobile: "+48 885 785 007"
+        },
+        {
+          name: "Renata Krawczyńska",
+          department: "Sprzedaż",
+          market: "Polska",
+          email: "rkrawczynska@odczynniki.com.pl",
+          mobile: "+48 885 785 077"
         },
         {
           name: "Waldemar Piątkowski",
@@ -574,7 +581,7 @@ export const NAV_LINKS = [
         {
           name: "Małgorzata Kopniak",
           email: "mkopniak@odczynniki.com.pl",
-          mobile: "+48 793 419 215"
+          mobile: "+48 506 265 125"
         },
         {
           name: "Ewelina Buszko",

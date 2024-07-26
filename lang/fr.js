@@ -376,56 +376,64 @@ export const ADMINISTRATION = 'Administration et gestion';
 
 // ÉQUIPE COMMERCIALE
 export const TRADE_TEAM = [
-  {
-      name: "Małgorzata Wilczewski",
-      department: "Ventes",
-      market: "Allemagne",
-      email: "mwiklczewski@odczynniki.com.pl",
-      mobile: "+48 505 498 884 / +49 178 676 0903"
-  },
-  {
-      name: "Aleksandra Simon",
-      department: "Ventes",
-      market: "Pays du Benelux",
-      email: "asimon@odczynniki.com.pl",
-      mobile: "+48 508 218 947"
-  },
-  {
-      name: "Anna Mróz",
-      department: "Ventes",
-      market: "Espagne",
-      email: "amroz@odczynniki.com.pl",
-      mobile: "+48 508 218 900"
-  },
-  {
-      name: "Nairy Chaglasyan",
-      department: "Ventes",
-      market: "Espagne, Portugal",
-      email: "nchaglasyan@odczynniki.com.pl",
-      mobile: "+34 639 314 391"
-  },
-  {
-      name: "Agnieszka Piątkowska",
-      department: "Ventes",
-      market: "Ukraine",
-      email: "apiatkowska@odczynniki.com.pl",
-      mobile: "+48 885 785 007"
-  },
-  {
-      name: "Waldemar Piątkowski",
-      department: "Achats, ventes, logistique",
-      market: "Pologne",
-      email: "wpiatkowski@odczynniki.com.pl",
-      mobile: "+48 508 218 838"
-  },
-  {
-      name: "Piotr Topolski",
-      department: "Achats",
-      market: "Tous les emplacements",
-      email: "ptopolski@odczynniki.com.pl",
-      mobile: "+48 885 785 011"
-  }
+    {
+        name: "Małgorzata Wilczewski",
+        department: "Ventes",
+        market: "Allemagne, Autriche, Suisse",
+        email: "mwilczewski@odczynniki.com.pl",
+        mobile: " +49 178 676 0903"
+    },
+    {
+        name: "Aleksandra Simon",
+        department: "Ventes",
+        market: "Pays du Benelux, France, République tchèque, Angleterre",
+        email: "asimon@odczynniki.com.pl",
+        mobile: "+48 508 218 947"
+    },
+    {
+        name: "Anna Mróz",
+        department: "Ventes",
+        market: "Espagne, Pays du Benelux, Angleterre, Italie",
+        email: "amroz@odczynniki.com.pl",
+        mobile: "+48 508 218 900"
+    },
+    {
+        name: "Nairy Chaglasyan",
+        department: "Ventes",
+        market: "Espagne, Portugal",
+        email: "nchaglasyan@odczynniki.com.pl",
+        mobile: "+34 639 314 391"
+    },
+    {
+        name: "Agnieszka Piątkowska",
+        department: "Ventes",
+        market: "Ukraine",
+        email: "apiatkowska@odczynniki.com.pl",
+        mobile: "+48 885 785 007"
+    },
+    {
+        name: "Renata Krawczyńska",
+        department: "Ventes",
+        market: "Pologne",
+        email: "rkrawczynska@odczynniki.com.pl",
+        mobile: "+48 885 785 077"
+    },
+    {
+        name: "Waldemar Piątkowski",
+        department: "Achats, ventes, logistique",
+        market: "Pologne",
+        email: "wpiatkowski@odczynniki.com.pl",
+        mobile: "+48 508 218 838"
+    },
+    {
+        name: "Piotr Topolski",
+        department: "Achats",
+        market: "Toutes les localisations",
+        email: "ptopolski@odczynniki.com.pl",
+        mobile: "+48 885 785 011"
+    }
 ];
+
 
 // ÉQUIPE DE RÈGLEMENT
 export const SETTLEMENT_TEAM = [
@@ -437,7 +445,7 @@ export const SETTLEMENT_TEAM = [
   {
       name: "Małgorzata Kopniak",
       email: "mkopniak@odczynniki.com.pl",
-      mobile: "+48 793 419 215"
+      mobile: "+48 506 265 125"
   },
   {
       name: "Ewelina Buszko",

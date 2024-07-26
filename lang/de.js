@@ -376,74 +376,62 @@ export const ADMINISTRATION = 'Verwaltung und Management';
 
 // TRADE TEAM
 export const TRADE_TEAM = [
-  {
-      name: "Małgorzata Wilczewski",
-      department: "Verkauf",
-      market: "Deutschland",
-      email: "mwiklczewski@odczynniki.com.pl",
-      mobile: "+48 505 498 884 / +49 178 676 0903"
-  },
-  {
-      name: "Aleksandra Simon",
-      department: "Verkauf",
-      market: "Benelux-Länder",
-      email: "asimon@odczynniki.com.pl",
-      mobile: "+48 508 218 947"
-  },
-  {
-      name: "Anna Mróz",
-      department: "Verkauf",
-      market: "Spanien",
-      email: "amroz@odczynniki.com.pl",
-      mobile: "+48 508 218 900"
-  },
-  {
-      name: "Nairy Chaglasyan",
-      department: "Verkauf",
-      market: "Spanien, Portugal",
-      email: "nchaglasyan@odczynniki.com.pl",
-      mobile: "+34 639 314 391"
-  },
-  {
-      name: "Agnieszka Piątkowska",
-      department: "Verkauf",
-      market: "Ukraine",
-      email: "apiatkowska@odczynniki.com.pl",
-      mobile: "+48 885 785 007"
-  },
-  {
-      name: "Waldemar Piątkowski",
-      department: "Einkauf, Verkauf, Logistik",
-      market: "Polen",
-      email: "wpiatkowski@odczynniki.com.pl",
-      mobile: "+48 508 218 838"
-  },
-  {
-      name: "Piotr Topolski",
-      department: "Einkauf",
-      market: "Alle Standorte",
-      email: "ptopolski@odczynniki.com.pl",
-      mobile: "+48 885 785 011"
-  }
-];
-
-//SETTLEMENT TEAM
-export const SETTLEMENT_TEAM = [
-  {
-      name: "Agnieszka Piątkowska",
-      email: "apiatkowska@odczynniki.com.pl",
-      mobile: "+48 885 785 007"
-  },
-  {
-      name: "Małgorzata Kopniak",
-      email: "mkopniak@odczynniki.com.pl",
-      mobile: "+48 793 419 215"
-  },
-  {
-      name: "Ewelina Buszko",
-      email: "ebuszko@odczynniki.com.pl",
-      mobile: "+48 885 785 002"
-  }
+    {
+        name: "Małgorzata Wilczewski",
+        department: "Verkauf",
+        market: "Deutschland, Österreich, Schweiz",
+        email: "mwilczewski@odczynniki.com.pl",
+        mobile: " +49 178 676 0903"
+    },
+    {
+        name: "Aleksandra Simon",
+        department: "Verkauf",
+        market: "Benelux-Länder, Frankreich, Tschechien, England",
+        email: "asimon@odczynniki.com.pl",
+        mobile: "+48 508 218 947"
+    },
+    {
+        name: "Anna Mróz",
+        department: "Verkauf",
+        market: "Spanien, Benelux-Länder, England, Italien",
+        email: "amroz@odczynniki.com.pl",
+        mobile: "+48 508 218 900"
+    },
+    {
+        name: "Nairy Chaglasyan",
+        department: "Verkauf",
+        market: "Spanien, Portugal",
+        email: "nchaglasyan@odczynniki.com.pl",
+        mobile: "+34 639 314 391"
+    },
+    {
+        name: "Agnieszka Piątkowska",
+        department: "Verkauf",
+        market: "Ukraine",
+        email: "apiatkowska@odczynniki.com.pl",
+        mobile: "+48 885 785 007"
+    },
+    {
+        name: "Renata Krawczyńska",
+        department: "Verkauf",
+        market: "Polen",
+        email: "rkrawczynska@odczynniki.com.pl",
+        mobile: "+48 885 785 077"
+    },
+    {
+        name: "Waldemar Piątkowski",
+        department: "Einkauf, Verkauf, Logistik",
+        market: "Polen",
+        email: "wpiatkowski@odczynniki.com.pl",
+        mobile: "+48 508 218 838"
+    },
+    {
+        name: "Piotr Topolski",
+        department: "Einkauf",
+        market: "Alle Standorte",
+        email: "ptopolski@odczynniki.com.pl",
+        mobile: "+48 885 785 011"
+    }
 ];
 
 //CERTIFICATES

@@ -15,7 +15,8 @@ export const NAV_LINKS = [
     { code: 'pl', label: 'PL' },
     { code: 'fr', label: 'FR' },
     { code: 'de', label: 'DE' },
-    { code: 'ru', label: 'RU' }
+    { code: 'ru', label: 'RU' },
+    { code: 'es', label: 'ES' },
   ];
 
 

@@ -4,6 +4,7 @@ const localesData = {
   pl: () => import('../lang/pl'),
   de: () => import('../lang/de'),
   ru: () => import('../lang/ru'),
+  es: () => import('../lang/es'),
 };
 
 export async function getLocaleData(locale) {

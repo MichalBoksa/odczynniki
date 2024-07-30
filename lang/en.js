@@ -24,6 +24,11 @@ export const SPECIALIZATION = 'This is our specialty';
 export const SPECIALIZATION_DESC = 'The main activity of CMOCMI is the production of inorganic chemicals, especially compounds (metal salts) of molybdenum, selenium, copper, manganese, zinc, cobalt, and nickel. CMOCMI is the only producer of sodium molybdate and ammonium heptamolybdate in Poland and a leading producer in Europe. The company also engages in international trade of specialized chemical compounds. CMOCMI is ISO 9001 and 14001, GMP+ certified, enabling it to supply products to the most demanding customers from various industrial sectors and producers of feed and food articles.';
 export const INNOVATIONS = 'Innovation and sustainable development - key pillars';
 export const INNOVATIONS_DESC = 'The company currently possesses modern technical and technological facilities for producing chemical compounds with customer-desired parameters. For many years, CMOCMI has cooperated with leading national research units, higher education institutions, and the Polish Academy of Sciences. Due to the limited supply of raw materials containing molybdenum, selenium, and other metals listed as critical and deficient, CMOCMI specializes in sourcing these raw materials from waste or low-quality primary sources. Innovative hydrometallurgical processes allow the company to obtain high-purity products, building its competitive position and fitting into the philosophy of the Circular Economy.';
+export const REGISTRATION_DETAILS = 'Registration Details';
+export const VAT = 'VAT';
+export const REGON = 'REGON';
+export const KRS = 'KRS';
+export const COURT_REGISTER = 'District Court for the Capital City of Warsaw in Warsaw, 13th Commercial Division of the National Court Register';
 
 //CAREERS
 export const JOIN_US = 'Join our team';
@@ -33,7 +38,7 @@ export const SKILLS = 'Do you have unique skills and are looking for a place whe
 export const HR_OFFICE = 'Our HR office';
 export const HR_OFFICE_NAME = 'Agnieszka Tęcza';
 export const HR_OFFICE_EMAIL = 'atecza@odczynniki.com.pl';
-export const HR_OFFICE_PHONE = '+48 503 089 563';
+export const HR_OFFICE_PHONE = '+48 517 522 439';
 export const JOB_LIST = 'Currently, we are looking for individuals for the following positions:';
 export const JOB_TITLE1 = 'Employee for the Accounting and Financial Department in a production company';
 export const JOB_DETAILS = 'See details';
@@ -90,11 +95,7 @@ export const PRODUCTS = [
       name: 'Other',
       href: '/products/other',
   },
-  {
-      symbol: '',
-      name: 'Certificates',
-      href: '/certificates',
-  },
+
 ];
 
 //Molybdenum products
@@ -360,6 +361,7 @@ export const BENEFITS_LIST2 = [
 
 //FOOTER
 export const CONTACT = 'Contact';
+export const CONTACT_FACTORY = 'Contact - Production Plant';
 export const TEL1 = 'tel.+48 81 746 20 11';
 export const TEL2 = '+48 81 746 36 82';
 export const FAX = 'fax: +48 81 458 39 88';
@@ -368,6 +370,8 @@ export const CMOC = 'Centrum Metal Odczynniki Chemiczne';
 export const MI = 'MIDAS Investment';
 export const LINKS = 'Useful links';
 export const CAREERS = 'Careers';
+export const EU_FUNDS = 'European Funds';
+
 
 //CONTACT US
 export const CONTACT_US = 'Contact us';

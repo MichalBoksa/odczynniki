@@ -26,6 +26,12 @@ export const NAV_LINKS = [
   export const SPECIALIZATION_DESC = 'Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu. CMOCMI jest jedynym w Polsce i wiodącym w Europie producentem sodu molibdenianu i amonu heptamolibdenianu oraz liczącym się w Europie producentem sodu seleninu. Poza działalnością produkcyjną firma prowadzi również międzynarodową działalność handlową w zakresie specjalistycznych związków chemicznych. Firma posiada certyfikaty ISO 9001 i 14001, GMP+, dzięki czemu produkty mogą trafiać do najbardziej wymagających odbiorców z wielu branż przemysłowych oraz producentów pasz i artykułów spożywczych.';
   export const INNOVATIONS = 'Innowacje i zrównoważony rozwój - kluczowe filary';
   export const INNOVATIONS_DESC = 'Obecnie firma posiada nowoczesne zaplecze techniczne i technologiczne do produkcji związków chemicznych o pożądanych przez klientów parametrach. CMOCMI od wielu lat współpracuje z wiodącymi krajowymi jednostkami badawczymi oraz z uczelniami wyższymi i Polska Akademią Nauk. Z uwagi na ograniczoną podaż niezbędnych do produkcji surowców zawierających molibden, selen i inne metale znajdujące się na listach krytycznych i deficytowych, CMOCMI od lat specjalizuje się w ich pozyskiwaniu ze źródeł odpadowych lub surowców pierwotnych o niskiej jakości. Dzięki innowacyjnym procesom hydrometalurgicznym firma uzyskuje dostęp do takich surowców, z których jest w stanie wytworzyć produkty o wysokiej czystości - na czym buduje swoją pozycję konkurencyjną wpisując się jednocześnie w filozofię Gospodarki Obiegu Zamkniętego.';
+  export const REGISTRATION_DETAILS = 'Dane rejestrowe';
+  export const VAT = 'VAT';
+  export const REGON = 'REGON';
+  export const KRS = 'KRS';
+  export const COURT_REGISTER = 'Sąd Rejonowy Dla M. St. Warszawy w Warszawie XIII Wydział Gospodarczy Krajowego Rejestru Sądowego';
+
 
   //CAREERS
   export const JOIN_US = 'Dołącz do naszego zespołu';
@@ -35,7 +41,7 @@ export const NAV_LINKS = [
   export const HR_OFFICE = 'Nasze biuro kadr'
   export const HR_OFFICE_NAME = 'Agnieszka Tęcza'
   export const HR_OFFICE_EMAIL = 'atecza@odczynniki.com.pl'
-  export const HR_OFFICE_PHONE = '+48 503 089 563'
+  export const HR_OFFICE_PHONE = '+48 517 522 439';
   export const JOB_LIST = 'Aktualnie poszukujemy osób na dane stanowiska:'
   export const JOB_TITLE1 = 'Pracownik do Działu księgowo-rachunkowego w firmie produkcyjnej'
   export const JOB_DETAILS = 'Zobacz szczegóły'
@@ -86,10 +92,6 @@ export const NAV_LINKS = [
         symbol: '',
         name: 'Pozostałe',
         href: '/products/other',},
-        {
-          symbol: '',
-          name: 'Certyfikaty',
-          href: '/certificates',},
     ];
 
     //Molybdenum products
@@ -488,6 +490,7 @@ export const NAV_LINKS = [
 
       //FOOTER
       export const CONTACT = 'Kontakt';
+      export const CONTACT_FACTORY = 'Kontakt - Zakład produkcyjny';
       export const TEL1 = 'tel.+48 81 746 20 11';
       export const TEL2 = '+48 81 746 36 82';
       export const FAX = 'fax: +48 81 458 39 88';
@@ -496,7 +499,7 @@ export const NAV_LINKS = [
       export const MI = 'MIDAS Investment';
       export const LINKS = 'Przydatne linki';
       export const CAREERS = 'Kariera';
-
+      export const EU_FUNDS = 'Fundusze Europejskie';
 
 
       //CONTACT US

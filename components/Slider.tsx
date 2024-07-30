@@ -1,51 +1,73 @@
 "use client";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { CldImage } from 'next-cloudinary';
 import { useLocale } from '../lang/LocaleContext';
 
 const Slider = () => {
   const { data } = useLocale() || {};
-  return (
-    <section className='flex' >
-       <div className="carousel w-full max-h-[600px]">
-    {/* <div id="slide1" className="carousel-item relative w-full">
-    <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/docpptgefgcz5fhvvvak.jpg" className="w-full object-fill z-5" alt='' height={2000} width={4000}
-     crop={{
-      type: 'auto',
-      source: true
-    }} />
-      <div className='w-full absolute text-accent font-bold text-6xl z-10  tracking-wider' style={{top: '20%', left:'5%', transform: 'translateY(-50%)'}}>
-         <h1 className='drop-shadow-md'>INNOWACJA NASZĄ DROGĄ DO CELU</h1>
-      </div>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div> */}
-  {/* </div>  */}
-  <div id="slide1" className="carousel-item relative w-full">
-   <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/lbi5sg9al1hjcjuhdxys.png" className="w-full object-fill z-5" alt='' height={1020} width={800} />
-    <div className='w-full absolute text-accent font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'5%', transform: 'translateY(-50%)'}}>
-         <h1 className='drop-shadow-md'>{data?.SLIDER_TITLE}</h1>
-      </div>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const totalSlides = 3; // Zaktualizuj liczbę slajdów w razie potrzeby
 
-  <div id="slide2" className="carousel-item relative w-full">
-       <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/hk5a68trk9tu0ioordbf.jpg" className="w-full object-fill z-5" alt='' height={1020} width={1900} />
-    <div className='w-full absolute text-accent font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'5%', transform: 'translateY(-50%)'}}>
-         <h1 className=''>{data?.SLIDER_TITLE}</h1>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide % totalSlides) + 1);
+    }, 108000); // Przełączanie co 5 sekund
+
+    return () => clearInterval(interval);
+  }, [totalSlides]);
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide % totalSlides) + 1);
+  };
+
+  const goToPrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 1 ? totalSlides : prevSlide - 1));
+  };
+
+  return (
+    <section className='flex'>
+      <div className="carousel w-full max-h-[500px] xl:max-h-[520px]  2xl:max-h-[680px] ">
+        <div id="slide1" className={`carousel-item relative w-full ${currentSlide === 1 ? 'block' : 'hidden'} `}>
+          <div className="flex  max-h-[500px] xl:max-h-[520px]  2xl:max-h-[680px] ">
+            <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1722287248/midas/slider/c6cpd6lerxizynkpzlye.jpg" className="w-full object-cover z-5 h-auto" alt='' height={1080} width={1900}/>
+          </div>
+          <div className='w-full absolute text-ivory font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  2xl:text-7xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'3%', right:'5%', transform:  'translateY(-50%)'}}>
+            <h1 className='drop-shadow-md'>{data?.SLIDER_TITLE}</h1>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button onClick={goToPrevSlide} className="btn btn-circle">❮</button>
+          <button onClick={goToNextSlide} className="btn btn-circle">❯</button>  
+          </div>
+        </div> 
+
+        <div id="slide2" className={`carousel-item relative w-full ${currentSlide === 2 ? 'block' : 'hidden'} `}>
+          <div className="flex max-h-[500px] xl:max-h-[520px]  2xl:max-h-[680px]">
+           <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/slider/mvckox7vc2k1vae25xnf.jpg" className="w-full object-cover z-5 h-auto"  height={1080} width={1900} alt=''  />
+          </div>
+          <div className='w-full absolute text-ivory font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl justify-center items-center z-10 tracking-wide' style={{top: '20%', left:'3%', right:'5%', transform: 'translateY(-50%)'}}>
+            <h1 className='drop-shadow-md'>{data?.SLIDER_TITLE}</h1>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button onClick={goToPrevSlide} className="btn btn-circle">❮</button>
+          <button onClick={goToNextSlide} className="btn btn-circle">❯</button>  
+          </div>
+        </div> 
+
+        <div id="slide3" className={`carousel-item relative w-full ${currentSlide === 3 ? 'block' : 'hidden'}`}>
+         <div className="flex  max-h-[500px] xl:max-h-[520px]  2xl:max-h-[680px]">
+            <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/slider/bvpmxmonpf1dm1q2p4jk.jpg" className="w-full object-cover z-5" alt=''  height={1080} width={1900}/>
+          </div>
+          <div className='w-full absolute text-ivory font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  2xl:text-7xl justify-center items-center z-10 tracking-wider' style={{top: '20%', left:'3%', right:'5%', transform:  'translateY(-50%)'}}>
+            <h1 className='drop-shadow-md'>{data?.SLIDER_TITLE}</h1>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button onClick={goToPrevSlide} className="btn btn-circle">❮</button>
+          <button onClick={goToNextSlide} className="btn btn-circle">❯</button>
+          </div>
+        </div>
       </div>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a> 
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-     </section>
+    </section>
   )
 }
 
-export default Slider
+export default Slider;

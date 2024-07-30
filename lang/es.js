@@ -24,7 +24,12 @@ export const NAV_LINKS = [
   export const SPECIALIZATION_DESC = 'La actividad principal de CMOCMI es la producción de productos químicos inorgánicos, especialmente compuestos (sales metálicas) de molibdeno, selenio, cobre, manganeso, zinc, cobalto y níquel. CMOCMI es el único productor de molibdato de sodio y heptamolibdato de amonio en Polonia, y un productor líder en Europa. La empresa también participa en el comercio internacional de compuestos químicos especializados. CMOCMI cuenta con certificaciones ISO 9001 y 14001, y GMP+, lo que le permite suministrar productos a los clientes más exigentes de diversos sectores industriales y productores de alimentos y artículos de alimentación.';
   export const INNOVATIONS = 'Innovación y desarrollo sostenible - pilares clave';
   export const INNOVATIONS_DESC = 'La empresa posee actualmente instalaciones técnicas y tecnológicas modernas para la producción de compuestos químicos con parámetros específicos según las necesidades del cliente. Durante muchos años, CMOCMI ha colaborado con las principales unidades de investigación nacionales, instituciones de educación superior y la Academia Polaca de Ciencias. Dada la oferta limitada de materias primas que contienen molibdeno, selenio y otros metales críticos y escasos, CMOCMI se especializa en obtener estas materias primas de residuos o fuentes primarias de baja calidad. A través de procesos hidrometalúrgicos innovadores, la empresa logra obtener productos de alta pureza, construyendo su posición competitiva y alineándose con la filosofía de la Economía Circular.';
-  
+  export const REGISTRATION_DETAILS = 'Detalles de registro';
+export const VAT = 'IVA';
+export const REGON = 'REGON';
+export const KRS = 'KRS';
+export const COURT_REGISTER = 'Tribunal de Distrito para la Ciudad Capital de Varsovia en Varsovia, 13ª División Comercial del Registro Nacional de Tribunales';
+
   // CARRERAS
   export const JOIN_US = 'Únete a nuestro equipo';
   export const JOIN_TEAM = 'Únete al equipo de CMOCMI, un productor líder de productos químicos inorgánicos en Europa. Buscamos individuos apasionados por la química, listos para trabajar en un entorno dinámico y dispuestos a desarrollarse con nosotros. Ofrecemos la oportunidad de trabajar con un equipo calificado, instalaciones técnicas modernas y condiciones de empleo estables. Aplica hoy y forma parte del futuro de la industria química con nosotros.';
@@ -33,7 +38,7 @@ export const NAV_LINKS = [
   export const HR_OFFICE = 'Nuestra oficina de RRHH';
   export const HR_OFFICE_NAME = 'Agnieszka Tęcza';
   export const HR_OFFICE_EMAIL = 'atecza@odczynniki.com.pl';
-  export const HR_OFFICE_PHONE = '+48 503 089 563';
+  export const HR_OFFICE_PHONE = '+48 517 522 439';
   export const JOB_LIST = 'Actualmente, estamos buscando personas para los siguientes puestos:';
   export const JOB_TITLE1 = 'Empleado para el Departamento de Contabilidad y Finanzas en una empresa de producción';
   export const JOB_DETAILS = 'Ver detalles';
@@ -87,11 +92,7 @@ export const NAV_LINKS = [
         name: 'Otros',
         href: '/products/other',
     },
-    {
-        symbol: '',
-        name: 'Certificados',
-        href: '/certificates',
-    },
+
   ];
   
   // Productos de Molibdeno
@@ -357,6 +358,7 @@ export const NAV_LINKS = [
   
   // PIE DE PÁGINA
   export const CONTACT = 'Contacto';
+  export const CONTACT_FACTORY = 'Contacto - Planta de producción';
   export const TEL1 = 'tel.+48 81 746 20 11';
   export const TEL2 = '+48 81 746 36 82';
   export const FAX = 'fax: +48 81 458 39 88';
@@ -365,6 +367,8 @@ export const NAV_LINKS = [
   export const MI = 'MIDAS Investment';
   export const LINKS = 'Enlaces útiles';
   export const CAREERS = 'Carreras';
+  export const EU_FUNDS = 'Fondos Europeos';
+
   
   // CONTACTO
   export const CONTACT_US = 'Contáctanos';

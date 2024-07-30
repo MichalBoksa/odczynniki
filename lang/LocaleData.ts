@@ -15,6 +15,11 @@ export interface LocaleData {
   SPECIALIZATION_DESC: string;
   INNOVATIONS: string;
   INNOVATIONS_DESC: string;
+  REGISTRATION_DETAILS: string;
+  VAT: string;
+  REGON: string;
+  KRS: string;
+  COURT_REGISTER: string;
 
   // CAREERS
   JOIN_US: string;
@@ -69,9 +74,11 @@ export interface LocaleData {
   MI: string;
  LINKS: string;
  CAREERS: string;
+ EU_FUNDS: string;
 
   // CONTACT US
   CONTACT_US: string;
+  CONTACT_FACTORY: string;
   ANSWEAR_QUESTIONS: string;
   OUR_OFFICE: string;
   VISIT_US: string;

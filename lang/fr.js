@@ -24,6 +24,11 @@ export const SPECIALIZATION = 'Notre spécialisation';
 export const SPECIALIZATION_DESC = 'L\'activité principale de CMOCMI est la production de produits chimiques inorganiques, en particulier des composés (sels métalliques) de molybdène, de sélénium, de cuivre, de manganèse, de zinc, de cobalt et de nickel. CMOCMI est le seul producteur polonais et un leader européen de la production de molybdate de sodium et d\'heptamolybdate d\'ammonium, et un producteur important de sélénite de sodium en Europe. En plus de la production, l\'entreprise est également active dans le commerce international de produits chimiques spécialisés. L\'entreprise est certifiée ISO 9001 et 14001, GMP+, ce qui permet à ses produits de répondre aux exigences des clients les plus exigeants de divers secteurs industriels ainsi que des producteurs d\'aliments et de produits alimentaires.';
 export const INNOVATIONS = 'Innovations et développement durable - piliers clés';
 export const INNOVATIONS_DESC = 'L\'entreprise dispose d\'installations techniques et technologiques modernes pour la production de composés chimiques avec les paramètres souhaités par les clients. CMOCMI collabore depuis de nombreuses années avec des instituts de recherche nationaux leaders ainsi qu\'avec des universités et l\'Académie polonaise des sciences. En raison de l\'offre limitée des matières premières contenant du molybdène, du sélénium et d\'autres métaux critiques et déficitaires, CMOCMI se spécialise depuis des années dans leur obtention à partir de sources de déchets ou de matières premières primaires de faible qualité. Grâce à des processus hydrométallurgiques innovants, l\'entreprise accède à des matières premières qu\'elle est capable de transformer en produits de haute pureté, renforçant ainsi sa position concurrentielle tout en s\'inscrivant dans la philosophie de l\'économie circulaire.';
+export const REGISTRATION_DETAILS = 'Détails de l\'enregistrement';
+export const VAT = 'TVA';
+export const REGON = 'REGON';
+export const KRS = 'KRS';
+export const COURT_REGISTER = 'Tribunal de district pour la ville capitale de Varsovie à Varsovie, 13ème division commerciale du registre national des tribunaux';
 
 // CARRIÈRES
 export const JOIN_US = 'Rejoignez notre équipe';
@@ -33,7 +38,7 @@ export const SKILLS = 'Avez-vous des compétences uniques et cherchez-vous un en
 export const HR_OFFICE = 'Notre bureau des ressources humaines';
 export const HR_OFFICE_NAME = 'Agnieszka Tęcza';
 export const HR_OFFICE_EMAIL = 'atecza@odczynniki.com.pl';
-export const HR_OFFICE_PHONE = '+48 503 089 563';
+export const HR_OFFICE_PHONE = '+48 517 522 439';
 export const JOB_LIST = 'Nous recherchons actuellement des personnes pour les postes suivants:';
 export const JOB_TITLE1 = 'Employé du département comptabilité-finance dans une entreprise de production';
 export const JOB_DETAILS = 'Voir les détails';
@@ -89,11 +94,6 @@ export const PRODUCTS = [
         href: '/products/other',
     },
     
-    {
-        symbol: '',
-        name: 'Certificats',
-        href: '/certificates',
-    },
 ];
 
 // Produits de molybdène
@@ -359,6 +359,7 @@ export const BENEFITS_LIST2 = [
 
 // PIED DE PAGE
 export const CONTACT = 'Contact';
+export const CONTACT_FACTORY = 'Contact - Usine de production';
 export const TEL1 = 'tél. +48 81 746 20 11';
 export const TEL2 = '+48 81 746 36 82';
 export const FAX = 'fax : +48 81 458 39 88';
@@ -367,6 +368,8 @@ export const CMOC = 'Centrum Metal Odczynniki Chemiczne';
 export const MI = 'MIDAS Investment';
 export const LINKS = 'Liens utiles';
 export const CAREERS = 'Carrière';
+export const EU_FUNDS = 'Fonds Européens';
+
 
 
 // CONTACTEZ-NOUS

@@ -33,7 +33,7 @@ export const SKILLS = 'Haben Sie einzigartige Fähigkeiten und suchen einen Ort,
 export const HR_OFFICE = 'Unser Personalbüro';
 export const HR_OFFICE_NAME = 'Agnieszka Tęcza';
 export const HR_OFFICE_EMAIL = 'atecza@odczynniki.com.pl';
-export const HR_OFFICE_PHONE = '+48 503 089 563';
+export const HR_OFFICE_PHONE = '+48 517 522 439';
 export const JOB_LIST = 'Derzeit suchen wir Personen für folgende Positionen:';
 export const JOB_TITLE1 = 'Mitarbeiter für die Buchhaltungs- und Finanzabteilung in einem Produktionsunternehmen';
 export const JOB_DETAILS = 'Siehe Details';
@@ -87,11 +87,7 @@ export const PRODUCTS = [
       name: 'Andere',
       href: '/products/other',
   },
-  {
-      symbol: '',
-      name: 'Zertifikate',
-      href: '/certificates',
-  },
+
 ];
 
 //Molybdenum products
@@ -357,6 +353,7 @@ export const BENEFITS_LIST2 = [
 
 //FOOTER
 export const CONTACT = 'Kontakt';
+export const CONTACT_FACTORY = 'Kontakt - Produktionsanlage';
 export const TEL1 = 'tel.+48 81 746 20 11';
 export const TEL2 = '+48 81 746 36 82';
 export const FAX = 'fax: +48 81 458 39 88';
@@ -365,6 +362,8 @@ export const CMOC = 'Centrum Metal Odczynniki Chemiczne';
 export const MI = 'MIDAS Investment';
 export const LINKS = 'Nützliche Links';
 export const CAREERS = 'Karriere';
+export const EU_FUNDS = 'Europäische Fonds';
+
 
 
 //CONTACT US

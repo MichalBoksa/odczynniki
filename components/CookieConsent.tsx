@@ -26,7 +26,7 @@ const CookieConsent = () => {
         <span className="text-dark text-base mr-16">
             {data?.COOKIES_CONSENT}
         </span>
-        <button className="bg-green-500 py-2 px-8 rounded text-white" onClick={() => acceptCookie()}>
+        <button className="bg-base-300 py-2 px-8 rounded text-white" onClick={() => acceptCookie()}>
         {data?.COOKIES_CONSENT_ACCEPT}
         </button>
       </div>

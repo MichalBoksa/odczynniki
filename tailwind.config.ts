@@ -56,7 +56,9 @@ theme: {
     "ivory": "#F9FBF7",
     "dark-gray": "#747474",
     "dark-ivory": "#E2DED0",
-    "slide-gray": "#A5CFE3"
+    "slide-gray": "#A5CFE3",
+    "slider":"#D9DED8",
+  
   }
 },
   plugins: [require("daisyui")],

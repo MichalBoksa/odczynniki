@@ -8,8 +8,8 @@ return (
     <section className='max-container'>
              <h1 className='text-8xl w-full mb-10'>{data?.COPPER}</h1>
                     <div className='flex gap-12 w-full mb-20 mt-20'>
-                            <div className="flex flex-1 flex-col card w-96 h-60 ml-4 mb-6 bg-base-100 border-primary border-2 items-center justify-center">
-                                            <div className='flex flex-col'>
+                           <div className="flex flex-col card w-72 h-48 ml-4 mb-6 bg-base-100 border-primary border-2 items-center justify-center">
+                                  <div className='flex flex-col'>
                                                     <h1 className='text-xl'>29</h1>
                                                     <p className='text-primary text-8xl font-bold'>Cu</p>
                                             </div>

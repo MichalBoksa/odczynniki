@@ -379,7 +379,9 @@ export const COURT_REGISTER = 'Tribunal de Distrito para la Ciudad Capital de Va
   export const OPEN_HOURS = 'Abierto de lunes a viernes de 7:00 a 15:00';
   export const OUR_TRADE_TEAM = 'Nuestro equipo de ventas';
   export const OUR_SETTLEMENT_TEAM = 'Equipo de liquidación de transacciones comerciales';
-  export const ADMINISTRATION = 'Administración y gestión';
+  export const ADMINISTRATION = 'Oficina de Gestión y Administración';
+  export const HR_EMPLOYEE = 'Empleado de RRHH';
+    
   
   // EQUIPOS DE CONTACTO
   

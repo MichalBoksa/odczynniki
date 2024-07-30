@@ -368,6 +368,8 @@ export const MI = 'MIDAS Investment';
 export const LINKS = 'Полезные ссылки';
 export const CAREERS = 'Карьера';
 export const EU_FUNDS = 'Европейские фонды';
+export const HR_EMPLOYEE = 'Сотрудник отдела кадров';
+
 
 
 
@@ -380,7 +382,7 @@ export const OFFICE_ADDRESS = '20-234 Люблин, ул. Металургиче
 export const OPEN_HOURS = 'Открыто с понедельника по пятницу с 7:00 до 15:00';
 export const OUR_TRADE_TEAM = 'Наша торговая команда';
 export const OUR_SETTLEMENT_TEAM = 'Команда по расчетам торговых операций';
-export const ADMINISTRATION = 'Администрация и управление';
+export const ADMINISTRATION = 'Офис управления и администрации';
 
 //КОМАНДА ПО КОНТАКТАМ
 

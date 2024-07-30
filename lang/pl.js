@@ -429,7 +429,7 @@ export const NAV_LINKS = [
 
       //JOBS OFFER1
       export const JOB_DESC = 'Opis oferty pracy';
-      export const JOB_NAME = 'Aparatowy procesów chemicznyc';
+      export const JOB_NAME = 'Aparatowy procesów chemicznych';
       export const JOB_RESPONSIBILITIES = 'Zakres obowiązków:';
       export const JOB_REQUIREMENTS = 'Wymagania:';
       export const BENEFITS = 'Zapewniamy:';
@@ -511,7 +511,8 @@ export const NAV_LINKS = [
         export const OPEN_HOURS = 'Czynne poniedziałek - piątek od 7:00 do 15:00';
         export const OUR_TRADE_TEAM = 'Nasz zespół handlowców';
         export const OUR_SETTLEMENT_TEAM = 'Zespół rozliczeń transakcji handlowych';
-        export const ADMINISTRATION = 'Zarządzanie i administracja';
+        export const ADMINISTRATION = 'Biuro zarządzania i administracji';
+        export const HR_EMPLOYEE ='Pracownik ds. osobowych';
         
 
 

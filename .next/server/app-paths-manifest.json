@@ -2,6 +2,6 @@
   "/page": "app/page.js",
   "/aboutUs/page": "app/aboutUs/page.js",
   "/products/selenium/page": "app/products/selenium/page.js",
-  "/contactUs/page": "app/contactUs/page.js",
-  "/euFunds/page": "app/euFunds/page.js"
+  "/euFunds/page": "app/euFunds/page.js",
+  "/contactUs/page": "app/contactUs/page.js"
 }

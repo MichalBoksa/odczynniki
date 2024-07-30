@@ -87,6 +87,7 @@ export interface LocaleData {
   OUR_TRADE_TEAM: string;
   OUR_SETTLEMENT_TEAM: string;
   ADMINISTRATION: string;
+  HR_EMPLOYEE:string
 
   // CONTACT US TEAMS
   TRADE_TEAM: TradeTeamMember[];

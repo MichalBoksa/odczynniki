@@ -382,7 +382,9 @@ export const OFFICE_ADDRESS = '20-234 Lublin, ul. Metalurgiczna 15 E, 17 D';
 export const OPEN_HOURS = 'Open Monday - Friday from 7:00 to 15:00';
 export const OUR_TRADE_TEAM = 'Our sales team';
 export const OUR_SETTLEMENT_TEAM = 'Trade transaction settlement team';
-export const ADMINISTRATION = 'Administration and management';
+export const ADMINISTRATION = 'Management and Administration Office';
+export const HR_EMPLOYEE = 'HR Employee';
+
 
 //CONTACT US TEAMS
 
@@ -549,7 +551,7 @@ export const LATEST_NEWS = 'Latest news';
 export const LATEST_NEWS2 = 'Recent news';
 
 // SLIDER
-export const SLIDER_TITLE = 'INNOVATION IS OUR WAY TO THE GOAL';
+export const SLIDER_TITLE = 'INNOVATION IS OUR WAY TO SUCCESS';
 
 //COOKIES CONSNET
 export const COOKIES_CONSENT = 'This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.';

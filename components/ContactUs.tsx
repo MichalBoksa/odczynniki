@@ -1,7 +1,6 @@
 "use client";
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
-import { SETTLEMENT_TEAM, TRADE_TEAM } from '@/constants';
 import { useLocale } from '../lang/LocaleContext';
 import Link from 'next/link';
 
@@ -132,16 +131,11 @@ const ContactUs = () => {
                             <div  className="flex flex-col justify-center items-center px-7">
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>
-                                    <h2 className="mt-4 text-base font-medium text-jetblack">Agnieszka Barańska</h2>
-                                   
-                                    <div className="flex mt-2 items-center mb-2 mr-auto">
-                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
-                                        <a className="text-sm text-secondary-content">abaranska@odczynniki.com.pl</a>
-                                    </div>
+                                    <h2 className="mt-4 text-base font-medium text-jetblack">{data?.HR_EMPLOYEE}</h2>
                                     
                                     <div className="flex items-center mr-auto">
                                         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={20} height={20} alt='phone icon' className='mr-2'/>
-                                        <a className='text-sm '>+48 503 089 563, fax: +48 81 458 39 88</a>         
+                                        <a className='text-sm '>+48 517 522 439, fax: +48 81 458 39 88</a>         
                                     </div>
                                   
                             </div>

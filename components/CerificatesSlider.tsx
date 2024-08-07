@@ -14,7 +14,7 @@ const CerificatesSlider = () => {
         </div>
         { CERTIFICATES.map((cert) => (
           cert.code === currentLocale &&
-      <div className="carousel w-full max-h-[600px]">
+      <div key={cert.code} className="carousel w-full max-h-[600px]">
      
         <div id="item1" className="carousel-item w-full">
            <CldImage src={cert.srcGmp} width={400} height={600} alt="" className=' mr-auto ml-auto'/>

@@ -378,7 +378,7 @@ export const COURT_REGISTER = 'Tribunal de Distrito para la Ciudad Capital de Va
   export const OFFICE_ADDRESS = '20-234 Lublin, ul. Metalurgiczna 15 E, 17 D';
   export const OPEN_HOURS = 'Abierto de lunes a viernes de 7:00 a 15:00';
   export const OUR_TRADE_TEAM = 'Nuestro equipo de ventas';
-  export const OUR_SETTLEMENT_TEAM = 'Equipo de liquidación de transacciones comerciales';
+  export const OUR_SETTLEMENT_TEAM = 'Departamento de Servicios Operativos';
   export const ADMINISTRATION = 'Oficina de Gestión y Administración';
   export const HR_EMPLOYEE = 'Empleado de RRHH';
     

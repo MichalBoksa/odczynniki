@@ -53,7 +53,7 @@ const CareersInfo = () => {
 
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>
-                                    <h2 className="mt-3 mb-3 text-base font-medium text-jetblack">{data?.HR_OFFICE_NAME} </h2>
+                                    <h2 className="mt-3 mb-3 text-base font-medium text-jetblack">{data?.HR_EMPLOYEE}</h2>
                                    
                                     <div className="flex items-center mb-1 mr-auto">
                                         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>

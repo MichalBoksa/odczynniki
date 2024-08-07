@@ -381,7 +381,7 @@ export const VISIT_US = 'Visit us';
 export const OFFICE_ADDRESS = '20-234 Lublin, ul. Metalurgiczna 15 E, 17 D';
 export const OPEN_HOURS = 'Open Monday - Friday from 7:00 to 15:00';
 export const OUR_TRADE_TEAM = 'Our sales team';
-export const OUR_SETTLEMENT_TEAM = 'Trade transaction settlement team';
+export const OUR_SETTLEMENT_TEAM = 'Operational Services Department';
 export const ADMINISTRATION = 'Management and Administration Office';
 export const HR_EMPLOYEE = 'HR Employee';
 

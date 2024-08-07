@@ -381,7 +381,7 @@ export const VISIT_US = 'Посетите нас';
 export const OFFICE_ADDRESS = '20-234 Люблин, ул. Металургическая 15 E, 17 D';
 export const OPEN_HOURS = 'Открыто с понедельника по пятницу с 7:00 до 15:00';
 export const OUR_TRADE_TEAM = 'Наша торговая команда';
-export const OUR_SETTLEMENT_TEAM = 'Команда по расчетам торговых операций';
+export const OUR_SETTLEMENT_TEAM = 'Отдел операционного обслуживания';
 export const ADMINISTRATION = 'Офис управления и администрации';
 
 //КОМАНДА ПО КОНТАКТАМ

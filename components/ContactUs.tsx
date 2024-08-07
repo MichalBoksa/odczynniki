@@ -64,7 +64,7 @@ const ContactUs = () => {
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_TRADE_TEAM}</h1>
                          </div>
 
-                    <div className='flex flex-wrap gap-20'>
+                    <div className='flex flex-wrap gap-16'>
                         {/* TODO make component to team meameber */}
                         {data?.TRADE_TEAM.map((member) => (
                             <div key={member.email} className="flex flex-col justify-center items-center px-7">
@@ -93,12 +93,12 @@ const ContactUs = () => {
 
 
 
-                <div className='flex flex-col mt-16 px-10'>
+                <div className='flex flex-col mt-16'>
                         <div className='flex items-center justify-left mb-6'>
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_SETTLEMENT_TEAM}</h1>
                          </div>
 
-                    <div className='flex flex-wrap gap-20'>
+                    <div className='flex flex-wrap gap-16'>
                         {/* TODO make component to team meameber */}
                         {data?.SETTLEMENT_TEAM.map((member) => (
                             <div key={member.email} className="flex flex-col justify-center items-center px-7">
@@ -122,20 +122,25 @@ const ContactUs = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col mt-16 px-10'>
+            <div className='flex flex-col mt-16'>
                         <div className='flex items-center justify-left mb-6'>
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.ADMINISTRATION}</h1>
                          </div>
 
-                    <div className='flex flex-wrap gap-20'>
+                         <div className='flex flex-wrap'>
                             <div  className="flex flex-col justify-center items-center px-7">
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>
-                                    <h2 className="mt-4 text-base font-medium text-jetblack">{data?.HR_EMPLOYEE}</h2>
+                                    <h2 className="mt-4 text-base font-medium text-jetblack">Agnieszka Barańska</h2>
+                                   
+                                    <div className="flex mt-2 items-center mb-2 mr-auto">
+                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
+                                        <a className="text-sm text-secondary-content">abaranska@odczynniki.com.pl</a>
+                                    </div>
                                     
                                     <div className="flex items-center mr-auto">
                                         <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={20} height={20} alt='phone icon' className='mr-2'/>
-                                        <a className='text-sm '>+48 517 522 439, fax: +48 81 458 39 88</a>         
+                                        <a className='text-sm '>+48 503 089 563, fax: +48 81 458 39 88</a>         
                                     </div>
                                   
                             </div>

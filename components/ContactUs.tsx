@@ -64,7 +64,7 @@ const ContactUs = () => {
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_TRADE_TEAM}</h1>
                          </div>
 
-                    <div className='flex flex-wrap gap-16'>
+                    <div className='flex flex-col lg:flex-row lg:flex-wrap gap-16'>
                         {/* TODO make component to team meameber */}
                         {data?.TRADE_TEAM.map((member) => (
                             <div key={member.email} className="flex flex-col justify-center items-center px-7">
@@ -98,7 +98,7 @@ const ContactUs = () => {
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_SETTLEMENT_TEAM}</h1>
                          </div>
 
-                    <div className='flex flex-wrap gap-16'>
+                    <div className='flex flex-col lg:flex-row lg:flex-wrap gap-16'>
                         {/* TODO make component to team meameber */}
                         {data?.SETTLEMENT_TEAM.map((member) => (
                             <div key={member.email} className="flex flex-col justify-center items-center px-7">
@@ -127,7 +127,7 @@ const ContactUs = () => {
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.ADMINISTRATION}</h1>
                          </div>
 
-                         <div className='flex flex-wrap'>
+                         <div className='flex flex-col lg:flex-row lg:flex-wrap'>
                             <div  className="flex flex-col justify-center items-center px-7">
                                 <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
                                 <div className='flex flex-col justify-center items-center '>

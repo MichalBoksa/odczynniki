@@ -15,7 +15,7 @@ const NewsCardList: React.FC<NewsProps> = (posts) => {
   }
   const { data } = useLocale() || {};
   return (
-    <section className='max-container padding-container mt-16 rounded-lg bg-secondary p-5'>
+    <section className='max-container padding-container lg:mt-16 rounded-lg bg-secondary p-5'>
       <h1 className='font-bold text-4xl text-primary'>{data?.LATEST_NEWS}</h1>
       <div className='posts'>
         {posts.posts.map((postItem: Post) => (

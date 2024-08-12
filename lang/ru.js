@@ -515,4 +515,9 @@ export const SLIDER_TITLE = 'ИННОВАЦИЯ - НАШ ПУТЬ К ЦЕЛИ';
 export const COOKIES_CONSENT = 'Этот веб-сайт использует файлы cookie для улучшения удобства пользователей. Используя наш сайт, вы соглашаетесь на использование всех файлов cookie в соответствии с нашей Политикой использования файлов cookie.';
 export const COOKIES_CONSENT_ACCEPT = 'Принять';
 
+//PAGINATION
+export const PREVIOUS = 'Предыдущая';
+export const NEXT = 'Следующая';
+
+
 

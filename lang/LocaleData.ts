@@ -140,6 +140,10 @@ export interface LocaleData {
   //COOKIES CONSENT
   COOKIES_CONSENT: string;
   COOKIES_CONSENT_ACCEPT: string;
+
+  //PAGINATION
+  NEXT: string;
+  PREVIOUS: string;
 }
 
 export interface NavLink {

@@ -513,4 +513,9 @@ export const COURT_REGISTER = 'Tribunal de Distrito para la Ciudad Capital de Va
   // CONSENTIMIENTO DE COOKIES
   export const COOKIES_CONSENT = 'Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al usar nuestro sitio web, usted consiente el uso de todas las cookies de acuerdo con nuestra Política de Cookies.';
   export const COOKIES_CONSENT_ACCEPT = 'Aceptar';
+
+  //PAGINATION
+export const PREVIOUS = 'Anterior';
+export const NEXT = 'Siguiente';
+
   

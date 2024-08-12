@@ -13,6 +13,7 @@ const Navbar = () => {
 
   const handleLanguageChange = (lang: string) => {
     const selectedLanguage = LANGUAGES.find(language => language.code === lang);
+    setSideMenuOpen(false);
     setLocale(lang);
     setCurrentLanguage(selectedLanguage?.label || 'PL');
   };
@@ -24,6 +25,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     const elem = document.activeElement as HTMLElement;
+    setSideMenuOpen(false);
     if (elem) {
       elem?.blur();
     }
@@ -34,7 +36,7 @@ const Navbar = () => {
     <nav className="flex items-start max-container relative z-30 py-5 mb-6 gap-3">
         <div className="mr-auto justify-start">
             <Link href="/" >
-               <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/f5065d6a7ulp9pww81ux.png" alt="INORG Logo" width={150} height={90} className="object-cover" />
+               <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/f5065d6a7ulp9pww81ux.png" alt="MIDAS Logo" width={150} height={90} className="object-cover" />
             </Link>
         </div>
 
@@ -47,13 +49,13 @@ const Navbar = () => {
                 </Link>
               ) :
               (<div key={link.label} className=" dropdown dropdown-hover ">
-              <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
-              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
-                {data?.PRODUCTS.map((product) => (
-                  <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
-                ))}
-              </ul>
-              </div>)
+                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
+                    {data?.PRODUCTS.map((product) => (
+                      <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
+                    ))}
+                  </ul>
+                </div>)
               )}
             <div className="dropdown dropdown-hover">
             <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{currentLanguage}</div>
@@ -71,13 +73,22 @@ const Navbar = () => {
         {sideMenuOpen && (
          <div className="lg:hidden relative flex flex-col h-[calc(100vh-96px)] top-24 left-0 w-full justify-items-center items-center gap-12">
          
-              {data?.NAV_LINKS.map((link) => (
-                
-                <Link href={link.href} key={link.key} className= 'bold-10 text-default flexCenter cursor-pointer'>
+              {data?.NAV_LINKS.map((link) => link.key !== 'products' ? (
+                <Link href={link.href} key={link.key}  onClick={handleClick} className= 'bold-10 text-default flexCenter cursor-pointer'>
                   {link.label}
                 </Link>
-              ))}
-               <div className="dropdown dropdown-hover">
+              ) : (
+                <div key={link.label} className="dropdown">
+                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
+                    {data?.PRODUCTS.map((product) => (
+                      <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
+                    ))}
+                  </ul>
+                </div>
+              ))
+             }
+               <div className="dropdown">
             <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 left-8">{currentLanguage}</div>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-18 right-05">
               {LANGUAGES.map((lang) => (

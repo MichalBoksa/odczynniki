@@ -20,7 +20,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const selectedLanguage = LANGUAGES.find(lang => lang.code === currentLocale);
-    setCurrentLanguage(selectedLanguage?.label || 'EN');
+    setCurrentLanguage(selectedLanguage?.label || 'PL');
   }, [currentLocale]);
 
   const handleClick = () => {

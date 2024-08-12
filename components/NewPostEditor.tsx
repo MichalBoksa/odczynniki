@@ -7,13 +7,6 @@ import { CldImage, CldUploadWidget, CloudinaryUploadWidgetInfo } from 'next-clou
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
-
-interface CloudinaryResource {
-  public_id: string;
-  secure_url: string;
-  [key: string]: any; // Add any other fields that may be included in the resource
-}
-
 const NewPostEditor = () => {
     const cloudinary = require('cloudinary').v2;
     cloudinary.config({
@@ -53,8 +46,6 @@ const NewPostEditor = () => {
     };
 
     const handleOnSubmit = async () => {
-      // const imgUrl = JSON.parse(resource).secure_url;
-       //console.log(imgUrl);
         const res = await fetch('/api/news', {
           method:'POST',
           body: JSON.stringify(
@@ -66,7 +57,6 @@ const NewPostEditor = () => {
             }
           ),
       });
-      console.log(res);
     }
     
 
@@ -90,8 +80,6 @@ const NewPostEditor = () => {
                 }}>
                 {({ open }) => {
                   return(
-                  // <input type='file' id='image' onChange={(e)=> setFile(e.target.files ? e.target.files[0] : null)}/>
-                  // <label htmlFor='image'>
                   <button className='flex w-[36px] h-[36px] rounded-[50%] border-2 items-center justify-center' onClick={() => open()}>
                     <CldImage src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/qu3vhl7vzffip78jzhmw.png" alt="" width={16} height={16} />
                   </button>

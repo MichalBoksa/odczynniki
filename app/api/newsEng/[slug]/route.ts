@@ -4,11 +4,11 @@ import { NextRequest, NextResponse } from 'next/server';
 export const GET = async (req: NextRequest, {params}:{params:{slug:string}}) => {
     const slug = params.slug;
     try{
-        const post = await prisma.post.findUnique({
+        const post = await prisma.postEng.findUnique({
             where: {slug} ,
         });
 
-        const recentPosts = await prisma.post.findMany({
+        const recentPosts = await prisma.postEng.findMany({
             take: 3,
             
           });

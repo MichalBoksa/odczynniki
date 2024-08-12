@@ -73,5 +73,13 @@ model Post {
   createdAt DateTime @default(now()) @map("created_at")
 }
 
+model PostEng {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  slug     String   @unique
+  title    String
+  desc     String
+  img      String
+  createdAt DateTime @default(now()) @map("created_at")
+}
 
  

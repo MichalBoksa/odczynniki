@@ -10,12 +10,12 @@ export const GET = async (req:NextRequest) => {
 
 const skip = (parseInt(page as string) - 1) * POST_PER_PAGE;
 try {
-  const firstPost = await prisma.post.findFirst({
+  const firstPost = await prisma.postEng.findFirst({
     orderBy: {
       createdAt: 'desc',
     },});
   
-    const paginatedPosts = await prisma.post.findMany({
+    const paginatedPosts = await prisma.postEng.findMany({
     take: POST_PER_PAGE,
     skip,
     orderBy: {
@@ -24,7 +24,7 @@ try {
   });
 
   const posts = [firstPost, ...paginatedPosts];
-  const count = await prisma.post.count();
+  const count = await prisma.postEng.count();
 
   return new NextResponse(JSON.stringify({ posts, count }), { status: 200 });
 }
@@ -38,10 +38,9 @@ catch (error) {
 };
 
 export const POST = async (req: NextRequest ) => {
-
   try {
     const body = await req.json();
-    const post = await prisma.post.create({
+    const post = await prisma.postEng.create({
       data: { ...body },
     });
     return new NextResponse(JSON.stringify(post), { status: 200 });

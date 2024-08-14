@@ -3,6 +3,8 @@ import SingleNewsPage from '@/components/SingleNewsPage';
 import { Post, PostEng } from '@prisma/client';
 
 const getData = async (slug: string, currentLocale: string): Promise<Post[] | PostEng[]> => {
+    console.log(slug);
+    console.log("ASDDDDDDD");
   try {
     const url =currentLocale === 'pl'
      ? `http://localhost:3002/api/news/${slug}`
@@ -27,6 +29,7 @@ const NewsPageSlug = ({ params, currentLocale }: { params: { slug: string }; cur
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    console.log(params.slug + 'useeffect');
     const fetchData = async () => {
       try {
         const data = await getData(params.slug, currentLocale);

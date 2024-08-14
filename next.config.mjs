@@ -8,18 +8,6 @@ const nextConfig = {
     config.resolve.fallback = { fs: false };
     return config;
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/news/:slug',
-        destination: 'http://localhost:3002/api/news/:slug', // Proxy to Backend
-      },
-      {
-        source: '/api/newsEng/:slug',
-        destination: 'http://localhost:3002/api/newsEng/:slug', // Proxy to Backend
-      },
-    ];
-  },
 };
 
 export default nextConfig;

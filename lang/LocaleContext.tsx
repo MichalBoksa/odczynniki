@@ -11,7 +11,6 @@ interface LocaleContextProps {
 }
 
 const LocaleContext = createContext<LocaleContextProps>({ data: null, setLocale: () => {},currentLocale: 'pl' });
-
 export const LocaleProvider: React.FC<{children: ReactNode}> = ({ children }) => {
   const router: any = useRouter(); // Update the type of 'router' to 'any'
   const { locale, defaultLocale, pathname, asPath, query } = router;
@@ -52,3 +51,4 @@ export const useLocale = () => {
   }
   return context;
 };
+export default LocaleContext;

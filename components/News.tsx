@@ -11,14 +11,18 @@ interface NewsProps {
   posts: Post[];
   count: number;
   page: number;
+  postsEng: Post[];
+  countEng: number;
 }
 
-const News: React.FC<NewsProps> = ({ posts, page, count }) => {
-  const latestPost = posts[0];
+const News: React.FC<NewsProps> = ({ posts, page, count, postsEng, countEng }) => {
+  const { data, currentLocale } = useLocale() || {};
+  const latestPost = currentLocale === 'pl' ? posts[0] : postsEng[0];
+  const localePosts = currentLocale === 'pl' ? posts : postsEng;
   const POST_PER_PAGE = 3;  
   const hasPrevious = POST_PER_PAGE * (page - 1) > 0;
   const hasNext = POST_PER_PAGE * page < count;
-  const { data } = useLocale() || {};
+  
 
   return (
     <section className='max-container md:padding-container mb-6'>
@@ -49,9 +53,9 @@ const News: React.FC<NewsProps> = ({ posts, page, count }) => {
 
       <div className='mt-10'>
         {page && page > 1 ? (
-          <NewsCardList posts={posts.slice(1)} />
+          <NewsCardList posts={localePosts.slice(1)} />
         ) : (
-          <NewsCardList posts={posts.slice(2)} />
+          <NewsCardList posts={localePosts.slice(2)} />
         )}
       </div>
 

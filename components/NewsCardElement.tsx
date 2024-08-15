@@ -20,7 +20,7 @@ const NewsCardElement: React.FC<NewsProps> = (post,recentPosts) => {
                 <span className='text-secondary-content'>{post.post.createdAt.toString().substring(0,10)}</span>
                 <h1 className='font-bold text-xl mb-6 text-left' >{post.post.title}</h1>
                 <div className=' px-4 lg:px-20 text-secondary-content'  dangerouslySetInnerHTML={{__html: post.post.desc.substring(0,120).concat(" . . .")}}></div>
-                <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 mb-3 ml-auto'>{data?.READ_MORE}j</button>
+                <button className='flex btn btn-primary btn-sm text-cream rounded-lg items-center mt-3 mb-3 ml-auto'>{data?.READ_MORE}</button>
                 <div className='border-b-2 border-b-gray-300 w-9/10'></div>
             </div>
         </div>

@@ -26,7 +26,7 @@ const getEngData = async (slug:string)  => {
     const dataEng = await fetch(`http://localhost:3002/api/newsEng/${slug}`,{
       cache: "no-store",
     });
-    if (!data.ok) {
+    if (!dataEng.ok) {
       throw new Error("Failed");
     }
     const dataEngJson:Post[]= await dataEng.json();

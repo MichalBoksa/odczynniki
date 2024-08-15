@@ -2,7 +2,6 @@ import prisma from "../../../../utils/connect";
 import { NextRequest, NextResponse } from 'next/server';
 
 export const GET = async (req: NextRequest, { params }: { params: { slug: string } }) => {
-    console.log(params.slug);
     const slug = params.slug;
 
     const headers = new Headers();

@@ -3,14 +3,17 @@ import React from 'react';
 import RecentPosts from './RecentPosts';
 import { CldImage } from 'next-cloudinary';
 import { Post } from '@prisma/client';
+import { useLocale } from '@/lang/LocaleContext';
 
 interface NewsProps {
   posts: Post[];
+  postsEng: Post[];
 }
 
-const SingleNewsPage: React.FC<NewsProps> = ({ posts }) => {
-  const firstPost = posts[0]; 
-  const recentPostsData = posts.slice(1);
+const SingleNewsPage: React.FC<NewsProps> = ({ posts, postsEng }) => {
+  const {currentLocale} = useLocale() || {};
+  const firstPost = currentLocale === 'pl' ? posts[0] : postsEng[0]; 
+  const recentPostsData = currentLocale === 'pl' ? posts.slice(1) : postsEng.slice(1);
   
   return (
     <section className='max-container md:padding-container lg:mb-32'>

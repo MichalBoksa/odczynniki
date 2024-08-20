@@ -25,10 +25,40 @@ export const SPECIALIZATION_DESC = 'The main activity of CMOCMI is the productio
 export const INNOVATIONS = 'Innovation and sustainable development - key pillars';
 export const INNOVATIONS_DESC = 'The company currently possesses modern technical and technological facilities for producing chemical compounds with customer-desired parameters. For many years, CMOCMI has cooperated with leading national research units, higher education institutions, and the Polish Academy of Sciences. Due to the limited supply of raw materials containing molybdenum, selenium, and other metals listed as critical and deficient, CMOCMI specializes in sourcing these raw materials from waste or low-quality primary sources. Innovative hydrometallurgical processes allow the company to obtain high-purity products, building its competitive position and fitting into the philosophy of the Circular Economy.';
 export const REGISTRATION_DETAILS = 'Registration Details';
-export const VAT = 'VAT';
+export const VAT = 'NIP';
 export const REGON = 'REGON';
 export const KRS = 'KRS';
 export const COURT_REGISTER = 'District Court for the Capital City of Warsaw in Warsaw, 13th Commercial Division of the National Court Register';
+export const ABOUT_US_LIST = [
+    {
+      href: '/aboutUs',
+      label: 'Who we are'
+    },
+    {
+      href: '/certificates',
+      label: 'Certificates'
+    },
+    {
+      href: '/organizations',
+      label: 'Organizations'
+    },
+    {
+      href: '/businessPartners',
+      label: 'Business partners'
+    },
+    {
+      href: '/registrationDetails',
+      label: 'Registration details'
+    }
+  ];
+
+  export const ORGANIZATIONS = 'Organizations we belong to';
+  export const BUSINESS_PARTNERS = 'Our business partners';
+  export const COMPANY_NAME = 'Company name';
+  export const COMPANY_HEADQUARTERS = 'Company headquarters';
+  export const PRODUCTION_PLANT = 'Production plant and correspondence address';
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, Opackiego 46A/11';
+
 
 //CAREERS
 export const JOIN_US = 'Join our team';

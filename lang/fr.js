@@ -25,10 +25,39 @@ export const SPECIALIZATION_DESC = 'L\'activité principale de CMOCMI est la pro
 export const INNOVATIONS = 'Innovations et développement durable - piliers clés';
 export const INNOVATIONS_DESC = 'L\'entreprise dispose d\'installations techniques et technologiques modernes pour la production de composés chimiques avec les paramètres souhaités par les clients. CMOCMI collabore depuis de nombreuses années avec des instituts de recherche nationaux leaders ainsi qu\'avec des universités et l\'Académie polonaise des sciences. En raison de l\'offre limitée des matières premières contenant du molybdène, du sélénium et d\'autres métaux critiques et déficitaires, CMOCMI se spécialise depuis des années dans leur obtention à partir de sources de déchets ou de matières premières primaires de faible qualité. Grâce à des processus hydrométallurgiques innovants, l\'entreprise accède à des matières premières qu\'elle est capable de transformer en produits de haute pureté, renforçant ainsi sa position concurrentielle tout en s\'inscrivant dans la philosophie de l\'économie circulaire.';
 export const REGISTRATION_DETAILS = 'Détails de l\'enregistrement';
-export const VAT = 'TVA';
+export const VAT = 'NIP';
 export const REGON = 'REGON';
 export const KRS = 'KRS';
 export const COURT_REGISTER = 'Tribunal de district pour la ville capitale de Varsovie à Varsovie, 13ème division commerciale du registre national des tribunaux';
+export const ABOUT_US_LIST = [
+    {
+      href: '/aboutUs',
+      label: 'Qui nous sommes'
+    },
+    {
+      href: '/certificates',
+      label: 'Certificats'
+    },
+    {
+      href: '/organizations',
+      label: 'Organisations'
+    },
+    {
+      href: '/businessPartners',
+      label: 'Partenaires commerciaux'
+    },
+    {
+      href: '/registrationDetails',
+      label: 'Détails d\'enregistrement'
+    }
+  ];
+
+  export const ORGANIZATIONS = 'Organisations auxquelles nous appartenons';
+  export const BUSINESS_PARTNERS = 'Nos partenaires commerciaux';
+  export const COMPANY_NAME = 'Nom de l\'entreprise';
+  export const COMPANY_HEADQUARTERS = 'Siège de l\'entreprise';
+  export const PRODUCTION_PLANT = 'Usine de production et adresse de correspondance';
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, rue Opackiego 46A/11';
 
 // CARRIÈRES
 export const JOIN_US = 'Rejoignez notre équipe';

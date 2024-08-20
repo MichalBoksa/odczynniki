@@ -29,6 +29,36 @@ export const VAT = 'ИНН';
 export const REGON = 'REGON';
 export const KRS = 'KRS';
 export const COURT_REGISTER = 'Районный суд для столицы Варшавы в Варшаве, 13-е коммерческое отделение Национального судебного реестра';
+export const ABOUT_US_LIST = [
+  {
+    href: '/aboutUs',
+    label: 'Кто мы'
+  },
+  {
+    href: '/certificates',
+    label: 'Сертификаты'
+  },
+  {
+    href: '/organizations',
+    label: 'Организации'
+  },
+  {
+    href: '/businessPartners',
+    label: 'Бизнес-партнеры'
+  },
+  {
+    href: '/registrationDetails',
+    label: 'Регистрационные данные'
+  }
+];
+
+export const ORGANIZATIONS = 'Организации, к которым мы принадлежим';
+export const BUSINESS_PARTNERS = 'Наши бизнес-партнеры';
+export const COMPANY_NAME = 'Название компании';
+export const COMPANY_HEADQUARTERS = 'Штаб-квартира компании';
+export const PRODUCTION_PLANT = 'Производственное предприятие и адрес для корреспонденции';
+export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Фаленты, ул. Опакского 46A/11';
+
 
 //КАРЬЕРА
 export const JOIN_US = 'Присоединяйтесь к нашей команде';

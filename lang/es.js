@@ -25,10 +25,39 @@ export const NAV_LINKS = [
   export const INNOVATIONS = 'Innovación y desarrollo sostenible - pilares clave';
   export const INNOVATIONS_DESC = 'La empresa posee actualmente instalaciones técnicas y tecnológicas modernas para la producción de compuestos químicos con parámetros específicos según las necesidades del cliente. Durante muchos años, CMOCMI ha colaborado con las principales unidades de investigación nacionales, instituciones de educación superior y la Academia Polaca de Ciencias. Dada la oferta limitada de materias primas que contienen molibdeno, selenio y otros metales críticos y escasos, CMOCMI se especializa en obtener estas materias primas de residuos o fuentes primarias de baja calidad. A través de procesos hidrometalúrgicos innovadores, la empresa logra obtener productos de alta pureza, construyendo su posición competitiva y alineándose con la filosofía de la Economía Circular.';
   export const REGISTRATION_DETAILS = 'Detalles de registro';
-export const VAT = 'IVA';
+export const VAT = 'NIP';
 export const REGON = 'REGON';
 export const KRS = 'KRS';
 export const COURT_REGISTER = 'Tribunal de Distrito para la Ciudad Capital de Varsovia en Varsovia, 13ª División Comercial del Registro Nacional de Tribunales';
+export const ABOUT_US_LIST = [
+    {
+      href: '/aboutUs',
+      label: 'Quiénes somos'
+    },
+    {
+      href: '/certificates',
+      label: 'Certificados'
+    },
+    {
+      href: '/organizations',
+      label: 'Organizaciones'
+    },
+    {
+      href: '/businessPartners',
+      label: 'Socios comerciales'
+    },
+    {
+      href: '/registrationDetails',
+      label: 'Datos de registro'
+    }
+  ];
+
+  export const ORGANIZATIONS = 'Organizaciones a las que pertenecemos';
+  export const BUSINESS_PARTNERS = 'Nuestros socios comerciales';
+  export const COMPANY_NAME = 'Nombre de la empresa';
+  export const COMPANY_HEADQUARTERS = 'Sede de la empresa';
+  export const PRODUCTION_PLANT = 'Planta de producción y dirección para correspondencia';
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, calle Opackiego 46A/11';
 
   // CARRERAS
   export const JOIN_US = 'Únete a nuestro equipo';

@@ -24,6 +24,40 @@ export const SPECIALIZATION = 'Das ist unsere Spezialität';
 export const SPECIALIZATION_DESC = 'Die Haupttätigkeit von CMOCMI ist die Produktion anorganischer Chemikalien, insbesondere Verbindungen (Metallsalze) von Molybdän, Selen, Kupfer, Mangan, Zink, Kobalt und Nickel. CMOCMI ist der einzige Produzent von Natriummolybdat und Ammoniumheptamolybdat in Polen und ein führender Produzent in Europa. Das Unternehmen betreibt auch internationalen Handel mit spezialisierten chemischen Verbindungen. CMOCMI ist nach ISO 9001 und 14001, GMP+ zertifiziert, was es ermöglicht, Produkte an die anspruchsvollsten Kunden aus verschiedenen Industriesektoren und Hersteller von Futtermitteln und Lebensmitteln zu liefern.';
 export const INNOVATIONS = 'Innovation und nachhaltige Entwicklung - Schlüsselpilare';
 export const INNOVATIONS_DESC = 'Das Unternehmen verfügt derzeit über moderne technische und technologische Einrichtungen zur Herstellung chemischer Verbindungen mit kundenorientierten Parametern. CMOCMI arbeitet seit vielen Jahren mit führenden nationalen Forschungseinrichtungen, Hochschulen und der Polnischen Akademie der Wissenschaften zusammen. Aufgrund der begrenzten Verfügbarkeit von Rohstoffen, die Molybdän, Selen und andere Metalle enthalten und als kritisch und knapp eingestuft sind, spezialisiert sich CMOCMI auf deren Gewinnung aus Abfallquellen oder minderwertigen Primärrohstoffen. Innovative hydrometallurgische Prozesse ermöglichen es dem Unternehmen, Produkte mit hoher Reinheit zu erhalten, was seine Wettbewerbsposition stärkt und gleichzeitig der Philosophie der Kreislaufwirtschaft entspricht.';
+export const REGISTRATION_DETAILS = 'Registrierungsdetails';
+export const VAT = 'NIP';
+export const REGON = 'REGON';
+export const KRS = 'KRS';
+export const COURT_REGISTER = 'Amtsgericht für die Hauptstadt Warschau in Warschau, 13. Handelsabteilung des Landesgerichtsregisters';
+export const ABOUT_US_LIST = [
+    {
+      href: '/aboutUs',
+      label: 'Wer wir sind'
+    },
+    {
+      href: '/certificates',
+      label: 'Zertifikate'
+    },
+    {
+      href: '/organizations',
+      label: 'Organisationen'
+    },
+    {
+      href: '/businessPartners',
+      label: 'Geschäftspartner'
+    },
+    {
+      href: '/registrationDetails',
+      label: 'Registrierungsdaten'
+    }
+  ];
+
+  export const ORGANIZATIONS = 'Organisationen, denen wir angehören';
+  export const BUSINESS_PARTNERS = 'Unsere Geschäftspartner';
+  export const COMPANY_NAME = 'Firmenname';
+  export const COMPANY_HEADQUARTERS = 'Firmensitz';
+  export const PRODUCTION_PLANT = 'Produktionsstätte und Korrespondenzadresse';
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, Opackiego 46A/11';
 
 //CAREERS
 export const JOIN_US = 'Treten Sie unserem Team bei';

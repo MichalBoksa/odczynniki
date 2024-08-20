@@ -26,11 +26,40 @@ export const NAV_LINKS = [
   export const SPECIALIZATION_DESC = 'Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu. CMOCMI jest jedynym w Polsce i wiodącym w Europie producentem sodu molibdenianu i amonu heptamolibdenianu oraz liczącym się w Europie producentem sodu seleninu. Poza działalnością produkcyjną firma prowadzi również międzynarodową działalność handlową w zakresie specjalistycznych związków chemicznych. Firma posiada certyfikaty ISO 9001 i 14001, GMP+, dzięki czemu produkty mogą trafiać do najbardziej wymagających odbiorców z wielu branż przemysłowych oraz producentów pasz i artykułów spożywczych.';
   export const INNOVATIONS = 'Innowacje i zrównoważony rozwój - kluczowe filary';
   export const INNOVATIONS_DESC = 'Obecnie firma posiada nowoczesne zaplecze techniczne i technologiczne do produkcji związków chemicznych o pożądanych przez klientów parametrach. CMOCMI od wielu lat współpracuje z wiodącymi krajowymi jednostkami badawczymi oraz z uczelniami wyższymi i Polska Akademią Nauk. Z uwagi na ograniczoną podaż niezbędnych do produkcji surowców zawierających molibden, selen i inne metale znajdujące się na listach krytycznych i deficytowych, CMOCMI od lat specjalizuje się w ich pozyskiwaniu ze źródeł odpadowych lub surowców pierwotnych o niskiej jakości. Dzięki innowacyjnym procesom hydrometalurgicznym firma uzyskuje dostęp do takich surowców, z których jest w stanie wytworzyć produkty o wysokiej czystości - na czym buduje swoją pozycję konkurencyjną wpisując się jednocześnie w filozofię Gospodarki Obiegu Zamkniętego.';
-  export const REGISTRATION_DETAILS = 'Dane rejestrowe';
-  export const VAT = 'VAT';
+  export const REGISTRATION_DETAILS = 'Dane rejestrowe firmy';
+  export const VAT = 'NIP';
   export const REGON = 'REGON';
   export const KRS = 'KRS';
   export const COURT_REGISTER = 'Sąd Rejonowy Dla M. St. Warszawy w Warszawie XIII Wydział Gospodarczy Krajowego Rejestru Sądowego';
+  export const ABOUT_US_LIST = [
+    {
+      href: '/aboutUs',
+      label: 'Kim jesteśmy'
+    },
+    {
+      href: '/certificates',
+      label: 'Certifikaty'
+    },
+    {
+      href: '/organizations',
+      label: 'Organizacje'
+    },
+    {
+      href: '/businessPartners',
+      label: 'Partnerzy biznesowi'
+    },
+    {
+      href: '/registrationDetails',
+      label: 'Dane rejestrowe'
+    }
+  ];
+
+  export const ORGANIZATIONS = 'Organizacje, do których należymy';
+  export const BUSINESS_PARTNERS = 'Nasi partnerzy biznesowi';
+  export const COMPANY_NAME = 'Nazwa firmy';
+  export const COMPANY_HEADQUARTERS = 'Siedziba firmy';
+  export const PRODUCTION_PLANT = 'Zakład produkcyjny i adres do korespondencji';
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, ul. Opackiego 46A/11'
 
 
   //CAREERS

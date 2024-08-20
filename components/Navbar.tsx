@@ -42,12 +42,22 @@ const Navbar = () => {
 
         <div className="border-b-2 border-b-primary">
             <ul className="hidden lg:flex h-full md:gap-3 lg-gap-3 xl:gap-6">
-              {data?.NAV_LINKS.map((link:NavLink) => link.key !== 'products'? ( 
+              {data?.NAV_LINKS.map((link:NavLink) => link.key !== 'products' && link.key !== 'aboutUs' ? ( 
                 <Link key={link.label} href={link.href}  onClick={handleClick} > <div className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default flexCenter cursor-pointer pb-1.5 transition-all mr-4">
                   {link.label}
                   </div>
                 </Link>
-              ) :
+              ): link.key === 'aboutUs' ? (
+              (<div key={link.label} className=" dropdown dropdown-hover ">
+                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 items-center justify-center">{link.label}</div>
+                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-56">
+                    {data?.ABOUT_US_LIST.map((link) => (
+                      <Link href={link.href} key={link.label}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{link.label}</p></li></Link>
+                    ))}
+                  </ul>
+                </div>)
+              )
+               :
               (<div key={link.label} className=" dropdown dropdown-hover ">
                 <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
@@ -73,26 +83,37 @@ const Navbar = () => {
         {sideMenuOpen && (
          <div className="lg:hidden relative flex flex-col h-[calc(100vh-96px)] top-24 left-0 w-full justify-items-center items-center gap-12">
          
-              {data?.NAV_LINKS.map((link) => link.key !== 'products' ? (
-                <Link href={link.href} key={link.key}  onClick={handleClick} className= 'bold-10 text-default flexCenter cursor-pointer'>
+              {data?.NAV_LINKS.map((link) => link.key !== 'products' && link.key !== 'aboutUs' ? (
+                <Link href={link.href} key={link.key}  onClick={handleClick} className= 'text-xl text-default flexCenter cursor-pointer'>
                   {link.label}
                 </Link>
-              ) : (
+              )
+              : link.key === 'aboutUs' ? (
+                (<div key={link.label} className=" dropdown ">
+                  <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold  cursor-pointer mr-4 text-xl items-center justify-center">{link.label}</div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-64">
+                      {data?.ABOUT_US_LIST.map((link) => (
+                        <Link href={link.href} key={link.label}> <li onClick={handleClick} className="flexCenter text-wrap text-xl cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{link.label}</p></li></Link>
+                      ))}
+                    </ul>
+                  </div>)
+                )
+              : (
                 <div key={link.label} className="dropdown">
-                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
+                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-xl cursor-pointer mr-4 ">{link.label}</div>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                     {data?.PRODUCTS.map((product) => (
-                      <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
+                      <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap text-xl cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
                     ))}
                   </ul>
                 </div>
               ))
              }
                <div className="dropdown">
-            <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 left-8">{currentLanguage}</div>
+            <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-xl cursor-pointer mr-4 left-8">{currentLanguage}</div>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-18 right-05">
               {LANGUAGES.map((lang) => (
-                <li key={lang.code} onClick={() => handleLanguageChange(lang.code)} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg">
+                <li key={lang.code} onClick={() => handleLanguageChange(lang.code)} className="flexCenter text-xl text-wrap cursor-pointer pb-1.5 text:md xl:text-lg">
                 <p>{lang.label}</p>
               </li>
               ))}

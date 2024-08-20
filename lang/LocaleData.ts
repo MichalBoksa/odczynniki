@@ -20,6 +20,14 @@ export interface LocaleData {
   REGON: string;
   KRS: string;
   COURT_REGISTER: string;
+  ABOUT_US_LIST: AboutUsLinks[];
+  ORGANIZATIONS: string;
+  BUSINESS_PARTNERS : string;
+  COMPANY_NAME: string;
+  COMPANY_HEADQUARTERS: string;
+  PRODUCTION_PLANT: string;
+  REGISTRATION_DETAILS_OFFICE_ADDRESS: string;
+
 
   // CAREERS
   JOIN_US: string;
@@ -226,4 +234,9 @@ export interface SettlementTeamMember {
   name: string;
   email: string;
   mobile: string;
+}
+
+export interface AboutUsLinks {
+  href: string;
+  label: string;
 }

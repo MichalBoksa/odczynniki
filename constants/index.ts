@@ -65,3 +65,35 @@ export const NAV_LINKS = [
         srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/e16hfbxnlekccikyobye.jpg' },   
 
       ]
+
+      export const MOLYBDENUM_PRODUCTS = [
+        {
+          name: 'Sodu Molibdenian',
+          symbol: 'Na₂MoO₄',
+          cas: '7631-95-0',
+          use:['dodatek do pasz dla zwierząt', 'przemysł nawozowy', 'pigmenty', 'uzdatnianie wody', 'inhibitor korozji', 'środek przeciw zamarzaniu i chłodziwa do silników']
+        },
+  
+        {
+          name: 'Amonu Heptamolibdenian',
+          cas: '12054-85-2',
+          symbol:'(NH₄)₆Mo₇O₂₄·4H₂O',
+          use: ['przemysł nawozowy', 
+            'katalizator', 
+            'inhibitor korozji', 
+            'chemia analityczna'
+            ]
+        },
+  
+        {
+          name: 'Amonu Dimolibdenian ',
+          symbol: '(NH₄)₂Mo₂O₇',
+          cas:'27546-07-2',
+          use:['pigmenty', 
+            'produkcja katalizatorów', 
+            'opóźniacze spalania', 
+            'środki przeciwdziałające pożarom'
+          ]
+        },
+       
+      ];

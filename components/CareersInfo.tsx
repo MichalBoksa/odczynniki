@@ -3,10 +3,14 @@ import React, { useEffect, useRef } from 'react';
 import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
 import { useLocale } from '../lang/LocaleContext';
+import Head from 'next/head';
 
 const CareersInfo = () => {
   const { data } = useLocale() || {};
   const careersOffice = useRef<HTMLDivElement>(null);
+
+  const pageTitle = `Kariera - Dołącz do Naszego Zespołu!`;
+  const pageDescription = `Dołącz do naszego zespołu! Odkryj aktualne oferty pracy i możliwości rozwoju kariery w [Nazwa Firmy]. Szukamy utalentowanych ludzi, którzy chcą współtworzyć naszą przyszłość. Zobacz nasze wartości i przekonaj się, dlaczego warto z nami pracować.`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +29,12 @@ const CareersInfo = () => {
   }, []);
 
   return (
+    <>
+    <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="keywords" content={`kariera, praca chemia, praca, praca handel, chemiczny`} />
+      </Head>
     <section className='max-container md:padding-container'>
       <div className='w-full flex flex-col lg:flex-row lg:max-h-[400px]'>
         <div className='bg-base-200 flex flex-col lg:w-2/5 p-6 lg:p-8'>
@@ -92,6 +102,7 @@ const CareersInfo = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

@@ -1,9 +1,22 @@
 'use client';
+import Head from 'next/head';
 import { useLocale } from '../lang/LocaleContext';
 
 const MolybdenumInfo = () => {
   const { data } = useLocale() || {};
+  const productNames = data?.MOLYBDENUM_PRODUCTS.map(product => product.name).join(', ');
+
+  const pageTitle = `Molibden - Nasze Produkty`;
+  const pageDescription = `Poznaj produkty zawierające molibden: ${productNames}. Dowiedz się więcej o ich zastosowaniach i specyfikacjach.`;
+
   return (
+    <>
+    <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="keywords" content={`molibden, molybdenum, produkty molibdenowe, ${productNames}`} />
+      </Head>
+    
     <section className='max-container md:padding-container'>
       <h1 className='text-4xl md:text-6xl lg:text-8xl w-full mb-10 text-center'>{data?.MOLYBDENUM}</h1>
       
@@ -57,6 +70,7 @@ const MolybdenumInfo = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

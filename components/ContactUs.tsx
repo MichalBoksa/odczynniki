@@ -3,6 +3,7 @@ import React from 'react'
 import { CldImage } from 'next-cloudinary';
 import { useLocale } from '../lang/LocaleContext';
 import Link from 'next/link';
+import Head from 'next/head';
 
 
 const ContactUs = () => {
@@ -10,7 +11,16 @@ const ContactUs = () => {
     const address = 'Metalurgiczna 15e, 20-001 Lublin';
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
+    const pageTitle = `Skontaktuj się z nami`;
+    const pageDescription = `Znajdź dane kontaktowe do naszego zespołu, w tym adres e-mail, numer telefonu oraz formularz kontaktowy. Jesteśmy tu, aby odpowiedzieć na Twoje pytania i pomóc w każdej sprawie.`;
+
   return (
+<>
+    <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="keywords" content={`kontakt, kontakt odczynniki, odczynniki chemiczne kontakt`} />
+     </Head>
     <section className="bg-white">
     <div className="container px-6 py-12 mx-auto">
         <div className="text-center ">
@@ -151,6 +161,7 @@ const ContactUs = () => {
     </div>
             
 </section>
+</>
   )
 }
 

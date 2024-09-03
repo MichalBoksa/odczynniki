@@ -10,7 +10,7 @@ import CookieConsent from "@/components/CookieConsent";
 export const metadata: Metadata = {
   title: "Centrum Metal Odczynniki Chemiczne",
   description: "Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu",
-  keywords:["odczynniki", "odczynniki chemiczne", "molibden", "miedź"],
+  keywords:["odczynniki", "odczynniki chemiczne", "molibden", "miedź", "Sodu Molibdenian", "Amonu Heptamolibdenian", "Midas Investment"],
 };
 
 export default function RootLayout({

@@ -33,6 +33,10 @@ export const NAV_LINKS = [
   export const COURT_REGISTER = 'Sąd Rejonowy Dla M. St. Warszawy w Warszawie XIII Wydział Gospodarczy Krajowego Rejestru Sądowego';
   export const ABOUT_US_LIST = [
     {
+      href: '/registrationDetails',
+      label: 'Dane rejestrowe'
+    },
+    {
       href: '/aboutUs',
       label: 'Kim jesteśmy'
     },
@@ -48,10 +52,7 @@ export const NAV_LINKS = [
       href: '/businessPartners',
       label: 'Partnerzy biznesowi'
     },
-    {
-      href: '/registrationDetails',
-      label: 'Dane rejestrowe'
-    }
+    
   ];
 
   export const ORGANIZATIONS = 'Organizacje, do których należymy';

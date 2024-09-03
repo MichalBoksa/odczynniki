@@ -31,6 +31,10 @@ export const KRS = 'KRS';
 export const COURT_REGISTER = 'District Court for the Capital City of Warsaw in Warsaw, 13th Commercial Division of the National Court Register';
 export const ABOUT_US_LIST = [
     {
+        href: '/registrationDetails',
+        label: 'Registration details'
+      },
+    {
       href: '/aboutUs',
       label: 'Who we are'
     },
@@ -46,10 +50,7 @@ export const ABOUT_US_LIST = [
       href: '/businessPartners',
       label: 'Business partners'
     },
-    {
-      href: '/registrationDetails',
-      label: 'Registration details'
-    }
+  
   ];
 
   export const ORGANIZATIONS = 'Organizations we belong to';

@@ -31,6 +31,10 @@ export const KRS = 'KRS';
 export const COURT_REGISTER = 'Amtsgericht für die Hauptstadt Warschau in Warschau, 13. Handelsabteilung des Landesgerichtsregisters';
 export const ABOUT_US_LIST = [
     {
+        href: '/registrationDetails',
+        label: 'Registrierungsdaten'
+      },
+    {
       href: '/aboutUs',
       label: 'Wer wir sind'
     },
@@ -46,10 +50,7 @@ export const ABOUT_US_LIST = [
       href: '/businessPartners',
       label: 'Geschäftspartner'
     },
-    {
-      href: '/registrationDetails',
-      label: 'Registrierungsdaten'
-    }
+   
   ];
 
   export const ORGANIZATIONS = 'Organisationen, denen wir angehören';

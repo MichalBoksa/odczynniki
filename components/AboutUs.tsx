@@ -2,7 +2,6 @@
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
 import { useLocale } from '../lang/LocaleContext';
-import CerificatesSlider from './CerificatesSlider';
 
 const AboutUs = () => {
     const { data } = useLocale() || {};

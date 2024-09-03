@@ -31,6 +31,10 @@ export const KRS = 'KRS';
 export const COURT_REGISTER = 'Районный суд для столицы Варшавы в Варшаве, 13-е коммерческое отделение Национального судебного реестра';
 export const ABOUT_US_LIST = [
   {
+    href: '/registrationDetails',
+    label: 'Регистрационные данные'
+  },
+  {
     href: '/aboutUs',
     label: 'Кто мы'
   },
@@ -46,10 +50,7 @@ export const ABOUT_US_LIST = [
     href: '/businessPartners',
     label: 'Бизнес-партнеры'
   },
-  {
-    href: '/registrationDetails',
-    label: 'Регистрационные данные'
-  }
+ 
 ];
 
 export const ORGANIZATIONS = 'Организации, к которым мы принадлежим';

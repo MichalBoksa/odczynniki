@@ -31,6 +31,10 @@ export const KRS = 'KRS';
 export const COURT_REGISTER = 'Tribunal de Distrito para la Ciudad Capital de Varsovia en Varsovia, 13ª División Comercial del Registro Nacional de Tribunales';
 export const ABOUT_US_LIST = [
     {
+        href: '/registrationDetails',
+        label: 'Datos de registro'
+      },
+    {
       href: '/aboutUs',
       label: 'Quiénes somos'
     },
@@ -46,10 +50,7 @@ export const ABOUT_US_LIST = [
       href: '/businessPartners',
       label: 'Socios comerciales'
     },
-    {
-      href: '/registrationDetails',
-      label: 'Datos de registro'
-    }
+   
   ];
 
   export const ORGANIZATIONS = 'Organizaciones a las que pertenecemos';

@@ -14,7 +14,7 @@ const NewsCardElement: React.FC<NewsProps> = (post,recentPosts) => {
     <Link href={`/news/${post.post.slug}`}> <div>
         <div className='flex flex-col lg:flex-row mt-7 items-center justify-center gap-8 '>
             <div className='flex-none'>
-                <CldImage src={post.post.img} width={350} height={300} alt="post image" className='object-cover rounded-lg' />
+                <CldImage src={post.post.img} width={350} height={300} alt="post image" className='object-fill rounded-lg h-[200px]' />
             </div>
             <div className=' flex-1'>
                 <span className='text-secondary-content'>{post.post.createdAt.toString().substring(0,10)}</span>

@@ -24,7 +24,7 @@ const SingleNewsPage: React.FC<NewsProps> = ({ posts, postsEng }) => {
             alt="" 
             width={650} 
             height={400} 
-            className='rounded w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[250px] object-cover'
+            className='rounded w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[350px] object-cover'
           />
         </div> 
         <div className='flex-1 w-full mt-6 lg:mt-0'>

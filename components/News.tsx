@@ -33,7 +33,7 @@ const News: React.FC<NewsProps> = ({ posts, page, count, postsEng, countEng }) =
           <div className='flex-1 w-full'>
             {latestPost && (
               <CldImage
-                className='rounded-lg w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[250px] object-cover'
+                className='rounded-lg w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[450px] object-cover'
                 src={latestPost.img}
                 alt="img"
                 width={600}

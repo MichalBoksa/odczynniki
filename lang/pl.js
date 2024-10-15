@@ -127,15 +127,15 @@ export const NAV_LINKS = [
     //Molybdenum products
     export const MOLYBDENUM_PRODUCTS = [
       {
-        name: 'Sodu Molibdenian',
-        symbol: 'Na₂MoO₄',
-        cas: '7631-95-0',
+        name: 'Sodu Molibdenian 2hydrat',
+        symbol: 'Na₂MoO₄·2H₂O',
+        cas: '10102-40-6',
         use:['dodatek do pasz dla zwierząt', 'przemysł nawozowy', 'pigmenty', 'uzdatnianie wody', 'inhibitor korozji', 'środek przeciw zamarzaniu i chłodziwa do silników']
       },
 
       {
-        name: 'Amonu Heptamolibdenian',
-        cas: '12054-85-2',
+        name: 'Amonu Heptamolibdenian 4hydrat',
+        cas: '12054-85-2 (CAS: 12027-67-7 - bezwodny)',
         symbol:'(NH₄)₆Mo₇O₂₄·4H₂O',
         use: ['przemysł nawozowy', 
           'katalizator', 
@@ -180,15 +180,10 @@ export const NAV_LINKS = [
           },
 
           {
-            name: 'Premixy 1% - 10%',
+            name: 'Premixy 1% - 10% Se',
             symbol: 'Na₂SeO₃/CaMg(CO₃)₂',
             cas: '10102-18-8',
-            use: ['dodatek do pasz dla zwierząt', 
-              'wchodzi w skład substancji budulcowych', 
-              'bierze udział w mechanizmach antyoksydacyjnych', 
-              'ma wpływ na metabolizm i odporność organizmu zwierząt', 
-              'rolnictwo'
-              ]
+            use: ['dodatek do pasz dla zwierząt']
             },
         ];
 
@@ -196,12 +191,10 @@ export const NAV_LINKS = [
         //Cobalt products
         export const COBALT_PRODUCTS = [
           {
-            name: 'Powlekany Granulowany Węglan Kobaltu - Co 1-5% ',
+            name: 'Powlekany Granulowany Węglan Kobaltu - Co 2-5% ',
             symbol: 'CoCO₃/CaMg(CO₃)₂',
-            cas: '513-79-1',
-            use: ['dodatek do pasz', 
-            'jego występowanie w organizmie zwierząt jest związane z witaminą B12, a rola kobaltu wiąże się ściśle z występowaniem tej witaminy'
-              ]
+            cas: '513-79-1 nośnik: CaMg(CO₃)₂' ,
+            use: ['dodatek do pasz']
             },
           
         ];
@@ -210,7 +203,7 @@ export const NAV_LINKS = [
         //Nickel products
         export const NICKEL_PRODUCTS = [
           {
-            name: 'Niklu Azotan',
+            name: 'Niklu Azotan roztwór',
             symbol: 'Ni(NO₃)₂',
             cas: '13138-45-9',
             use: [ 'produkcja baterii', 
@@ -221,7 +214,18 @@ export const NAV_LINKS = [
             },
 
             {
-              name: 'Niklu Chlorek',
+              name: 'Niklu Azotan 6hydrat',
+              symbol: 'Ni(NO₃)₂•6H₂O',
+              cas: '13478-00-7',
+              use: [ 'produkcja baterii', 
+                'katalizatory', 
+                'odczynniki chemiczne', 
+                'galwaniczne (niklowanie)'
+                ]
+              },
+
+            {
+              name: 'Niklu Chlorek 6hydrat',
               symbol: 'NiCl₂•6H₂O',
               cas: '7791-20-0',
               use: [ 'farby', 
@@ -230,7 +234,7 @@ export const NAV_LINKS = [
               },
 
               {
-                name: 'Niklu Siarczan',
+                name: 'Niklu Siarczan 6hydrat',
                 symbol: 'NiSO₄•6H₂O',
                 cas: '10101-97-0',
                 use: [ 'dodatek do produkcji biogazu', 
@@ -240,6 +244,18 @@ export const NAV_LINKS = [
                   'do produkcji baterii'
                   ]
                 },
+
+                {
+                  name: 'Niklu Siarczan 7hydrat',
+                  symbol: 'NiSO₄•7H₂O',
+                  cas: '10101-98-1',
+                  use: [ 'dodatek do produkcji biogazu', 
+                    'dodatek do szkła', 
+                    'pigmenty', 
+                    'galwanizacja', 
+                    'do produkcji baterii'
+                    ]
+                  }
             
         ];
 
@@ -247,7 +263,7 @@ export const NAV_LINKS = [
         export const COPPER_PRODUCTS = [
           
           {
-            name: 'Miedzi Azotan',
+            name: 'Miedzi Azotan roztwór',
             symbol: 'Cu(NO₃)₂',
             cas: '3251-23-8',
             use: [ 'nawozy', 
@@ -260,7 +276,20 @@ export const NAV_LINKS = [
             },
 
             {
-              name: 'Miedzi Chlorek',
+              name: 'Miedzi Azotan roztwór',
+              symbol: 'Cu(NO₃)₂•3H₂O',
+              cas: '10031-43-3',
+              use: [ 'nawozy', 
+                'katalizatory', 
+                'galwaniczne', 
+                'pigmenty', 
+                'obróbka powierzchni niemetalowych'
+                          
+                ]
+              },
+
+            {
+              name: 'Miedzi Chlorek roztwór',
               symbol: 'CuCl₂',
               cas: '7447-39-4',
               use: [ 'przemysł chemiczny', 
@@ -270,8 +299,19 @@ export const NAV_LINKS = [
                 ]
               },
 
+              {
+                name: 'Miedzi Chlorek 2hydrat',
+                symbol: 'CuCl₂•2H₂O',
+                cas: '10125-13-0',
+                use: [ 'przemysł chemiczny', 
+                  'nawozy', 
+                  'odczynniki do analiz', 
+                  'jako katalizator w chemii organicznej'
+                  ]
+                },
+
             {
-              name: 'Miedzi Siarczan',
+              name: 'Miedzi Siarczan 5hydrat',
               symbol: 'CuSO₄•5H₂O',
               cas: '7758-99-8',
               use: ['dodatek do nawozów i pestycydów', 
@@ -284,7 +324,7 @@ export const NAV_LINKS = [
             },
 
             {
-              name: 'Miedzi Octan',
+              name: 'Miedzi Octan 1hydrat',
               symbol: 'Cu(CH₃COO)₂•H₂O',
               cas: '6046-93-1',
               use: ['zastosowanie laboratoryjne', 
@@ -321,7 +361,7 @@ export const NAV_LINKS = [
         //Zinc products
         export const ZINC_PRODUCTS = [
         {
-          name: 'Cynku Azotan',
+          name: 'Cynku Azotan roztwór',
           symbol: 'Zn(NO₃)₂',
           cas: '7779-88-6',
           use: ['nawozy', 
@@ -330,13 +370,33 @@ export const NAV_LINKS = [
         },
 
         {
-          name: 'Cynku Chlorek',
+          name: 'Cynku Azotan 6hydrat',
+          symbol: 'Zn(NO₃)₂•6 H₂O',
+          cas: '10196-18-6',
+          use: ['nawozy', 
+            	'odczynniki chemiczne'
+            ]
+        },
+
+        {
+          name: 'Cynku Chlorek roztwór',
           symbol: 'ZnCl₂',
           cas: '7646-85-7',
           use: ['ogrodnictwo', 
             'przemysł nawozowy', 
             'półprodukt, między innymi do baterii', 
             'do powlekania powierzchni metalowych'
+            ]
+        },
+
+        {
+          name: 'Cynku Octan 2hydrat',
+          symbol: '(CH₃COO)₂Zn•2H₂OZnCl₂',
+          cas: '5970-45-6',
+          use: ['katalizatory', 
+            'inhibitor korozji', 
+            'związki paszowe', 
+            'odczynniki chemiczne'
             ]
         },
 
@@ -371,7 +431,7 @@ export const NAV_LINKS = [
         //Manganese products
         export const MANGANESE_PRODUCTS = [
           {
-            name: 'Manganu Azotan',
+            name: 'Manganu Azotan roztwór',
             symbol: 'Mn(NO₃)₂',
             cas: '10377-66-9',
             use: [ 'przemysł petrochemiczny', 
@@ -381,7 +441,7 @@ export const NAV_LINKS = [
             },
 
             {
-              name: 'Manganu Chlorek ',
+              name: 'Manganu Chlorek roztwór',
               symbol: 'MnCl₂',
               cas: '7773-01-5',
               use: [ 'dodatek do pasz dla zwierząt', 
@@ -392,7 +452,7 @@ export const NAV_LINKS = [
               },
 
               {
-                name: 'Manganu Octan',
+                name: 'Manganu Octan 4hydrat',
                 symbol: 'Mn(CH₃COO)₂•4H₂O ',
                 cas: '6156-78-1',
                 use: [ 'odczynniki do syntez', 
@@ -403,7 +463,7 @@ export const NAV_LINKS = [
                 },
 
                 {
-                  name: 'Manganu Siarczan',
+                  name: 'Manganu Siarczan 1hydrat',
                   symbol: 'MnSO₄•H₂O',
                   cas: '10034-96-5',
                   use: [ 'nawozy', 
@@ -451,6 +511,13 @@ export const NAV_LINKS = [
             'środek do impregnacji drewna', 
             'dodatek do farb'
           ]
+        },
+
+        {
+          name: 'Monoamonowy Fosforan (MAP)',
+          symbol: 'NH₄H₂PO₄',
+          cas: '7722-76-1',
+          use: ['przemysł rolniczy; nawozy']
         }
 
 
@@ -639,11 +706,11 @@ export const NAV_LINKS = [
 
       //COPPER
       export const COPPER = 'Miedź';
-      export const COPPER_DESC = 'Pierwiastek chemiczny z grupy metali przejściowych w kolorze czerwonobrązowym. Jest odporna na korozję, wytrzymała, ciągliwa, skutecznie przewodzi prąd i ciepło, łatwo tworzy stopy. Miedź stosowany m.in. w rolnictwie, uzdatnianiu wody, paszach dla zwierząt ale również w pigmentach i ceramice, szkle, galwanizacji oraz  katalizatorach.'
+      export const COPPER_DESC = 'Pierwiastek chemiczny z grupy metali przejściowych. Miedź metaliczna jest w kolorze czerwonobrązowym. W postaci metalicznej jest odporna na korozję, wytrzymała, ciągliwa, skutecznie przewodzi prąd i ciepło, łatwo tworzy stopy. Stosowana m.in. w rolnictwie, uzdatnianiu wody, paszach dla zwierząt ale również w pigmentach i ceramice, szkle, galwanizacji oraz katalizatorachierwiastek chemiczny z grupy metali przejściowych w kolorze czerwonobrązowym. Jest odporna na korozję, wytrzymała, ciągliwa, skutecznie przewodzi prąd i ciepło, łatwo tworzy stopy. Miedź stosowany m.in. w rolnictwie, uzdatnianiu wody, paszach dla zwierząt ale również w pigmentach i ceramice, szkle, galwanizacji oraz  katalizatorach.'
 
       //MANGANESE
       export const MANGANESE = 'Mangan';
-      export const MANGANESE_DESC = 'To srebrzystoszary o niebieskim połysku pierwiastek chemiczny należący do grupy metali przejściowych. Wykorzystywany jest do produkcji stali, w tym stali nierdzewnej. Dodawany jest również do stopów z aluminium, poprawiając jego odporność na korozję. Oprócz metalurgii, mangan dodawany jest do paliw, cementu, szkła, farb, nawozów.'
+      export const MANGANESE_DESC = 'To srebrzystoszary o niebieskim połysku pierwiastek chemiczny należący do grupy metali przejściowych. Wykorzystywany jest do produkcji stali, w tym stali nierdzewnej. Dodawany jest również do stopów z aluminium, poprawiając ich odporność na korozję. Oprócz metalurgii, mangan dodawany jest do paliw, cementu, szkła, farb, nawozów.'
 
       //MOLYBDENUM
       export const MOLYBDENUM = 'Molibden';

@@ -32,7 +32,7 @@ const ZincInfo = () => {
         <div className='flex flex-col gap-10 mt-6 pb-3'>
           {data?.ZINC_PRODUCTS.map((product, index) => (
             <div key={product.symbol} className={`flex flex-col md:flex-row gap-7 items-center justify-center ${index !== data?.ZINC_PRODUCTS.length - 1 ? 'border-b-2 border-b-gray-300 pb-8' : ''}`}>
-              <div className='flex card w-48 h-20 bg-base-100 border-primary border-2 justify-center items-center'>
+              <div className='flex card w-52 h-20 bg-base-100 border-primary border-2 justify-center items-center'>
                 <div className='text-center'>
                   <h2 className='text-neutral font-light text-lg'>{product.symbol}</h2>
                 </div>

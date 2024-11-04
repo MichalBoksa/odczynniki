@@ -244,13 +244,19 @@ export const ABOUT_US_LIST = [
   // Productos de Zinc
   export const ZINC_PRODUCTS = [
     {
-        name: 'Nitrato de Zinc',
+        name: 'Nitrato de zinc soluciónc',
         symbol: 'Zn(NO₃)₂',
         cas: '7779-88-6',
         use: ['fertilizantes', 'reactivos químicos']
     },
     {
-        name: 'Cloruro de Zinc',
+        name: 'Nitrato de zinc 6-hidrato',
+        symbol: 'Zn(NO₃)₂•6 H₂O',
+        cas: '10196-18-6',
+        use: ['fertilizantes', 'reactivos químicos']
+    },
+    {
+        name: 'Cloruro de zinc solución',
         symbol: 'ZnCl₂',
         cas: '7646-85-7',
         use: ['horticultura', 'industria de fertilizantes', 'producto intermedio, incluyendo para baterías', 'revestimiento de superficies metálicas']
@@ -273,30 +279,36 @@ export const ABOUT_US_LIST = [
         cas: '1314-13-2',
         use: ['aditivo para pinturas', 'aditivo para barnices', 'cerámica', 'impregnación de madera', 'relleno para gomas, elastómeros, plásticos']
     },
+    {
+        name: 'Acetato de zinc 2-hidrato',
+        symbol: '(CH₃COO)₂Zn•2H₂O',
+        cas: '5970-45-6',
+        use: ['catalizadores', 'inhibidor de corrosión', 'aditivos para alimentos', 'reactivos químicos']
+    },
   ];
   
   // Productos de Manganeso
   export const MANGANESE_PRODUCTS = [
     {
-        name: 'Nitrato de Manganeso',
+        name: 'Nitrato de manganeso solución',
         symbol: 'Mn(NO₃)₂',
         cas: '10377-66-9',
         use: ['industria petroquímica', 'fertilizantes', 'galvanoplastia']
     },
     {
-        name: 'Cloruro de Manganeso',
+        name: 'Cloruro de manganeso solución',
         symbol: 'MnCl₂',
         cas: '7773-01-5',
         use: ['aditivo para alimentación animal', 'producción de baterías', 'fertilizantes', 'reactivos químicos']
     },
     {
-        name: 'Acetato de Manganeso',
+        name: 'Acetato de manganeso 4-hidrato',
         symbol: 'Mn(CH₃COO)₂•4H₂O',
         cas: '6156-78-1',
         use: ['reactivos de síntesis', 'aditivo para fertilizantes', 'aditivo para alimentación animal', 'industria petroquímica']
     },
     {
-        name: 'Sulfato de Manganeso',
+        name: 'Sulfato de manganeso 1-hidrato',
         symbol: 'MnSO₄•H₂O',
         cas: '10034-96-5',
         use: ['fertilizantes', 'aditivo para alimentación animal', 'reactivos de síntesis']
@@ -506,11 +518,11 @@ export const ABOUT_US_LIST = [
   
   //COBRE
   export const COPPER = 'Cobre';
-  export const COPPER_DESC = 'Un elemento químico del grupo de metales de transición con un color marrón rojizo. Es resistente a la corrosión, duradero, dúctil, conduce eficazmente la electricidad y el calor, y forma aleaciones fácilmente. El cobre se utiliza, entre otras cosas, en la agricultura, tratamiento de agua, alimentación animal, así como en pigmentos y cerámicas, vidrio, galvanoplastia y catalizadores.';
+  export const COPPER_DESC = 'Elemento químico del grupo de metales de transición. El cobre metálico es de color marrón rojizo. En su forma metálica, es resistente a la corrosión, duradero, maleable, conduce eficazmente la electricidad y el calor, y forma aleaciones fácilmente. Se utiliza, entre otros, en agricultura, tratamiento de agua, alimentos para animales, así como en pigmentos y cerámica, vidrio, galvanoplastia y catalizadores.';
   
   //MANGANESO
   export const MANGANESE = 'Manganeso';
-  export const MANGANESE_DESC = 'Un elemento de color gris plateado con un brillo azulado, perteneciente al grupo de metales de transición. Se utiliza en la producción de acero, incluido el acero inoxidable. También se añade a las aleaciones de aluminio, mejorando su resistencia a la corrosión. Además de la metalurgia, el manganeso se añade a combustibles, cemento, vidrio, pinturas y fertilizantes.';
+  export const MANGANESE_DESC =  'Es un elemento químico de color gris plateado con un brillo azul, perteneciente al grupo de los metales de transición. Se utiliza en la producción de acero, incluyendo el acero inoxidable. También se añade a aleaciones de aluminio, mejorando su resistencia a la corrosión. Además de la metalurgia, el manganeso se añade a combustibles, cemento, vidrio, pinturas y fertilizantes.';
   
   //MOLIBDENO
   export const MOLYBDENUM = 'Molibdeno';

@@ -248,13 +248,19 @@ export const COPPER_PRODUCTS = [
 //Zinc products
 export const ZINC_PRODUCTS = [
   {
-      name: 'Zinc Nitrate',
+      name: 'Zinc nitrate solution',
       symbol: 'Zn(NO₃)₂',
       cas: '7779-88-6',
       use: ['fertilizers', 'chemical reagents']
   },
   {
-      name: 'Zinc Chloride',
+    name: 'Zinc nitrate hexahydrate',
+    symbol: 'Zn(NO₃)₂•6 H₂O',
+    cas: '10196-18-6',
+    use: ['fertilizers', 'chemical reagents']
+},
+  {
+      name: 'Zinc chloride solution',
       symbol: 'ZnCl₂',
       cas: '7646-85-7',
       use: ['horticulture', 'fertilizer industry', 'intermediate product, including for batteries', 'metal surface coating']
@@ -277,30 +283,38 @@ export const ZINC_PRODUCTS = [
       cas: '1314-13-2',
       use: ['paint additive', 'varnish additive', 'ceramics', 'wood impregnation', 'filler for rubbers, elastomers, plastics']
   },
+
+  {
+    name: 'Zinc acetate dihydrate',
+    symbol: '(CH₃COO)₂Zn•2H₂O',
+    cas: '5970-45-6',
+    use: ['catalysts', 'corrosion inhibitor', 'feed additives', 'chemical reagents']
+},
+  
 ];
 
 //Manganese products
 export const MANGANESE_PRODUCTS = [
   {
-      name: 'Manganese Nitrate',
+      name: 'Manganese nitrate solution',
       symbol: 'Mn(NO₃)₂',
       cas: '10377-66-9',
       use: ['petrochemical industry', 'fertilizers', 'electroplating']
   },
   {
-      name: 'Manganese Chloride',
+      name: 'Manganese chloride solution',
       symbol: 'MnCl₂',
       cas: '7773-01-5',
       use: ['animal feed additive', 'battery production', 'fertilizers', 'chemical reagents']
   },
   {
-      name: 'Manganese Acetate',
+      name: 'Manganese acetate tetrahydrate',
       symbol: 'Mn(CH₃COO)₂•4H₂O',
       cas: '6156-78-1',
       use: ['synthesis reagents', 'fertilizer additive', 'animal feed additive', 'petrochemical industry']
   },
   {
-      name: 'Manganese Sulfate',
+      name: 'Manganese sulfate monohydrate',
       symbol: 'MnSO₄•H₂O',
       cas: '10034-96-5',
       use: ['fertilizers', 'animal feed additive', 'synthesis reagents']
@@ -550,11 +564,11 @@ export const COBALT_DESC = 'A chemical element in the group of transition metals
 
 //COPPER
 export const COPPER = 'Copper';
-export const COPPER_DESC = 'A chemical element from the group of transition metals with a reddish-brown color. It is corrosion-resistant, durable, ductile, effectively conducts electricity and heat, and easily forms alloys. Copper is used, among others, in agriculture, water treatment, animal feed, but also in pigments and ceramics, glass, electroplating, and catalysts.';
+export const COPPER_DESC = 'A chemical element from the group of transition metals. Metallic copper is reddish-brown. In metallic form, it is corrosion-resistant, durable, ductile, conducts electricity and heat effectively, and easily forms alloys. It is used in agriculture, water treatment, animal feed, as well as in pigments and ceramics, glass, electroplating, and catalysts.';
 
 //MANGANESE
 export const MANGANESE = 'Manganese';
-export const MANGANESE_DESC = 'A silvery-gray element with a bluish sheen, belonging to the group of transition metals. It is used in steel production, including stainless steel. It is also added to aluminum alloys, improving its corrosion resistance. In addition to metallurgy, manganese is added to fuels, cement, glass, paints, fertilizers.';
+export const MANGANESE_DESC = 'This is a silvery-gray chemical element with a bluish sheen, belonging to the group of transition metals. It is used in steel production, including stainless steel. It is also added to aluminum alloys, improving their resistance to corrosion. Besides metallurgy, manganese is added to fuels, cement, glass, paints, and fertilizers.';
 
 //MOLYBDENUM
 export const MOLYBDENUM = 'Molybdenum';

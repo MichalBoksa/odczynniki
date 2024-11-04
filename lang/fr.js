@@ -245,13 +245,19 @@ export const COPPER_PRODUCTS = [
 // Produits de zinc
 export const ZINC_PRODUCTS = [
   {
-      name: 'Nitrate de zinc',
+      name: 'Nitrate de zinc solution',
       symbol: 'Zn(NO₃)₂',
       cas: '7779-88-6',
       use: ['engrais', 'réactifs chimiques']
   },
   {
-      name: 'Chlorure de zinc',
+    name: 'Nitrate de zinc hexahydraté',
+    symbol: 'Zn(NO₃)₂•6 H₂O',
+    cas: '10196-18-6',
+    use: ['engrais', 'réactifs chimiques']
+},
+  {
+      name: 'Chlorure de zinc solution',
       symbol: 'ZnCl₂',
       cas: '7646-85-7',
       use: ['horticulture', 'industrie des engrais', 'intermédiaire, y compris pour batteries', 'revêtement des surfaces métalliques']
@@ -274,30 +280,36 @@ export const ZINC_PRODUCTS = [
       cas: '1314-13-2',
       use: ['additif pour peintures', 'additif pour laques', 'utilisé en céramique', 'pour l\'imprégnation du bois', 'agent de remplissage pour caoutchoucs, élastomères, plastiques']
   },
+  {
+    name: 'Acétate de zinc dihydraté',
+    symbol: '(CH₃COO)₂Zn•2H₂O',
+    cas: '5970-45-6',
+    use: ['catalyseurs', 'inhibiteur de corrosion', 'additifs pour aliments', 'réactifs chimiques']
+},
 ];
 
 // Produits de manganèse
 export const MANGANESE_PRODUCTS = [
   {
-      name: 'Nitrate de manganèse',
+      name: 'Nitrate de manganèse solution',
       symbol: 'Mn(NO₃)₂',
       cas: '10377-66-9',
       use: ['industrie pétrochimique', 'engrais', 'galvanoplastie']
   },
   {
-      name: 'Chlorure de manganèse',
+      name: 'Chlorure de manganèse solution',
       symbol: 'MnCl₂',
       cas: '7773-01-5',
       use: ['additif alimentaire pour animaux', 'production de batteries', 'engrais', 'réactifs chimiques']
   },
   {
-      name: 'Acétate de manganèse',
+      name: 'Acétate de manganèse tétrahydraté',
       symbol: 'Mn(CH₃COO)₂•4H₂O',
       cas: '6156-78-1',
       use: ['réactifs pour synthèses', 'additif pour engrais', 'additif alimentaire', 'industrie pétrochimique']
   },
   {
-      name: 'Sulfate de manganèse',
+      name: 'Sulfate de manganèse monohydraté',
       symbol: 'MnSO₄•H₂O',
       cas: '10034-96-5',
       use: ['engrais', 'additif alimentaire', 'réactifs pour synthèses']
@@ -508,11 +520,11 @@ export const COBALT_DESC = 'Élément chimique du groupe des métaux de transiti
 
 // CUIVRE
 export const COPPER = 'Cuivre';
-export const COPPER_DESC = 'Élément chimique du groupe des métaux de transition de couleur brun rougeâtre. Résistant à la corrosion, durable, ductile, il conduit efficacement l\'électricité et la chaleur, et forme facilement des alliages. Le cuivre est utilisé, entre autres, dans l\'agriculture, le traitement de l\'eau, l\'alimentation animale, mais aussi dans les pigments et la céramique, le verre, la galvanoplastie et les catalyseurs.';
+export const COPPER_DESC = 'Élément chimique du groupe des métaux de transition. Le cuivre métallique est de couleur brun rougeâtre. Sous forme métallique, il est résistant à la corrosion, durable, ductile, conduit efficacement l\'électricité et la chaleur, et forme facilement des alliages. Utilisé notamment en agriculture, dans le traitement de l\'eau, les aliments pour animaux, ainsi que dans les pigments et la céramique, le verre, la galvanisation et les catalyseurs.';
 
 // MANGANÈSE
 export const MANGANESE = 'Manganèse';
-export const MANGANESE_DESC = 'Élément chimique argenté à reflet bleu appartenant au groupe des métaux de transition. Utilisé dans la production d\'acier, y compris d\'acier inoxydable. Il est également ajouté aux alliages d\'aluminium pour améliorer leur résistance à la corrosion. En plus de la métallurgie, le manganèse est ajouté aux carburants, au ciment, au verre, aux peintures, aux engrais.';
+export const MANGANESE_DESC = 'C\'est un élément chimique gris argenté avec un éclat bleu, appartenant au groupe des métaux de transition. Il est utilisé dans la production d\'acier, y compris l\'acier inoxydable. Il est également ajouté aux alliages d\'aluminium, améliorant leur résistance à la corrosion. En dehors de la métallurgie, le manganèse est ajouté aux carburants, au ciment, au verre, aux peintures et aux engrais.';
 
 // MOLYBDÈNE
 export const MOLYBDENUM = 'Molybdène';

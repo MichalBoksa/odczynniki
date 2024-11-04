@@ -244,13 +244,19 @@ export const COPPER_PRODUCTS = [
 //Zinc products
 export const ZINC_PRODUCTS = [
   {
-      name: 'Zinknitrat',
+      name: 'Zinknitrat Lösung',
       symbol: 'Zn(NO₃)₂',
       cas: '7779-88-6',
       use: ['Düngemittel', 'Chemische Reagenzien']
   },
   {
-      name: 'Zinkchlorid',
+    name: 'Zinknitrat 6-hydrat',
+    symbol: 'Zn(NO₃)₂•6 H₂O',
+    cas: '10196-18-6',
+    use: ['Düngemittel', 'chemische Reagenzien']
+},
+  {
+      name: 'Zinkchlorid Lösung',
       symbol: 'ZnCl₂',
       cas: '7646-85-7',
       use: ['Gartenbau', 'Düngemittelindustrie', 'Zwischenprodukt, unter anderem für Batterien', 'Metalloberflächenbeschichtung']
@@ -273,30 +279,36 @@ export const ZINC_PRODUCTS = [
       cas: '1314-13-2',
       use: ['Farbenzusatz', 'Lackzusatz', 'Keramik', 'Holzimprägnierung', 'Füllstoff für Gummis, Elastomere, Kunststoffe']
   },
+  {
+    name: 'Zinkacetat 2-hydrat',
+    symbol: '(CH₃COO)₂Zn•2H₂O',
+    cas: '5970-45-6',
+    use: ['Katalysatoren', 'Korrosionsinhibitor', 'Futtermittelzusatz', 'chemische Reagenzien']
+},
 ];
 
 //Manganese products
 export const MANGANESE_PRODUCTS = [
   {
-      name: 'Mangannitrat',
+      name: 'Mangan(II)-nitrat Lösungt',
       symbol: 'Mn(NO₃)₂',
       cas: '10377-66-9',
       use: ['Petrochemische Industrie', 'Düngemittel', 'Galvanik']
   },
   {
-      name: 'Manganchlorid',
+      name: 'Mangan(II)-chlorid Lösung',
       symbol: 'MnCl₂',
       cas: '7773-01-5',
       use: ['Tierfutterzusatz', 'Batterieproduktion', 'Düngemittel', 'Chemische Reagenzien']
   },
   {
-      name: 'Manganacetat',
+      name: 'Mangan(II)-acetat 4-hydrat',
       symbol: 'Mn(CH₃COO)₂•4H₂O',
       cas: '6156-78-1',
       use: ['Synthesereagenzien', 'Düngemittelzusatz', 'Tierfutterzusatz', 'Petrochemische Industrie']
   },
   {
-      name: 'Mangansulfat',
+      name: 'Mangan(II)-sulfat 1-hydrat',
       symbol: 'MnSO₄•H₂O',
       cas: '10034-96-5',
       use: ['Düngemittel', 'Tierfutterzusatz', 'Synthesereagenzien']
@@ -486,11 +498,11 @@ export const COBALT_DESC = 'Ein chemisches Element der Gruppe der Übergangsmeta
 
 //COPPER
 export const COPPER = 'Kupfer';
-export const COPPER_DESC = 'Ein chemisches Element aus der Gruppe der Übergangsmetalle mit einer rötlich-braunen Farbe. Es ist korrosionsbeständig, langlebig, duktil, leitet Strom und Wärme effektiv und bildet leicht Legierungen. Kupfer wird unter anderem in der Landwirtschaft, Wasseraufbereitung, Tierfütterung, aber auch in Pigmenten und Keramik, Glas, Galvanik und Katalysatoren verwendet.';
+export const COPPER_DESC = 'Ein chemisches Element aus der Gruppe der Übergangsmetalle. Kupfer ist rotbraun. In metallischer Form ist es korrosionsbeständig, langlebig, duktil, leitet Strom und Wärme effektiv und bildet leicht Legierungen. Es wird unter anderem in der Landwirtschaft, in der Wasseraufbereitung, in Tierfutter sowie in Pigmenten und Keramik, Glas, Galvanisierung und Katalysatoren verwendet.';
 
 //MANGANESE
 export const MANGANESE = 'Mangan';
-export const MANGANESE_DESC = 'Ein silbrig-graues Element mit einem bläulichen Glanz, das zur Gruppe der Übergangsmetalle gehört. Es wird in der Stahlproduktion, einschließlich rostfreiem Stahl, verwendet. Es wird auch zu Aluminiumlegierungen hinzugefügt, um die Korrosionsbeständigkeit zu verbessern. Neben der Metallurgie wird Mangan zu Kraftstoffen, Zement, Glas, Farben, Düngemitteln hinzugefügt.';
+export const MANGANESE_DESC = 'Dies ist ein chemisches Element mit einer silbergrauen Farbe und einem bläulichen Schimmer, das zur Gruppe der Übergangsmetalle gehört. Es wird zur Stahlproduktion, einschließlich Edelstahl, verwendet. Es wird auch zu Aluminiumlegierungen hinzugefügt, wodurch ihre Korrosionsbeständigkeit verbessert wird. Neben der Metallurgie wird Mangan in Kraftstoffen, Zement, Glas, Farben und Düngemitteln eingesetzt.';
 
 //MOLYBDENUM
 export const MOLYBDENUM = 'Molybdän';

@@ -128,14 +128,14 @@ export const ABOUT_US_LIST = [
   // Productos de Molibdeno
   export const MOLYBDENUM_PRODUCTS = [
     {
-        name: 'Molibdato de Sodio',
-        symbol: 'Na₂MoO₄',
-        cas: '7631-95-0',
+        name: 'Molibdato de sodio 2-hidrato',
+        symbol: 'Na₂MoO₄·2H₂O',
+        cas: '10102-40-6',
         use: ['aditivo para alimentación animal', 'industria de fertilizantes', 'pigmentos', 'tratamiento de agua', 'inhibidor de corrosión', 'anticongelantes y refrigerantes para motores']
     },
     {
-        name: 'Heptamolibdato de Amonio',
-        cas: '12054-85-2',
+        name: 'Heptamolibdato de amonio 4-hidrato',
+        cas: '12054-85-2 (CAS: 12027-67-7 - anhidro)',
         symbol: '(NH₄)₆Mo₇O₂₄·4H₂O',
         use: ['industria de fertilizantes', 'catalizador', 'inhibidor de corrosión', 'química analítica']
     },
@@ -162,67 +162,91 @@ export const ABOUT_US_LIST = [
         use: ['aditivo para vidrio', 'reactivos químicos']
     },
     {
-        name: 'Premixes 1% - 10%',
+        name: 'Premixes 1% - 10% Se',
         symbol: 'Na₂SeO₃/CaMg(CO₃)₂',
         cas: '10102-18-8',
-        use: ['aditivo para alimentación animal', 'parte de sustancias de construcción', 'participa en mecanismos antioxidantes', 'afecta el metabolismo y la inmunidad de los animales', 'agricultura']
+        use: ['aditivo para piensos para animales']
     },
   ];
   
   // Productos de Cobalto
   export const COBALT_PRODUCTS = [
     {
-        name: 'Carbonato de Cobalto Granulado Recubierto - Co 1-5%',
+        name: 'Carbonato de Cobalto Granulado Recubierto - Co 2-5%',
         symbol: 'CoCO₃/CaMg(CO₃)₂',
-        cas: '513-79-1',
-        use: ['aditivo para alimentación', 'su presencia en el cuerpo animal está asociada con la vitamina B12, y el papel del cobalto está estrechamente relacionado con la presencia de esta vitamina']
-    },
+        cas: '513-79-1 portador: CaMg(CO₃)₂',
+        use: ['aditivo para piensos'] 
+        },
   ];
   
   // Productos de Níquel
   export const NICKEL_PRODUCTS = [
     {
-        name: 'Nitrato de Níquel',
+        name: 'Nitrato de níquel solución',
         symbol: 'Ni(NO₃)₂',
         cas: '13138-45-9',
         use: ['producción de baterías', 'catalizadores', 'reactivos químicos', 'galvanoplastia (niquelado)']
     },
     {
-        name: 'Cloruro de Níquel',
+        name: 'Nitrato de níquel 6-hidrato',
+        symbol: 'Ni(NO₃)₂•6H₂O',
+        cas: '13478-00-7',
+        use: ['producción de baterías', 'catalizadores', 'reactivos químicos', 'galvanoplastia (niquelado)']
+    },
+    {
+        name: 'Cloruro de níquel 6-hidrato',
         symbol: 'NiCl₂•6H₂O',
         cas: '7791-20-0',
         use: ['pinturas', 'barnices']
     },
     {
-        name: 'Sulfato de Níquel',
+        name: 'Sulfato de níquel 6-hidrato',
         symbol: 'NiSO₄•6H₂O',
         cas: '10101-97-0',
         use: ['aditivo para producción de biogás', 'aditivo para vidrio', 'pigmentos', 'galvanoplastia', 'producción de baterías']
+    },
+    {
+        name: 'Sulfato de níquel 7-hidrato',
+        symbol: 'NiSO₄•7H₂O',
+        cas: '10101-98-1',
+        use: ['aditivo para la producción de biogás', 'aditivo para vidrio', 'pigmentos', 'galvanoplastia', 'producción de baterías']
     },
   ];
   
   // Productos de Cobre
   export const COPPER_PRODUCTS = [
     {
-        name: 'Nitrato de Cobre',
+        name: 'Nitrato de cobre solución',
         symbol: 'Cu(NO₃)₂',
         cas: '3251-23-8',
         use: ['fertilizantes', 'catalizadores', 'galvanoplastia', 'pigmentos', 'tratamiento de superficies no metálicas']
     },
     {
-        name: 'Cloruro de Cobre',
+        name: 'Nitrato de cobre 3-hidrato',
+        symbol: 'Cu(NO₃)₂•3H₂O',
+        cas: '10031-43-3',
+        use: ['fertilizantes', 'catalizadores', 'galvanoplastia', 'pigmentos', 'tratamiento de superficies no metálicas']
+    },
+    {
+        name: 'Cloruro de cobre solución',
         symbol: 'CuCl₂',
         cas: '7447-39-4',
         use: ['industria química', 'fertilizantes', 'reactivos analíticos', 'catalizador en química orgánica']
     },
     {
-        name: 'Sulfato de Cobre',
+        name: 'Cloruro de cobre 2-hidrato',
+        symbol: 'CuCl₂•2H₂O',
+        cas: '10125-13-0',
+        use: ['industria química', 'fertilizantes', 'reactivos de análisis', 'catalizador en química orgánica']
+    },
+    {
+        name: 'Sulfato de cobre 5-hidrato',
         symbol: 'CuSO₄•5H₂O',
         cas: '7758-99-8',
         use: ['aditivo para fertilizantes y pesticidas', 'aditivo para alimentación', 'agente bactericida', 'producción de absorbentes', 'galvanoplastia', 'pigmentos']
     },
     {
-        name: 'Acetato de Cobre',
+        name: 'Acetato de cobre 1-hidrato',
         symbol: 'Cu(CH₃COO)₂•H₂O',
         cas: '6046-93-1',
         use: ['aplicaciones de laboratorio', 'pigmentos']

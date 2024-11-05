@@ -129,14 +129,14 @@ export const PRODUCTS = [
 // Produits de molybdène
 export const MOLYBDENUM_PRODUCTS = [
   {
-      name: 'Molybdate de sodium',
-      symbol: 'Na₂MoO₄',
-      cas: '7631-95-0',
+      name: 'Molybdate de sodium dihydraté',
+      symbol: 'Na₂MoO₄·2H₂O',
+      cas: '10102-40-6',
       use: ['additif alimentaire pour animaux', 'industrie des engrais', 'pigments', 'traitement de l\'eau', 'inhibiteur de corrosion', 'antigel et liquides de refroidissement pour moteurs']
   },
   {
-      name: 'Heptamolybdate d\'ammonium',
-      cas: '12054-85-2',
+      name: 'Heptamolybdate d\'ammonium tétrahydraté',
+      cas: '12054-85-2 (CAS: 12027-67-7 - anhydre)',
       symbol: '(NH₄)₆Mo₇O₂₄·4H₂O',
       use: ['industrie des engrais', 'catalyseur', 'inhibiteur de corrosion', 'chimie analytique']
   },
@@ -163,67 +163,91 @@ export const SELENIUM_PRODUCTS = [
       use: ['additif pour verre', 'réactifs chimiques']
   },
   {
-      name: 'Premix 1% - 10%',
+      name: 'Premix 1% - 10% Se',
       symbol: 'Na₂SeO₃/CaMg(CO₃)₂',
       cas: '10102-18-8',
-      use: ['additif alimentaire pour animaux', 'composant de substances de construction', 'participe aux mécanismes antioxydants', 'affecte le métabolisme et l\'immunité des animaux', 'agriculture']
-  },
+      use: ['additif pour aliments pour animaux']
+      },
 ];
 
 // Produits de cobalt
 export const COBALT_PRODUCTS = [
   {
-      name: 'Carbonate de cobalt granulé enrobé - Co 1-5%',
+      name: 'Carbonate de cobalt granulé enrobé - Co 2-5%',
       symbol: 'CoCO₃/CaMg(CO₃)₂',
-      cas: '513-79-1',
-      use: ['additif alimentaire', 'sa présence dans le corps des animaux est liée à la vitamine B12, et le rôle du cobalt est étroitement lié à la présence de cette vitamine']
-  },
+      cas: '513-79-1 support: CaMg(CO₃)₂',
+      use: ['additif pour aliments pour animaux']
+    },
 ];
 
 // Produits de nickel
 export const NICKEL_PRODUCTS = [
   {
-      name: 'Nitrate de nickel',
+      name: 'Nitrate de nickel solution',
       symbol: 'Ni(NO₃)₂',
       cas: '13138-45-9',
       use: ['production de batteries', 'catalyseurs', 'réactifs chimiques', 'galvanoplastie (nickelage)']
   },
   {
-      name: 'Chlorure de nickel',
+    name: 'Nitrate de nickel hexahydraté',
+    symbol: 'Ni(NO₃)₂•6H₂O',
+    cas: '13478-00-7',
+    use: ['production de batteries', 'catalyseurs', 'réactifs chimiques', 'galvanoplastie (nickelage)']
+},
+  {
+      name: 'Chlorure de nickel hexahydraté',
       symbol: 'NiCl₂•6H₂O',
       cas: '7791-20-0',
       use: ['peintures', 'laques']
   },
   {
-      name: 'Sulfate de nickel',
+      name: 'Sulfate de nickel hexahydraté',
       symbol: 'NiSO₄•6H₂O',
       cas: '10101-97-0',
       use: ['additif pour la production de biogaz', 'additif pour verre', 'pigments', 'galvanoplastie', 'production de batteries']
   },
+  {
+    name: 'Sulfate de nickel heptahydraté',
+    symbol: 'NiSO₄•7H₂O',
+    cas: '10101-98-1',
+    use: ['additif pour la production de biogaz', 'additif pour le verre', 'pigments', 'galvanoplastie', 'production de batteries']
+},
 ];
 
 // Produits de cuivre
 export const COPPER_PRODUCTS = [
   {
-      name: 'Nitrate de cuivre',
+      name: 'Nitrate de cuivre solution',
       symbol: 'Cu(NO₃)₂',
       cas: '3251-23-8',
       use: ['engrais', 'catalyseurs', 'galvanoplastie', 'pigments', 'traitement des surfaces non métalliques']
   },
   {
-      name: 'Chlorure de cuivre',
+    name: 'Nitrate de cuivre trihydraté',
+    symbol: 'Cu(NO₃)₂•3H₂O',
+    cas: '10031-43-3',
+    use: ['engrais', 'catalyseurs', 'galvanoplastie', 'pigments', 'traitement de surface des matériaux non métalliques']
+  },
+  {
+      name: 'Chlorure de cuivre solution',
       symbol: 'CuCl₂',
       cas: '7447-39-4',
       use: ['industrie chimique', 'engrais', 'réactifs pour analyses', 'catalyseur en chimie organique']
   },
   {
-      name: 'Sulfate de cuivre',
+    name: 'Chlorure de cuivre dihydraté',
+    symbol: 'CuCl₂•2H₂O',
+    cas: '10125-13-0',
+    use: ['industrie chimique', 'engrais', 'réactifs d\'analyse', 'catalyseur en chimie organique']
+},
+  {
+      name: 'Sulfate de cuivre pentahydraté',
       symbol: 'CuSO₄•5H₂O',
       cas: '7758-99-8',
       use: ['additif pour engrais et pesticides', 'additif alimentaire', 'bactéricide', 'production d\'absorbants', 'galvanoplastie', 'pigments']
   },
   {
-      name: 'Acétate de cuivre',
+      name: 'Acétate de cuivre monohydraté',
       symbol: 'Cu(CH₃COO)₂•H₂O',
       cas: '6046-93-1',
       use: ['applications de laboratoire', 'pigments']

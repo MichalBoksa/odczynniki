@@ -128,14 +128,14 @@ export const PRODUCTS = [
 //Molybdenum products
 export const MOLYBDENUM_PRODUCTS = [
   {
-      name: 'Natriummolybdat',
-      symbol: 'Na₂MoO₄',
-      cas: '7631-95-0',
+      name: 'Natriummolybdat 2-hydrat',
+      symbol: 'Na₂MoO₄·2H₂O',
+      cas: '10102-40-6',
       use: ['Tierfutterzusatz', 'Düngemittelindustrie', 'Pigmente', 'Wasseraufbereitung', 'Korrosionsinhibitor', 'Frostschutzmittel und Motorkühlmittel']
   },
   {
-      name: 'Ammoniumheptamolybdat',
-      cas: '12054-85-2',
+      name: 'Ammoniumheptamolybdat 4-hydrat',
+      cas: '12054-85-2 (CAS: 12027-67-7 - wasserfrei)',
       symbol: '(NH₄)₆Mo₇O₂₄·4H₂O',
       use: ['Düngemittelindustrie', 'Katalysator', 'Korrosionsinhibitor', 'Analytische Chemie']
   },
@@ -162,67 +162,90 @@ export const SELENIUM_PRODUCTS = [
       use: ['Glaszusatz', 'Chemische Reagenzien']
   },
   {
-      name: 'Premixe 1% - 10%',
+      name: 'Premixe 1% - 10% Se',
       symbol: 'Na₂SeO₃/CaMg(CO₃)₂',
       cas: '10102-18-8',
-      use: ['Tierfutterzusatz', 'Bestandteil von Baustoffen', 'Beteiligt an Antioxidationsmechanismen', 'Beeinflusst den Stoffwechsel und die Immunität von Tieren', 'Landwirtschaft']
-  },
+      use: ['Zusatzstoff für Tierfutter']
+      },
 ];
 
 //Cobalt products
 export const COBALT_PRODUCTS = [
   {
-      name: 'Beschichtetes Granuliertes Kobaltcarbonat - Co 1-5%',
+      name: 'Beschichtetes Granuliertes Kobaltcarbonat - Co 2-5%',
       symbol: 'CoCO₃/CaMg(CO₃)₂',
-      cas: '513-79-1',
-      use: ['Futterzusatz', 'Seine Präsenz im Tierkörper ist mit Vitamin B12 verbunden, und die Rolle von Kobalt steht in engem Zusammenhang mit der Präsenz dieses Vitamins']
-  },
+      cas: '513-79-1 Träger: CaMg(CO₃)₂',
+      use: ['Futtermittelzusatz']  },
 ];
 
 //Nickel products
 export const NICKEL_PRODUCTS = [
   {
-      name: 'Nickelnitrat',
+      name: 'Nickelnitrat Lösung',
       symbol: 'Ni(NO₃)₂',
       cas: '13138-45-9',
       use: ['Batterieproduktion', 'Katalysatoren', 'Chemische Reagenzien', 'Galvanik (Vernickeln)']
   },
   {
-      name: 'Nickelchlorid',
+    name: 'Nickelnitrat 6-hydrat',
+    symbol: 'Ni(NO₃)₂•6H₂O',
+    cas: '13478-00-7',
+    use: ['Batterieproduktion', 'Katalysatoren', 'chemische Reagenzien', 'Galvanik (Vernickelung)']
+},
+  {
+      name: 'Nickelchlorid 6-hydrat',
       symbol: 'NiCl₂•6H₂O',
       cas: '7791-20-0',
       use: ['Farben', 'Lacke']
   },
   {
-      name: 'Nickelsulfat',
+      name: 'Nickelsulfat 6-hydrat',
       symbol: 'NiSO₄•6H₂O',
       cas: '10101-97-0',
       use: ['Zusatz zur Biogasproduktion', 'Glaszusatz', 'Pigmente', 'Galvanik', 'Batterieproduktion']
   },
+  {
+    name: 'Nickelsulfat 7-hydrat',
+    symbol: 'NiSO₄•7H₂O',
+    cas: '10101-98-1',
+    use: ['Zusatzstoff zur Biogasproduktion', 'Zusatzstoff für Glas', 'Pigmente', 'Galvanisierung', 'zur Batterieproduktion']
+},
 ];
 
 //Copper products
 export const COPPER_PRODUCTS = [
   {
-      name: 'Kupfernitrat',
+      name: 'Kupfernitrat Lösung',
       symbol: 'Cu(NO₃)₂',
       cas: '3251-23-8',
       use: ['Düngemittel', 'Katalysatoren', 'Galvanik', 'Pigmente', 'Oberflächenbehandlung von Nichtmetallen']
   },
   {
-      name: 'Kupferchlorid',
+    name: 'Kupfernitrat 3-hydrat',
+    symbol: 'Cu(NO₃)₂•3H₂O',
+    cas: '10031-43-3',
+    use: ['Düngemittel', 'Katalysatoren', 'Galvanik', 'Pigmente', 'Oberflächenbehandlung nichtmetallischer Materialien']
+  },
+  {
+      name: 'Kupferchlorid Lösung',
       symbol: 'CuCl₂',
       cas: '7447-39-4',
       use: ['Chemische Industrie', 'Düngemittel', 'Analytische Reagenzien', 'Katalysator in der organischen Chemie']
   },
   {
-      name: 'Kupfersulfat',
+    name: 'Kupferchlorid 2-hydrat',
+    symbol: 'CuCl₂•2H₂O',
+    cas: '10125-13-0',
+    use: ['chemische Industrie', 'Düngemittel', 'Analyse-Reagenzien', 'Katalysator in der organischen Chemie']
+},
+  {
+      name: 'Kupfersulfat 5-hydrat',
       symbol: 'CuSO₄•5H₂O',
       cas: '7758-99-8',
       use: ['Düngemittel- und Pestizidzusatz', 'Futterzusatz', 'Bakterizides Mittel', 'Absorbensproduktion', 'Galvanik', 'Pigmente']
   },
   {
-      name: 'Kupferacetat',
+      name: 'Kupferacetat 1-hydrat',
       symbol: 'Cu(CH₃COO)₂•H₂O',
       cas: '6046-93-1',
       use: ['Laboranwendungen', 'Pigmente']

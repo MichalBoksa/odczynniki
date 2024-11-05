@@ -132,9 +132,9 @@ export const PRODUCTS = [
 //Molybdenum products
 export const MOLYBDENUM_PRODUCTS = [
   {
-      name: 'Sodium Molybdate',
-      symbol: 'Na₂MoO₄',
-      cas: '7631-95-0',
+      name: 'Sodium molybdate dihydrate',
+      symbol: 'Na₂MoO₄·2H₂O',
+      cas: '10102-40-6',
       use: ['animal feed additive', 'fertilizer industry', 'pigments', 'water treatment', 'corrosion inhibitor', 'antifreeze and engine coolants']
   },
   {
@@ -166,67 +166,91 @@ export const SELENIUM_PRODUCTS = [
       use: ['glass additive', 'chemical reagents']
   },
   {
-      name: 'Premixes 1% - 10%',
+      name: 'Premixes 1% - 10% Se',
       symbol: 'Na₂SeO₃/CaMg(CO₃)₂',
       cas: '10102-18-8',
-      use: ['animal feed additive', 'part of building substances', 'participates in antioxidant mechanisms', 'affects animal metabolism and immunity', 'agriculture']
+      use: ['animal feed additive']
   },
 ];
 
 //Cobalt products
 export const COBALT_PRODUCTS = [
   {
-      name: 'Coated Granulated Cobalt Carbonate - Co 1-5%',
+      name: 'Coated Granulated Cobalt Carbonate - Co 2-5%',
       symbol: 'CoCO₃/CaMg(CO₃)₂',
-      cas: '513-79-1',
-      use: ['feed additive', 'its presence in the animal body is associated with vitamin B12, and the role of cobalt is closely related to the presence of this vitamin']
-  },
+      cas: '513-79-1 carrier: CaMg(CO₃)₂',
+      use: ['feed additive']
+     },
 ];
 
 //Nickel products
 export const NICKEL_PRODUCTS = [
   {
-      name: 'Nickel Nitrate',
+      name: 'Nickel nitrate solution',
       symbol: 'Ni(NO₃)₂',
       cas: '13138-45-9',
       use: ['battery production', 'catalysts', 'chemical reagents', 'electroplating (nickel plating)']
   },
   {
-      name: 'Nickel Chloride',
+    name: 'Nickel nitrate hexahydrate',
+    symbol: 'Ni(NO₃)₂•6H₂O',
+    cas: '13478-00-7',
+    use: ['battery production', 'catalysts', 'chemical reagents', 'electroplating (nickeling)']
+},
+  {
+      name: 'Nickel chloride hexahydrate',
       symbol: 'NiCl₂•6H₂O',
       cas: '7791-20-0',
       use: ['paints', 'varnishes']
   },
   {
-      name: 'Nickel Sulfate',
+      name: 'Nickel sulfate hexahydrate',
       symbol: 'NiSO₄•6H₂O',
       cas: '10101-97-0',
       use: ['biogas production additive', 'glass additive', 'pigments', 'electroplating', 'battery production']
   },
+  {
+    name: 'Nickel sulfate heptahydrate',
+    symbol: 'NiSO₄•7H₂O',
+    cas: '10101-98-1',
+    use: ['additive for biogas production', 'glass additive', 'pigments', 'electroplating', 'battery production']
+},
 ];
 
 //Copper products
 export const COPPER_PRODUCTS = [
   {
-      name: 'Copper Nitrate',
+      name: 'Copper nitrate solution',
       symbol: 'Cu(NO₃)₂',
       cas: '3251-23-8',
       use: ['fertilizers', 'catalysts', 'electroplating', 'pigments', 'non-metallic surface treatment']
   },
   {
-      name: 'Copper Chloride',
+    name: 'Copper nitrate trihydrate',
+    symbol: 'Cu(NO₃)₂•3H₂O',
+    cas: '10031-43-3',
+    use: ['fertilizers', 'catalysts', 'electroplating', 'pigments', 'surface treatment of non-metallic materials']
+  },
+  {
+      name: 'Copper chloride solution',
       symbol: 'CuCl₂',
       cas: '7447-39-4',
       use: ['chemical industry', 'fertilizers', 'analytical reagents', 'catalyst in organic chemistry']
   },
   {
-      name: 'Copper Sulfate',
+    name: 'Copper chloride dihydrate',
+    symbol: 'CuCl₂•2H₂O',
+    cas: '10125-13-0',
+    use: ['chemical industry', 'fertilizers', 'analytical reagents', 'catalyst in organic chemistry']
+  },
+  {
+      name: 'Copper sulfate pentahydrate',
       symbol: 'CuSO₄•5H₂O',
       cas: '7758-99-8',
       use: ['fertilizer and pesticide additive', 'feed additive', 'bactericidal agent', 'absorbent production', 'electroplating', 'pigments']
   },
   {
-      name: 'Copper Acetate',
+      name: 'Copper acetate monohydrate',
       symbol: 'Cu(CH₃COO)₂•H₂O',
       cas: '6046-93-1',
       use: ['laboratory applications', 'pigments']

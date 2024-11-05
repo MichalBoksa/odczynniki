@@ -276,7 +276,7 @@ export const NAV_LINKS = [
             },
 
             {
-              name: 'Miedzi Azotan roztwór',
+              name: 'Miedzi Azotan 3hydrat',
               symbol: 'Cu(NO₃)₂•3H₂O',
               cas: '10031-43-3',
               use: [ 'nawozy', 

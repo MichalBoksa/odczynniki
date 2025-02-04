@@ -510,6 +510,24 @@ export const TRADE_TEAM = [
     }
 ];
 
+export const SETTLEMENT_TEAM = [
+  {
+    name: "Agnieszka Piątkowska",
+    email: "apiatkowska@odczynniki.com.pl",
+    mobile: "+48 885 785 007"
+  },
+  {
+    name: "Małgorzata Kopniak",
+    email: "mkopniak@odczynniki.com.pl",
+    mobile: "+48 506 265 125"
+  },
+  {
+    name: "Ewelina Buszko",
+    email: "ebuszko@odczynniki.com.pl",
+    mobile: "+48 885 785 002"
+  }
+];
+
 //CERTIFICATES
 export const OUR_CERTIFICATES = 'Unsere Zertifikate'
 

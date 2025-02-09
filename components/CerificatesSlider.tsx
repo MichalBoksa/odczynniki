@@ -23,7 +23,23 @@ const CerificatesSlider = () => {
         <div id="item2" className="carousel-item w-full">
           <CldImage src={cert.srcIso} width={450} height={700} alt="" className="mr-auto ml-auto" />
         </div> 
-   
+
+        <div id="item3" className="carousel-item w-full">
+          <CldImage src={cert.srcIso9001} width={450} height={700} alt="" className="mr-auto ml-auto" />
+        </div> 
+
+        <div id="item4" className="carousel-item w-full">
+        <CldImage src={cert.srcIso14001} width={450} height={700} alt="" className="mr-auto ml-auto" />
+        </div> 
+
+        <div id="item5" className="carousel-item w-full">
+          <CldImage src={cert.srcIso46001} width={450} height={700} alt="" className="mr-auto ml-auto" />
+        </div> 
+
+        <div id="item6" className="carousel-item w-full">
+          <CldImage src={cert.srcIso50001} width={450} height={700} alt="" className="mr-auto ml-auto" />
+        </div> 
+        
       </div> 
     
     ))}
@@ -32,6 +48,10 @@ const CerificatesSlider = () => {
     <div className="flex justify-center w-full py-2 gap-2 mt-3">
       <a href="#item1" className="btn btn-xs bg-cream">1</a> 
       <a href="#item2" className="btn btn-xs bg-cream">2</a> 
+      <a href="#item3" className="btn btn-xs bg-cream">3</a> 
+      <a href="#item4" className="btn btn-xs bg-cream">4</a> 
+      <a href="#item5" className="btn btn-xs bg-cream">5</a> 
+      <a href="#item6" className="btn btn-xs bg-cream">6</a> 
     </div>
       </div>
   </div>

@@ -42,28 +42,52 @@ export const NAV_LINKS = [
  export const CERTIFICATES = [
       { code: 'en',
         srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1722334775/midas/aboutus/kjtrthjvcwfzsfe0vogh.jpg',
-        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' },
+        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg', 
+        srcIso9001: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO9001_EN_vzy9ja.pdf',
+        srcIso14001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO14001_EN_yahzzm.pdf',
+        srcIso46001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikaty_ISO45001_EN_qmfwhq.pdf',
+        srcIso50001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO50001_EN_il7iyc.pdf' },
         
       { code: 'pl',
-        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aub3f6kxlaap4mfgyjre.jpg',
-        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/jgnsjhoxomyio4unnl4b.jpg' },
-
+         srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aub3f6kxlaap4mfgyjre.jpg',
+        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/jgnsjhoxomyio4unnl4b.jpg',
+        srcIso9001: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert/Certificate_ISO9001_PL_ststmk.pdf',
+        srcIso14001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert/Certyfikat_ISO14001_PL_l5b7pe.pdf',
+        srcIso46001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert/Certyfikat_ISO45001_PL_gxbvde.pdf',
+        srcIso50001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert/Certyfikat_ISO50001_PL_uyyq4a.pdf' },
+    
       { code: 'fr',
-        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/ly8df26mvzuncfs0if2d.jpg',
-        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' },
-
+        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1722334775/midas/aboutus/kjtrthjvcwfzsfe0vogh.jpg',
+        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' ,
+        srcIso9001: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO9001_EN_vzy9ja.pdf',
+        srcIso14001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO14001_EN_yahzzm.pdf',
+        srcIso46001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikaty_ISO45001_EN_qmfwhq.pdf',
+        srcIso50001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO50001_EN_il7iyc.pdf' },
+    
       { code: 'es',
-        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/tjphvg4vothltegvnzxg.jpg',
-        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' },      
+        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1722334775/midas/aboutus/kjtrthjvcwfzsfe0vogh.jpg',
+        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' ,
+        srcIso9001: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO9001_EN_vzy9ja.pdf',
+        srcIso14001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO14001_EN_yahzzm.pdf',
+        srcIso46001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikaty_ISO45001_EN_qmfwhq.pdf',
+        srcIso50001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO50001_EN_il7iyc.pdf' },
     
       { code: 'ru',
-        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/sjwkkbrnk4ib2zjxtrbb.jpg',
-        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' },   
-          
+        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1722334775/midas/aboutus/kjtrthjvcwfzsfe0vogh.jpg',
+        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' ,
+        srcIso9001: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO9001_EN_vzy9ja.pdf',
+        srcIso14001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO14001_EN_yahzzm.pdf',
+        srcIso46001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikaty_ISO45001_EN_qmfwhq.pdf',
+        srcIso50001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO50001_EN_il7iyc.pdf' },
+         
       { code: 'de',
-        srcIso:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/livl2jkmjsbegbgmpf6c.jpg',
-        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/e16hfbxnlekccikyobye.jpg' },   
-
+        srcIso: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1722334775/midas/aboutus/kjtrthjvcwfzsfe0vogh.jpg',
+        srcGmp:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/aboutus/jhadx45ow2f30ncb8gyf.jpg' ,
+        srcIso9001: 'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO9001_EN_vzy9ja.pdf',
+        srcIso14001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO14001_EN_yahzzm.pdf',
+        srcIso46001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikaty_ISO45001_EN_qmfwhq.pdf',
+        srcIso50001:'https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/cert_eng/Certyfikat_ISO50001_EN_il7iyc.pdf' },
+    
       ]
 
       export const MOLYBDENUM_PRODUCTS = [

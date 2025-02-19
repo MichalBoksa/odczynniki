@@ -6,6 +6,7 @@ export const NAV_LINKS = [
   { href: '/products', key: 'products', label: 'OUR PRODUCTS' },
   { href: '/careers', key: 'careers', label: 'CAREERS' },
   { href: '/news', key: 'news', label: 'NEWS' },
+  { href: 'https://sklep.odczynniki.com.pl/', key: 'shop', label: 'RETAIL SHOP' },
   { href: '/contactUs', key: 'contact_us', label: 'CONTACT' },
   { href: '/euFunds', key: 'euFunds', label: 'EU FUNDS' },
 ];

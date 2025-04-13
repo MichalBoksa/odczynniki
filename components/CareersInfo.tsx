@@ -89,7 +89,7 @@ const CareersInfo = () => {
             </div>
           </div>
 
-          <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
+          {/* <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">{data?.JOB_TITLE2}</h2>
               <div className="card-actions justify-end">
@@ -98,7 +98,7 @@ const CareersInfo = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

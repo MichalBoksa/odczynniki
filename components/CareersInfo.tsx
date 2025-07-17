@@ -78,7 +78,7 @@ const CareersInfo = () => {
           <h1 className='font-semibold text-3xl text-neutral'>{data?.JOB_LIST}</h1>
         </div>
         <div className='flex flex-col lg:flex-row lg:justify-center lg:gap-10 mt-10'>
-          <div className="card w-full lg:w-96 bg-base-100 shadow-xl mb-6 lg:mb-0">
+          {/* <div className="card w-full lg:w-96 bg-base-100 shadow-xl mb-6 lg:mb-0">
             <div className="card-body">
               <h2 className="card-title">{data?.JOB_TITLE1}</h2>
               <div className="card-actions justify-end">
@@ -87,9 +87,9 @@ const CareersInfo = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
+          <div className="card w-full lg:w-96 bg-base-100 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">{data?.JOB_TITLE2}</h2>
               <div className="card-actions justify-end">
@@ -98,7 +98,7 @@ const CareersInfo = () => {
                 </Link>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

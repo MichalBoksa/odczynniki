@@ -50,11 +50,32 @@ const Navbar = () => {
               ): link.key === 'aboutUs' ? (
               (<div key={link.label} className=" dropdown dropdown-hover ">
                 <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 items-center justify-center">{link.label}</div>
-                  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-56">
-                    {data?.ABOUT_US_LIST.map((link) => (
-                      <Link href={link.href} key={link.label}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{link.label}</p></li></Link>
-                    ))}
-                  </ul>
+<ul
+  tabIndex={0}
+  className="
+    dropdown-content 
+    z-[1] 
+    menu 
+    p-2 
+    shadow 
+    bg-base-100 
+    rounded-box 
+    w-56
+    left-1/2 
+    -translate-x-1/2
+  "
+>
+  {data?.ABOUT_US_LIST.map((link) => (
+    <Link href={link.href} key={link.label}>
+      <li
+        onClick={handleClick}
+        className="flex justify-center cursor-pointer pb-1.5 text-md xl:text-lg"
+      >
+        <p>{link.label}</p>
+      </li>
+    </Link>
+  ))}
+</ul>
                 </div>)
               )
                :

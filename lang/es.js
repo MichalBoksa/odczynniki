@@ -52,7 +52,14 @@ export const ABOUT_US_LIST = [
       label: 'Socios comerciales'
     },
    
+     {
+      href: '/statement',
+      label: 'Declaración - Gobernanza corporativa'
+    },
+  
   ];
+
+  export const STATEMENT_TITLE = 'Código de conducta';
 
   export const ORGANIZATIONS = 'Organizaciones a las que pertenecemos';
   export const BUSINESS_PARTNERS = 'Nuestros socios comerciales';

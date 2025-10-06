@@ -51,8 +51,14 @@ export const ABOUT_US_LIST = [
       href: '/businessPartners',
       label: 'Business partners'
     },
+        {
+      href: '/statement',
+      label: 'Statement - Corporate Governance'
+    },
   
   ];
+
+  export const STATEMENT_TITLE = 'Code of Conduct';
 
   export const ORGANIZATIONS = 'Organizations we belong to';
   export const BUSINESS_PARTNERS = 'Our business partners';

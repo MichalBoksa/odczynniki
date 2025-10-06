@@ -152,6 +152,8 @@ export interface LocaleData {
   //PAGINATION
   NEXT: string;
   PREVIOUS: string;
+
+  STATEMENT_TITLE: string;
 }
 
 export interface NavLink {

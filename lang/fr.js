@@ -52,7 +52,14 @@ export const ABOUT_US_LIST = [
       label: 'Partenaires commerciaux'
     },
    
+     {
+      href: '/statement',
+      label: 'Déclaration – Gouvernance d’entreprise'
+    },
+  
   ];
+
+  export const STATEMENT_TITLE = 'Code de conduite';
 
   export const ORGANIZATIONS = 'Organisations auxquelles nous appartenons';
   export const BUSINESS_PARTNERS = 'Nos partenaires commerciaux';

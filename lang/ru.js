@@ -52,7 +52,14 @@ export const ABOUT_US_LIST = [
     label: 'Бизнес-партнеры'
   },
  
-];
+  {
+      href: '/statement',
+      label: 'Заявление - Корпоративное управление'
+    },
+  
+  ];
+
+  export const STATEMENT_TITLE = 'Кодекс поведения';
 
 export const ORGANIZATIONS = 'Организации, к которым мы принадлежим';
 export const BUSINESS_PARTNERS = 'Наши бизнес-партнеры';

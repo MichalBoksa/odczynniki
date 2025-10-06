@@ -52,8 +52,14 @@ export const ABOUT_US_LIST = [
       label: 'Geschäftspartner'
     },
    
+    {
+      href: '/statement',
+      label: 'Erklärung - Unternehmensführung'
+    },
+  
   ];
 
+  export const STATEMENT_TITLE = 'Verhaltenskodex';
   export const ORGANIZATIONS = 'Organisationen, denen wir angehören';
   export const BUSINESS_PARTNERS = 'Unsere Geschäftspartner';
   export const COMPANY_NAME = 'Firmenname';

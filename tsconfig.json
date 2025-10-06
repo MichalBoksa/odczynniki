@@ -34,7 +34,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/scripts/addUser.js",
-    "utils/lib.js"
+    "utils/lib.js",
+        "global.d.ts"
   ],
   "exclude": [
     "node_modules"

@@ -53,6 +53,11 @@ export const NAV_LINKS = [
       href: '/businessPartners',
       label: 'Partnerzy biznesowi'
     },
+
+      {
+      href: '/statement',
+      label: 'Oświadczenie - ład korporacyjny'
+    },
     
   ];
 

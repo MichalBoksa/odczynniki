@@ -74,30 +74,60 @@ const ContactUs = () => {
                              <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_TRADE_TEAM}</h1>
                          </div>
 
-                    <div className='flex flex-col lg:flex-row lg:flex-wrap gap-16'>
+                    {/* <div className='flex flex-col lg:flex-row lg:flex-wrap gap-16'> */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-stretch">
                         {/* TODO make component to team meameber */}
                         {data?.TRADE_TEAM.map((member) => (
-                            <div key={member.email} className="flex flex-col justify-center items-center px-7">
-                                <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2'/>
-                                <div className='flex flex-col justify-center items-center '>
-                                    <h2 className="mt-4 text-base font-medium text-jetblack  ">{member.name}</h2>
-                                    <p className="text-md text-secondary-content mb-2">{member.department}</p>
-                                    <div className="flex items-center mb-2 mr-auto">
-                                            <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1716937855/midas/wjqxac2mvdwabd6cd3fo.svg' width={20} height={20} alt='home icon' className='mr-2'/>
-                                            <a className="text-sm">{member.market}</a>
-                                    </div>
-                                    <div className="flex items-center mb-2 mr-auto">
-                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg' width={22} height={22} alt='email icon' className='mr-2'/>
-                                        <a className="text-sm text-secondary-content">{member.email}</a>
-                                    </div>
-                                    
-                                    <div className="flex items-center mr-auto">
-                                        <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg' width={20} height={20} alt='phone icon' className='mr-2'/>
-                                        <a className='text-sm '>{member.mobile}</a>         
-                                    </div>
-                                  
-                            </div>
-                     </div>
+            <div key={member.email} className="flex flex-col justify-between items-center h-full ">
+  <CldImage
+    src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg"
+    width={30}
+    height={30}
+    alt="home icon"
+    className="mb-4"
+  />
+
+  <div className="flex flex-col items-center text-center flex-grow mb-6">
+    <h2 className="text-base font-medium text-jetblack">{member.name}</h2>
+    <p className="text-md text-secondary-content mb-2">{member.department}</p>
+
+    {/* Sekcja z danymi – równanie wysokości */}
+    <div className="flex flex-col justify-between flex-grow">
+      <div className="flex items-center mb-2">
+        <CldImage
+          src="https://res.cloudinary.com/dozgr1muo/image/upload/v1716937855/midas/wjqxac2mvdwabd6cd3fo.svg"
+          width={20}
+          height={20}
+          alt="market icon"
+          className="mr-2"
+        />
+        <a className="text-sm break-words text-left">{member.market}</a>
+      </div>
+
+      <div className="flex items-center mb-2">
+        <CldImage
+          src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/vzigu4ctnrf3h83fgbal.svg"
+          width={22}
+          height={22}
+          alt="email icon"
+          className="mr-2"
+        />
+        <a className="text-sm text-secondary-content break-all">{member.email}</a>
+      </div>
+
+      <div className="flex items-center">
+        <CldImage
+          src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/oee1rkckq36hdhtpmox5.svg"
+          width={20}
+          height={20}
+          alt="phone icon"
+          className="mr-2"
+        />
+        <a className="text-sm">{member.mobile}</a>
+      </div>
+    </div>
+  </div>
+</div>
                     ))}
                 </div>
 

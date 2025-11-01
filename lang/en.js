@@ -521,7 +521,14 @@ export const TRADE_TEAM_EN = [
         market: "All locations",
         email: "ptopolski@odczynniki.com.pl",
         mobile: "+48 885 785 011"
-    }
+    },
+        {
+          name: "Anna Kuszneruk-Stalińska",
+          department: "Purchasing",
+          market: "Northern Europe, the Balkans and Central Asia",
+          email: "astalinska@odczynniki.com.pl",
+          mobile: "+48 885 785 012"
+        }
 ];
 
 // Francuski
@@ -581,7 +588,14 @@ export const TRADE_TEAM = [
         market: "All locations",
         email: "ptopolski@odczynniki.com.pl",
         mobile: "+48 885 785 011"
-    }
+    },
+        {
+          name: "Anna Kuszneruk-Stalińska",
+          department: "Purchasing",
+          market: "Northern Europe, the Balkans and Central Asia",
+          email: "astalinska@odczynniki.com.pl",
+          mobile: "+48 885 785 012"
+        }
 ];
 
 export const SETTLEMENT_TEAM = [

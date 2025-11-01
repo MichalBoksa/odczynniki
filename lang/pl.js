@@ -678,6 +678,13 @@ export const NAV_LINKS = [
           market: "Wszystkie lokalizacje",
           email: "ptopolski@odczynniki.com.pl",
           mobile: "+48 885 785 011"
+        },
+        {
+          name: "Anna Kuszneruk-Stalińska",
+          department: "Zakupy",
+          market: "Europa Północna, Bałkany i Azja Centralna",
+          email: "astalinska@odczynniki.com.pl",
+          mobile: "+48 885 785 012"
         }
       ];
 

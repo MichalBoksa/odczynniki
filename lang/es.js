@@ -516,7 +516,14 @@ export const ABOUT_US_LIST = [
         market: "Todas las ubicaciones",
         email: "ptopolski@odczynniki.com.pl",
         mobile: "+48 885 785 011"
-    }
+    },
+        {
+          name: "Anna Kuszneruk-Stalińska",
+          department: "Compras",
+          market: "Europa del Norte, los Balcanes y Asia Central",
+          email: "astalinska@odczynniki.com.pl",
+          mobile: "+48 885 785 012"
+        }
 ];
 
   

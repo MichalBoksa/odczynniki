@@ -483,13 +483,6 @@ export const ABOUT_US_LIST = [
         mobile: "+48 508 218 900"
     },
     {
-        name: "Nairy Chaglasyan",
-        department: "Ventas",
-        market: "España, Portugal",
-        email: "nchaglasyan@odczynniki.com.pl",
-        mobile: "+34 639 314 391"
-    },
-    {
         name: "Agnieszka Piątkowska",
         department: "Ventas",
         market: "Ucrania",
@@ -519,7 +512,7 @@ export const ABOUT_US_LIST = [
     },
         {
           name: "Anna Kuszneruk-Stalińska",
-          department: "Compras",
+          department: "Ventas",
           market: "Europa del Norte, los Balcanes y Asia Central",
           email: "astalinska@odczynniki.com.pl",
           mobile: "+48 885 785 012"

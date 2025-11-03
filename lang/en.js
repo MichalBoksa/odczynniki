@@ -555,13 +555,6 @@ export const TRADE_TEAM = [
         mobile: "+48 508 218 900"
     },
     {
-        name: "Nairy Chaglasyan",
-        department: "Sales",
-        market: "Spain, Portugal",
-        email: "nchaglasyan@odczynniki.com.pl",
-        mobile: "+34 639 314 391"
-    },
-    {
         name: "Agnieszka Piątkowska",
         department: "Sales",
         market: "Ukraine",
@@ -591,7 +584,7 @@ export const TRADE_TEAM = [
     },
         {
           name: "Anna Kuszneruk-Stalińska",
-          department: "Purchasing",
+          department: "Sales",
           market: "Northern Europe, the Balkans and Central Asia",
           email: "astalinska@odczynniki.com.pl",
           mobile: "+48 885 785 012"

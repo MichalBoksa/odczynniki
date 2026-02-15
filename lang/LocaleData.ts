@@ -61,6 +61,8 @@ export interface LocaleData {
   JOB_REQUIREMENTS: string;
   BENEFITS: string;
   APPLY: string;
+  SALARY_TITLE:string;
+  SALARY:string;
   JOB_RESPONSIBILITIES_LIST: string[];
   JOB_REQUIREMENTS_LIST: string[];
   BENEFITS_LIST: string[];

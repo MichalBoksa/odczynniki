@@ -81,7 +81,7 @@ export const NAV_LINKS = [
   export const JOB_LIST = 'Aktualnie poszukujemy osób na dane stanowiska:'
   export const JOB_TITLE1 = 'Pracownik do Działu księgowo-rachunkowego w firmie produkcyjnej'
   export const JOB_DETAILS = 'Zobacz szczegóły'
-  export const JOB_TITLE2 = 'Aparatowy procesów chemicznych'
+  export const JOB_TITLE2 = 'Aparatowy/Aparatowa procesów chemicznych'
 
   //PRODUCTS
   export const PRODUCTS = [
@@ -532,10 +532,12 @@ export const NAV_LINKS = [
 
       //JOBS OFFER1
       export const JOB_DESC = 'Opis oferty pracy';
-      export const JOB_NAME = 'Aparatowy procesów chemicznych';
+      export const JOB_NAME = 'Aparatowy/Aparatowa procesów chemicznych';
       export const JOB_RESPONSIBILITIES = 'Zakres obowiązków:';
       export const JOB_REQUIREMENTS = 'Wymagania:';
       export const BENEFITS = 'Zapewniamy:';
+      export const SALARY_TITLE = 'Wynagrodzenie:';
+      export const SALARY = '4.806-5.300 zł brutto/m-c';
       export const APPLY = 'Zgłoś się do nas!';
       export const JOB_RESPONSIBILITIES_LIST = [
         'Wykształcenie średnie/zawodowe (mechaniczne, chemiczne)',

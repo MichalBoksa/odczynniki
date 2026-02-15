@@ -378,11 +378,14 @@ export const OTHER_PRODUCTS = [
 
 // OFFRE D'EMPLOI 1
 export const JOB_DESC = 'Description de l\'offre d\'emploi';
-export const JOB_NAME = 'Opérateur de processus chimiques';
 export const JOB_RESPONSIBILITIES = 'Responsabilités:';
 export const JOB_REQUIREMENTS = 'Exigences:';
 export const BENEFITS = 'Nous offrons:';
 export const APPLY = 'Postulez dès maintenant!';
+export const SALARY_TITLE = 'Salaire :';
+export const SALARY = '4 806-5 300 PLN brut/mois';
+export const JOB_NAME = 'Opérateur/Opératrice de procédés chimiques';
+
 export const JOB_RESPONSIBILITIES_LIST = [
   'Diplôme secondaire/professionnel (mécanique, chimie)',
   'Utilisation des équipements et installations de production de composés chimiques',

@@ -375,11 +375,13 @@ export const OTHER_PRODUCTS = [
 
 //JOBS OFFER1
 export const JOB_DESC = 'Stellenbeschreibung';
-export const JOB_NAME = 'Chemieprozessbetreiber';
 export const JOB_RESPONSIBILITIES = 'Verantwortlichkeiten:';
 export const JOB_REQUIREMENTS = 'Anforderungen:';
 export const BENEFITS = 'Wir bieten:';
 export const APPLY = 'Jetzt bewerben!';
+export const SALARY_TITLE = 'Gehalt:';
+export const SALARY = '4.806-5.300 PLN brutto/Monat';
+export const JOB_NAME = 'Chemieanlagenführer/in';
 export const JOB_RESPONSIBILITIES_LIST = [
   'Sekundär-/Berufsausbildung (mechanisch, chemisch)',
   'Betrieb von Geräten und Anlagen zur Herstellung chemischer Verbindungen',

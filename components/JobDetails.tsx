@@ -46,6 +46,14 @@ const JobDetails = () => {
             </ul>
           </div>
 
+      <div className='className="mb-10"'>
+          <h3 className='text-xl lg:text-2xl font-semibold mb-2 text-jetblack'>{data?.SALARY_TITLE}</h3>
+          <h1 className='text-base lg:text-lg'>{data?.SALARY}</h1>
+      </div>
+
+     
+
+
           <div className="mt-6 flex justify-center">
             <Link href="/careers#office">
               <button className="btn btn-primary text-cream">{data?.APPLY}</button>

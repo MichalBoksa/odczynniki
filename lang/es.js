@@ -377,11 +377,14 @@ export const ABOUT_US_LIST = [
   
   // DESCRIPCIÓN DE OFERTA DE TRABAJO
   export const JOB_DESC = 'Descripción de la oferta de trabajo';
-  export const JOB_NAME = 'Operador de procesos químicos';
   export const JOB_RESPONSIBILITIES = 'Responsabilidades:';
   export const JOB_REQUIREMENTS = 'Requisitos:';
   export const BENEFITS = 'Ofrecemos:';
   export const APPLY = '¡Aplica ahora!';
+  export const SALARY_TITLE = 'Salario:';
+export const SALARY = '4.8065.300 PLN brutos/mes';
+export const JOB_NAME = 'Operador/a de procesos químicos';
+
   export const JOB_RESPONSIBILITIES_LIST = [
     'Educación secundaria/vocacional (mecánica, química)',
     'Operación de dispositivos e instalaciones para la producción de compuestos químicos',

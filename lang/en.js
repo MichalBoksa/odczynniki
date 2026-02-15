@@ -387,6 +387,9 @@ export const JOB_RESPONSIBILITIES = 'Responsibilities:';
 export const JOB_REQUIREMENTS = 'Requirements:';
 export const BENEFITS = 'We provide:';
 export const APPLY = 'Apply now!';
+export const SALARY_TITLE = 'Salary:';
+export const SALARY = '4,806-5,300 PLN gross/month';
+
 export const JOB_RESPONSIBILITIES_LIST = [
   'Secondary/vocational education (mechanical, chemical)',
   'Operation of devices and installations for the production of chemical compounds',

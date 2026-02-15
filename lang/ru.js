@@ -373,11 +373,14 @@ export const OTHER_PRODUCTS = [
 
 //ПРЕДЛОЖЕНИЕ РАБОТЫ 1
 export const JOB_DESC = 'Описание вакансии';
-export const JOB_NAME = 'Оператор химических процессов';
 export const JOB_RESPONSIBILITIES = 'Обязанности:';
 export const JOB_REQUIREMENTS = 'Требования:';
 export const BENEFITS = 'Мы предлагаем:';
 export const APPLY = 'Подать заявку!';
+export const SALARY_TITLE = 'Заработная плата:';
+export const SALARY = '4 806–5 300 злотых брутто в месяц';
+export const JOB_NAME = 'Аппаратчик химических процессов';
+
 export const JOB_RESPONSIBILITIES_LIST = [
   'Среднее/профессиональное образование (механика, химия)',
   'Эксплуатация оборудования и установок для производства химических соединений',

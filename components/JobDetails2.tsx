@@ -46,6 +46,8 @@ const JobDetails2 = () => {
             </ul>
           </div>
 
+  
+
           <div className="mt-6 flex justify-center">
             <Link href="/careers#office">
               <button className="btn btn-primary text-cream">{data?.APPLY}</button>

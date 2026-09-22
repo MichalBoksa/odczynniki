@@ -17,7 +17,7 @@ const EuFunds = () => {
     <section className='max-container md:padding-container bg-secondary p-3'>
       <div className="flex flex-col justify-center mb-5 mt-10">
         <h1 className='text-primary font-bold text-4xl lg:text-6xl text-center'>Realizowane projekty UE</h1>
-        <h3 className='text-secondary-content font-semibold text-2xl lg:text-3xl mt-5 lg:ml-8 text-left'>Zakończone</h3>
+        <h2 className='text-secondary-content font-semibold text-2xl lg:text-3xl mt-5 lg:ml-8 text-left'>Zakończone</h2>
       </div>
 
       <div className='flex flex-col w-full'>

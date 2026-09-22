@@ -11,10 +11,10 @@ interface LocaleContextProps {
 }
 
 const LocaleContext = createContext<LocaleContextProps>({ data: null, setLocale: () => {},currentLocale: 'pl' });
-export const LocaleProvider: React.FC<{children: ReactNode}> = ({ children }) => {
+export const LocaleProvider: React.FC<{children: ReactNode; initialData: LocaleData}> = ({ children, initialData }) => {
   const router: any = useRouter(); // Update the type of 'router' to 'any'
   const { locale, defaultLocale, pathname, asPath, query } = router;
-  const [data, setData] = useState<LocaleData | null>(null);
+  const [data, setData] = useState<LocaleData | null>(initialData);
   const [currentLocale, setCurrentLocale] = useState<string>(locale || defaultLocale || 'pl');
 
   useEffect(() => {

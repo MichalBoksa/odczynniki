@@ -49,7 +49,7 @@ const Navbar = () => {
                 </Link>
               ): link.key === 'aboutUs' ? (
               (<div key={link.label} className=" dropdown dropdown-hover ">
-                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 items-center justify-center">{link.label}</div>
+                <Link href={link.href} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 items-center justify-center">{link.label}</Link>
 <ul
   tabIndex={0}
   className="
@@ -80,7 +80,7 @@ const Navbar = () => {
               )
                :
               (<div key={link.label} className=" dropdown dropdown-hover ">
-                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</div>
+                <Link href={link.href} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-default cursor-pointer mr-4 ">{link.label}</Link>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                     {data?.PRODUCTS.map((product) => (
                       <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
               )
               : link.key === 'aboutUs' ? (
                 (<div key={link.label} className=" dropdown ">
-                  <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold  cursor-pointer mr-4 text-xl items-center justify-center">{link.label}</div>
+                  <Link href={link.href} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold  cursor-pointer mr-4 text-xl items-center justify-center">{link.label}</Link>
                     <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-64">
                       {data?.ABOUT_US_LIST.map((link) => (
                         <Link href={link.href} key={link.label}> <li onClick={handleClick} className="flexCenter text-wrap text-xl cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{link.label}</p></li></Link>
@@ -121,7 +121,7 @@ const Navbar = () => {
                 )
               : (
                 <div key={link.label} className="dropdown">
-                <div tabIndex={0} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-xl cursor-pointer mr-4 ">{link.label}</div>
+                <Link href={link.href} className="lg:text-nowrap lg:text-md xl:text-lg lg:font-bold text-xl cursor-pointer mr-4 ">{link.label}</Link>
                   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
                     {data?.PRODUCTS.map((product) => (
                       <Link href={product.href} key={product.name}> <li onClick={handleClick} className="flexCenter text-wrap text-xl cursor-pointer pb-1.5 text:md xl:text-lg  "><p>{product.name}</p></li></Link>

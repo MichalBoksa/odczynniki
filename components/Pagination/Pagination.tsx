@@ -1,15 +1,14 @@
 'use client';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import React from 'react'
 import { useLocale } from '@/lang/LocaleContext';
 
 const Pagination = ({page, hasPrevious, hasNext}:{page:any, hasPrevious:any, hasNext:any}) => {
   const {data} = useLocale();
-    const router = useRouter();
   return (
     <div className='flex justify-around mt-10'>
-        <button className='w-24 p-2 text-sm bg-primary text-ivory cursor-pointer disabled:cursor-not-allowed disabled:bg-dark-gray' disabled={!hasPrevious} onClick={() => router.push(`?page=${page - 1}`)}>{data?.PREVIOUS}</button>
-        <button className='w-24 p-2 text-sm bg-primary text-ivory cursor-pointer disabled:cursor-not-allowed disabled:bg-dark-gray' disabled={!hasNext} onClick={() => router.push(`?page=${page + 1}`)}>{data?.NEXT}</button> 
+        {hasPrevious ? <Link rel="prev" className="w-24 p-2 text-sm text-center bg-primary text-ivory" href={page === 2 ? '/news/' : `/news/?page=${page - 1}`}>{data?.PREVIOUS}</Link> : <span aria-disabled="true" className="w-24 p-2 text-sm text-center bg-dark-gray text-ivory">{data?.PREVIOUS}</span>}
+        {hasNext ? <Link rel="next" className="w-24 p-2 text-sm text-center bg-primary text-ivory" href={`/news/?page=${page + 1}`}>{data?.NEXT}</Link> : <span aria-disabled="true" className="w-24 p-2 text-sm text-center bg-dark-gray text-ivory">{data?.NEXT}</span>}
     </div>
   )
 }

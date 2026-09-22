@@ -155,7 +155,7 @@ export interface LocaleData {
   NEXT: string;
   PREVIOUS: string;
 
-  STATEMENT_TITLE: string;
+  STATEMENT_TITLE?: string;
 }
 
 export interface NavLink {

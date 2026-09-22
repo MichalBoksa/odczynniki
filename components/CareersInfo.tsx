@@ -3,14 +3,11 @@ import React, { useEffect, useRef } from 'react';
 import { CldImage } from 'next-cloudinary';
 import Link from 'next/link';
 import { useLocale } from '../lang/LocaleContext';
-import Head from 'next/head';
 
 const CareersInfo = () => {
   const { data } = useLocale() || {};
   const careersOffice = useRef<HTMLDivElement>(null);
 
-  const pageTitle = `Kariera - Dołącz do Naszego Zespołu!`;
-  const pageDescription = `Dołącz do naszego zespołu! Odkryj aktualne oferty pracy i możliwości rozwoju kariery w [Nazwa Firmy]. Szukamy utalentowanych ludzi, którzy chcą współtworzyć naszą przyszłość. Zobacz nasze wartości i przekonaj się, dlaczego warto z nami pracować.`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,11 +27,6 @@ const CareersInfo = () => {
 
   return (
     <>
-    <Head>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <meta name="keywords" content={`kariera, praca chemia, praca, praca handel, chemiczny`} />
-      </Head>
     <section className='max-container md:padding-container'>
       <div className='w-full flex flex-col lg:flex-row lg:max-h-[400px]'>
         <div className='bg-base-200 flex flex-col lg:w-2/5 p-6 lg:p-8'>
@@ -48,13 +40,13 @@ const CareersInfo = () => {
 
       <div className='flex flex-col lg:flex-row mb-10 mt-5 lg:mt-20 md:justify-around items-center'>
         <div className='flex flex-col lg:w-1/2 px-6 lg:px-12'>
-          <h1 className='font-semibold text-xl text-neutral'>{data?.CV}</h1>
+          <h2 className='font-semibold text-xl text-neutral'>{data?.CV}</h2>
           <p className='text-md text-secondary-content mt-4 lg:mt-6'>{data?.SKILLS}</p>
         </div>
         
         <div className="flex flex-col justify-center items-center px-6 lg:px-12 mt-10 lg:mt-0">
           <div className='flex flex-col items-center justify-start'>
-            <h1 className="font-semibold text-2xl mb-5 text-center">{data?.HR_OFFICE}</h1>
+            <h2 className="font-semibold text-2xl mb-5 text-center">{data?.HR_OFFICE}</h2>
           </div>
           <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/yr2j0bxspepty0adi8sm.svg' width={30} height={30} alt='home icon' className='mr-2' />
           <div className='flex flex-col justify-center items-center mt-4'>
@@ -75,7 +67,7 @@ const CareersInfo = () => {
 
       <div className='flex flex-col mb-20 px-6 lg:px-12'>
         <div className='mt-10 lg:mt-5'>
-          <h1 className='font-semibold text-3xl text-neutral'>{data?.JOB_LIST}</h1>
+          <h2 className='font-semibold text-3xl text-neutral'>{data?.JOB_LIST}</h2>
         </div>
         <div className='flex flex-col lg:flex-row lg:justify-center lg:gap-10 mt-10'>
           {/* <div className="card w-full lg:w-96 bg-base-100 shadow-xl mb-6 lg:mb-0">
@@ -93,7 +85,7 @@ const CareersInfo = () => {
             <div className="card-body">
               <h2 className="card-title">{data?.JOB_TITLE2}</h2>
               <div className="card-actions justify-end">
-                <Link href="jobOffer2">
+                <Link href="/careers/jobOffer2/">
                   <button className="btn btn-primary text-cream">{data?.JOB_DETAILS}</button>
                 </Link>
               </div>

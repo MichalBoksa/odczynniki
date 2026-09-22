@@ -1,0 +1,11 @@
+# Wyniki przeglądu bezpieczeństwa SEO
+
+- Usunięto `env.NEXT_PUBLIC_JWT_SECRET = process.env.JWT_SECRET` z `next.config.mjs`. W źródłach nie było odwołań do tej zmiennej publicznej, więc usunięcie mapowania nie zmienia funkcji frontendu. Sama konfiguracja publiczna oznacza ryzyko ekspozycji; nie dowodzi, że sekret wystąpił w dotychczasowym bundlu. Administrator powinien zweryfikować stare artefakty i w razie ekspozycji przeprowadzić kontrolowaną rotację. Nie zmieniono `.env` ani sekretów produkcyjnych.
+- `DATABASE_URL`, `GOOGLE_SECRET`, `SECRET` NextAuth i `CLOUDINARY_API_SECRET` są używane w kodzie serwera. Nie dodano ich do komponentów klienta. `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` i publiczny API key są identyfikatorami; API secret nie może być publiczny.
+- Lokalny zestaw nazw zmiennych zawiera `NEXT_PUBLIC_CLOUDINARY_API_KEY`, podczas gdy signing route czyta `CLOUDINARY_API_KEY`. Zweryfikować ustawienia VPS; nie zmieniano podpisywania ani nazw zmiennych automatycznie.
+- Nie zmieniono NextAuth, adaptera, Prisma, schematu MongoDB ani API publikowania. `robots.txt` i `noindex` ograniczają indeksowanie, ale nie są kontrolą dostępu.
+- Istniejące endpointy POST `/api/news`, `/api/newsEng` oraz `/api/sign-cloudinary-params` nie weryfikują sesji po stronie serwera. Przekierowanie z edytora w przeglądarce nie chroni tych endpointów. To istniejący problem wymagający osobnego, przetestowanego wdrożenia autoryzacji serwerowej z użyciem obecnego NextAuth; nie zmieniono go w zadaniu SEO ze względu na wymaganie zachowania API i logowania.
+- Treść newsów jest istniejącym HTML z edytora Quill renderowanym przez `dangerouslySetInnerHTML`. Nie przebudowano formularza i sposobu przechowywania. Potrzebna jest osobna polityka sanitizacji HTML na granicy zapisu/odczytu i przegląd już zapisanych danych, zwłaszcza wobec braku autoryzacji POST. Usuwanie tagów do metadata nie jest sanitizatorem treści strony.
+- JSON-LD serializuje `<` jako `\u003c`, a także separatory U+2028/U+2029. Metadata korzystają z escapowania React/Next.js; opisy newsów nie wstawiają HTML do tagów meta.
+
+Nie aktualizowano zależności, nie wykonywano rotacji, nie publikowano wpisów testowych i nie zmieniano konfiguracji VPS.

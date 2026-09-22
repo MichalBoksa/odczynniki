@@ -1,3 +1,4 @@
+export const metadata = { title: 'Logowanie', robots: { index: false, follow: false } };
 import LoginPage from '@/components/LoginPage'
 import React from 'react'
 

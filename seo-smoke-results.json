@@ -1,0 +1,304 @@
+{
+  "base": "http://localhost:3102",
+  "passed": 74,
+  "failures": 0,
+  "checks": [
+    {
+      "name": "/",
+      "status": "PASS"
+    },
+    {
+      "name": "/aboutUs/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/",
+      "status": "PASS"
+    },
+    {
+      "name": "/contactUs/",
+      "status": "PASS"
+    },
+    {
+      "name": "/certificates/",
+      "status": "PASS"
+    },
+    {
+      "name": "/businessPartners/",
+      "status": "PASS"
+    },
+    {
+      "name": "/organizations/",
+      "status": "PASS"
+    },
+    {
+      "name": "/careers/",
+      "status": "PASS"
+    },
+    {
+      "name": "/euFunds/",
+      "status": "PASS"
+    },
+    {
+      "name": "/registrationDetails/",
+      "status": "PASS"
+    },
+    {
+      "name": "/statement/",
+      "status": "PASS"
+    },
+    {
+      "name": "/careers/jobOffer/",
+      "status": "PASS"
+    },
+    {
+      "name": "/careers/jobOffer2/",
+      "status": "PASS"
+    },
+    {
+      "name": "product route count",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/molybdenum/sodu-molibdenian-2hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/molybdenum/amonu-heptamolibdenian-4hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/molybdenum/amonu-dimolibdenian",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/selenium/sodu-selenin",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/selenium/cynku-selenin",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/selenium/premixy-1-10-se",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/cobalt/powlekany-granulowany-weglan-kobaltu-co-2-5",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-azotan-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-azotan-3hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-chlorek-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-chlorek-2hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-siarczan-5hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-octan-1hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-weglan",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/miedzi-wodorotlenek",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/manganese/manganu-azotan-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/manganese/manganu-chlorek-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/manganese/manganu-octan-4hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/manganese/manganu-siarczan-1hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/nickel/niklu-azotan-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/nickel/niklu-azotan-6hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/nickel/niklu-chlorek-6hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/nickel/niklu-siarczan-6hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/nickel/niklu-siarczan-7hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-azotan-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-azotan-6hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-chlorek-roztwor",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-octan-2hydrat",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-siarczan-7h",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-siarczan-1h",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/cynku-tlenek",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/other/zelaza-azotan",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/other/srebra-azotan",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/other/bezwodnik-kwasu-chromowego",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/other/kwas-borowy",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/other/monoamonowy-fosforan-map",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/molybdenum/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/selenium/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/cobalt/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/copper/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/manganese/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/nickel/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/zinc/",
+      "status": "PASS"
+    },
+    {
+      "name": "/products/other/",
+      "status": "PASS"
+    },
+    {
+      "name": "robots.txt",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy sitemap redirect",
+      "status": "PASS"
+    },
+    {
+      "name": "404 /not-a-real-page/",
+      "status": "PASS"
+    },
+    {
+      "name": "404 /products/unknown/unknown/",
+      "status": "PASS"
+    },
+    {
+      "name": "404 /products/molybdenum/unknown/",
+      "status": "PASS"
+    },
+    {
+      "name": "noindex /login/",
+      "status": "PASS"
+    },
+    {
+      "name": "noindex /news/newPost/",
+      "status": "PASS"
+    },
+    {
+      "name": "/news/",
+      "status": "PASS"
+    },
+    {
+      "name": "news pagination",
+      "status": "PASS"
+    },
+    {
+      "name": "live article sample",
+      "count": 3,
+      "status": "PASS"
+    },
+    {
+      "name": "sitemap and live articles",
+      "status": "PASS"
+    },
+    {
+      "name": "missing news returns 404",
+      "status": "PASS"
+    },
+    {
+      "name": "read-only API /api/auth/providers/",
+      "status": "PASS"
+    },
+    {
+      "name": "read-only API /api/auth/session/",
+      "status": "PASS"
+    },
+    {
+      "name": "read-only API /api/news/?page=1",
+      "status": "PASS"
+    },
+    {
+      "name": "read-only API /api/newsEng/?page=1",
+      "status": "PASS"
+    }
+  ]
+}

@@ -9,12 +9,12 @@ const JobDetails = () => {
   return (
     <section className='max-container mb-4'>
       <div className="flex justify-left lg:ml-20 mb-10 mt-6 px-4 lg:px-0">
-        <h1 className='text-primary font-bold text-xl lg:text-5xl'>{data?.CONTACT}</h1>
+        <p className='text-primary font-bold text-xl lg:text-5xl'>{data?.CONTACT}</p>
       </div>
 
       <div className='bg-ivory p-5 mb-6 rounded-lg'>
         <div className="flex flex-col justify-left lg:ml-20 mb-10 mt-6 px-4 lg:px-0">
-          <h3 className='font-semibold'>{data?.JOB_DESC}</h3>
+          <p className='font-semibold'>{data?.JOB_DESC}</p>
           <h1 className='text-primary font-bold text-md lg:text-2xl'>{data?.JOB_NAME}</h1>
         </div>
 
@@ -47,8 +47,8 @@ const JobDetails = () => {
           </div>
 
       <div className='className="mb-10"'>
-          <h3 className='text-xl lg:text-2xl font-semibold mb-2 text-jetblack'>{data?.SALARY_TITLE}</h3>
-          <h1 className='text-base lg:text-lg'>{data?.SALARY}</h1>
+          <h2 className='text-xl lg:text-2xl font-semibold mb-2 text-jetblack'>{data?.SALARY_TITLE}</h2>
+          <p className='text-base lg:text-lg'>{data?.SALARY}</p>
       </div>
 
      

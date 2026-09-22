@@ -16,10 +16,10 @@ const RecentPosts: React.FC<NewsProps> = ({ recentPosts }) => {
                
                         <h2 className='font-semibold text-md'>{data?.LATEST_NEWS2}</h2>
                         {recentPosts.map((postItem: Post) => (
-                           <Link key={postItem.id} href= {`/news/${postItem.slug}`}>
+                           <Link key={postItem.id} href= {`/news/${encodeURIComponent(postItem.slug)}`}>
                              <div  className='flex gap-8 mt-3 border-b-2 border-b-accent pb-2'>
                                 <div className=' flex border-1 '>
-                                        <CldImage className='aspect-square h-10 w-10 object-cover' width={80} height={80} src={postItem.img} alt="contact-bg"/>
+                                        <CldImage className='aspect-square h-10 w-10 object-cover' width={80} height={80} src={postItem.img} alt={postItem.title}/>
                                 </div>
                                 {postItem.title.length > 30 ? <div className=' justify-center text-sm flex-1'>{postItem.title.substring(0,30).concat(" . . .")}</div> 
 

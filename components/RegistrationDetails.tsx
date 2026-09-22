@@ -15,12 +15,12 @@ const RegistrationDetails = () => {
 
         <div className='flex flex-col px-6 sm:px-10 '>
             <div className='flex flex-col'>
-                <h3 className='font-semibold mb-2 md:text-2xl'>{data?.COMPANY_NAME}</h3>
-                <h3 className='ml-2 text-xs md:text-lg'>"CENTRUM METAL ODCZYNNIKI CHEMICZNE - MIDAS INVESTMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ" Spółka Komandytowa</h3>
+                <h2 className='font-semibold mb-2 md:text-2xl'>{data?.COMPANY_NAME}</h2>
+                <p className='ml-2 text-xs md:text-lg'>"CENTRUM METAL ODCZYNNIKI CHEMICZNE - MIDAS INVESTMENT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ" Spółka Komandytowa</p>
             </div>
 
             <div className="flex flex-col items-start mt-5">
-                <h3 className='font-semibold mb-2 md:text-2xl'>{data?.COMPANY_HEADQUARTERS}</h3>
+                <h2 className='font-semibold mb-2 md:text-2xl'>{data?.COMPANY_HEADQUARTERS}</h2>
 
                 <div className="flex flex-row ml-2 mb-2">
                     <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ijt9xa0obuhvt6sbw2o3.svg' width={28} height={22} alt='home icon' className='mr-2'/>
@@ -39,10 +39,10 @@ const RegistrationDetails = () => {
 
         <div className='flex flex-col mt-5'>
             <div className='flex flex-col'>
-                <h3 className='font-semibold mb-2 md:text-2xl'>{data?.PRODUCTION_PLANT}</h3>
+                <h2 className='font-semibold mb-2 md:text-2xl'>{data?.PRODUCTION_PLANT}</h2>
                 <div className="flex flex-row ml-2">
                     <CldImage src='https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/ijt9xa0obuhvt6sbw2o3.svg' width={28} height={22} alt='home icon' className='mr-2'/>
-                    <h3 className='text-xs md:text-lg'>{data?.OFFICE_ADDRESS}</h3>
+                    <p className='text-xs md:text-lg'>{data?.OFFICE_ADDRESS}</p>
                 </div>
             </div>
         </div>

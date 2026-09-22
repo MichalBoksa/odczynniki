@@ -1,7 +1,8 @@
 'use client';
+import Link from 'next/link';
 import { useLocale } from '../lang/LocaleContext';
 
-const SeleniumInfo = () => {
+const SeleniumInfo = ({ productLinks }: { productLinks: { cas: string; symbol: string; href: string }[] }) => {
   const { data } = useLocale() || {};
 
   return (
@@ -11,7 +12,7 @@ const SeleniumInfo = () => {
       <div className='flex flex-col lg:flex-row gap-12 mb-20 mt-20 items-center'>
         <div className="flex flex-col card w-72 h-48 mb-6 bg-base-100 border-primary border-2 items-center justify-center">
           <div className='flex flex-col items-center'>
-            <h1 className='text-xl'>34</h1>
+            <p className='text-xl'>34</p>
             <p className='text-primary text-6xl font-bold'>Se</p>
           </div>
           <div className="flex w-full card-actions justify-end pr-4">
@@ -26,7 +27,7 @@ const SeleniumInfo = () => {
 
       <div className='flex flex-col rounded border-solid border-2 border-base-200 py-4 mb-4'>
         <div className='flex justify-center'>
-          <h1 className='text-xl md:text-4xl font-semibold text-gray-400 text-center mb-4 lg:mb-8 tracking-wider'>{data?.OUR_PRODUCTS}</h1>
+          <h2 className='text-xl md:text-4xl font-semibold text-gray-400 text-center mb-4 lg:mb-8 tracking-wider'>{data?.OUR_PRODUCTS}</h2>
         </div>
 
         <div className='flex flex-col gap-10 mt-6 pb-3'>
@@ -34,17 +35,17 @@ const SeleniumInfo = () => {
             <div key={product.symbol} className={`flex flex-col md:flex-row gap-7 items-center justify-center ${index !== data?.SELENIUM_PRODUCTS.length - 1 ? 'border-b-2 border-b-gray-300 pb-8' : ''}`}>
               <div className='flex card w-48 h-20 bg-base-100 border-primary border-2 justify-center items-center'>
                 <div className='text-center'>
-                  <h2 className='text-neutral font-light text-lg'>{product.symbol}</h2>
+                  <p className='text-neutral font-light text-lg'>{product.symbol}</p>
                 </div>
               </div>
 
               <div className='flex flex-1 flex-col text-center md:text-left'>
-                <h1 className='text-xl font-semibold'>{product.name}</h1>
-                <h4>CAS: {product.cas}</h4>
+                <h3 className='text-xl font-semibold'>{productLinks.find(link => link.cas === product.cas && link.symbol === product.symbol) ? <Link href={productLinks.find(link => link.cas === product.cas && link.symbol === product.symbol)!.href} className="hover:underline">{product.name}</Link> : product.name}</h3>
+                <p>CAS: {product.cas}</p>
               </div>
 
               <div className='flex flex-1 flex-col mr-auto ml-5 md:ml-0'>
-                <h1 className='text-xl font-semibold mb-2'>{data?.USAGE}</h1>
+                <p className='text-xl font-semibold mb-2'>{data?.USAGE}</p>
                 <div className='flex flex-col'>
                   <ol className='list-disc ml-7'>
                     {product.use.map((use, index) => (

@@ -9,12 +9,12 @@ const JobDetails2 = () => {
   return (
     <section className='max-container mb-4'>
       <div className="flex justify-left lg:ml-20 mb-10 mt-6 px-4 lg:px-0">
-        <h1 className='text-primary font-bold text-xl lg:text-5xl'>{data?.JOB_DESC}</h1>
+        <p className='text-primary font-bold text-xl lg:text-5xl'>{data?.JOB_DESC}</p>
       </div>
 
       <div className='bg-ivory p-5 mb-6 rounded-lg'>
         <div className="flex flex-col justify-left lg:ml-20 mb-10 mt-6 px-4 lg:px-0">
-          <h3 className='font-semibold'>{data?.JOIN_US}</h3>
+          <p className='font-semibold'>{data?.JOIN_US}</p>
           <h1 className='text-primary font-bold text-md lg:text-2xl'>{data?.JOB_NAME2}</h1>
         </div>
 

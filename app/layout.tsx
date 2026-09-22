@@ -6,11 +6,14 @@ import Footer from "@/components/Footer";
 import AuthProvider from "@/providers/AuthProvider";
 import { LocaleProvider } from '@/lang/LocaleContext';
 import CookieConsent from "@/components/CookieConsent";
+import { BRAND, HOME_DESCRIPTION, LOGO, SITE_URL } from '@/lib/seo';
+import * as initialData from '@/lang/pl';
 
 export const metadata: Metadata = {
-  title: "Centrum Metal Odczynniki Chemiczne",
-  description: "Głównym przedmiotem działalności CMOCMI jest produkcja chemikaliów nieorganicznych w tym w szczególności związków (soli metali) molibdenu, selenu, miedzi, manganu, cynku, kobaltu i niklu",
-  keywords:["odczynniki", "odczynniki chemiczne", "molibden", "miedź", "Sodu Molibdenian", "Amonu Heptamolibdenian", "Midas Investment"],
+  metadataBase: new URL(SITE_URL),
+  title: { default: 'Producent odczynników chemicznych i soli metali | CMOCMI', template: `%s | ${BRAND}` },
+  description: HOME_DESCRIPTION,
+  openGraph: { siteName: BRAND, locale: 'pl_PL', type: 'website', images: [{ url: LOGO, alt: BRAND }] },
 };
 
 export default function RootLayout({
@@ -22,7 +25,7 @@ export default function RootLayout({
     <html lang="pl" className={GeistSans.className}>
       <body>
        <AuthProvider>
-        <LocaleProvider>
+        <LocaleProvider initialData={{ ...initialData }}>
           <Navbar/>
           {children}
           <CookieConsent/>

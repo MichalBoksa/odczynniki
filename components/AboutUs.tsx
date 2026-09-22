@@ -16,7 +16,7 @@ const AboutUs = () => {
        <div className='flex flex-col bg-dark-ivory md:max-w-[60%] '>
           
            <div className='text-secondary-content  flex lg:px-40 px-30 ml-8 mr-8 mb-8 mt-10 '>
-               <p className='text-left font-bold text-xl lg:text-2xl '>{data?.HISTORY}</p>
+               <h2 className='text-left font-bold text-xl lg:text-2xl '>{data?.HISTORY}</h2>
            </div>
 
            <div className='text-jetblack flex lg:px-20 px-30 ml-12 mr-12 pb-4 '>
@@ -40,7 +40,7 @@ const AboutUs = () => {
 
        <div className='flex flex-col '>
            <div className="flex mb-8 mt-8 px-3 lg:px-16 text-center text-cream " >
-               <p className=' text-left font-bold  md:text-md lg:text-2xl'>{data?.SPECIALIZATION}</p>
+               <h2 className=' text-left font-bold  md:text-md lg:text-2xl'>{data?.SPECIALIZATION}</h2>
            </div>
            <div className='flex px-8 mb-8 text-cream'>
                <p className=' text-justify lg:font-medium text-sm lg:text-l'>{data?.SPECIALIZATION_DESC}</p>
@@ -63,7 +63,7 @@ const AboutUs = () => {
        <div className='flex flex-col md:max-w-[60%] bg-dark-ivory'>
           
            <div className='text-secondary-content flex lg:px-40 px-30 ml-8 mr-8 mb-8 mt-10 '>
-               <p className='text-left font-bold text-xl lg:text-2xl '>{data?.INNOVATIONS}</p>
+               <h2 className='text-left font-bold text-xl lg:text-2xl '>{data?.INNOVATIONS}</h2>
            </div>
 
            <div className='text-black flex lg:px-20 px-30 ml-12 mr-12 pb-6'>

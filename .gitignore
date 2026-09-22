@@ -37,4 +37,6 @@ next-env.d.ts
 
 .env
 
-/scripts
+/scripts/*
+!/scripts/seo-smoke.mjs
+!/scripts/seo-security-check.cjs

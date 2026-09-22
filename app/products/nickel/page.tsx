@@ -1,9 +1,9 @@
-import NickelInfo from '@/components/NickelInfo'
-import React from 'react'
-
- const page = () => {
-  return (
-    <NickelInfo/>
-  )
+import NickelInfo from '@/components/NickelInfo';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import { getCategory, productPath } from '@/lib/catalog';
+import { pageMetadata } from '@/lib/seo';
+const category = getCategory('nickel')!;
+export const metadata = pageMetadata(category.name + ' – oferta', category.description, category.href);
+export default function CategoryPage() {
+  return <><Breadcrumbs items={[{ name: 'Produkty', href: '/products/' }, { name: category.name, href: category.href }]} /><NickelInfo productLinks={category.products.map(product => ({ cas: product.cas, symbol: product.symbol, href: productPath(category.slug, product.slug) }))} /></>;
 }
-export default page

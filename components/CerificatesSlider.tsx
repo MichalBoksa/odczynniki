@@ -4,6 +4,9 @@ import React from 'react'
 import { useLocale } from '../lang/LocaleContext';
 import { CERTIFICATES } from '@/constants';
 
+// Public ID from the supplied PDF. Use this asset's cloud, not the site's default.
+const SME_CERTIFICATE_ID = 'CENTRUM_METAL_ODCZYNNIKI_CHEMICZNE_MIDAS_INVESTMENT_Sp._z_o.o._Sp.K._-_SME_Certificate_-_20260720-100526_1';
+
 const CerificatesSlider = () => {
   const { data, currentLocale } = useLocale() || {};
   return (
@@ -15,43 +18,47 @@ const CerificatesSlider = () => {
         { CERTIFICATES.map((cert) => (
           cert.code === currentLocale &&
       <div key={cert.code} className="carousel w-full max-h-[700px]">
-     
+
         <div id="item1" className="carousel-item w-full">
-           <CldImage src={cert.srcGmp} width={450} height={700} alt="" className=' mr-auto ml-auto'/>
-        </div> 
+           <CldImage src={SME_CERTIFICATE_ID} config={{ cloud: { cloudName: 'dqig6tnze' } }} format="png" width={450} height={700} alt="Certyfikat SME CMOCMI" className="mr-auto ml-auto" />
+        </div>
+
+        <div id="item2" className="carousel-item w-full">
+           <CldImage src={cert.srcGmp} width={450} height={700} alt="Certyfikat GMP+ CMOCMI" className=' mr-auto ml-auto'/>
+        </div>
 
         {/* <div id="item2" className="carousel-item w-full">
           <CldImage src={cert.srcIso} width={450} height={700} alt="" className="mr-auto ml-auto" />
         </div>  */}
 
-        <div id="item2" className="carousel-item w-full">
-          <CldImage src={cert.srcIso9001} width={450} height={700} alt="" className="mr-auto ml-auto" />
-        </div> 
-
         <div id="item3" className="carousel-item w-full">
-        <CldImage src={cert.srcIso14001} width={450} height={700} alt="" className="mr-auto ml-auto" />
-        </div> 
+          <CldImage src={cert.srcIso9001} width={450} height={700} alt="Certyfikat ISO 9001 CMOCMI" className="mr-auto ml-auto" />
+        </div>
 
         <div id="item4" className="carousel-item w-full">
-          <CldImage src={cert.srcIso46001} width={450} height={700} alt="" className="mr-auto ml-auto" />
-        </div> 
+        <CldImage src={cert.srcIso14001} width={450} height={700} alt="Certyfikat ISO 14001 CMOCMI" className="mr-auto ml-auto" />
+        </div>
 
         <div id="item5" className="carousel-item w-full">
-          <CldImage src={cert.srcIso50001} width={450} height={700} alt="" className="mr-auto ml-auto" />
-        </div> 
-        
-      </div> 
-    
+          <CldImage src={cert.srcIso46001} width={450} height={700} alt="Certyfikat ISO 45001 CMOCMI" className="mr-auto ml-auto" />
+        </div>
+
+        <div id="item6" className="carousel-item w-full">
+          <CldImage src={cert.srcIso50001} width={450} height={700} alt="Certyfikat ISO 50001 CMOCMI" className="mr-auto ml-auto" />
+        </div>
+
+      </div>
+
     ))}
 
 
     <div className="flex justify-center w-full py-2 gap-2 mt-3">
-      <a href="#item1" className="btn btn-xs bg-cream">1</a> 
-      <a href="#item2" className="btn btn-xs bg-cream">2</a> 
-      <a href="#item3" className="btn btn-xs bg-cream">3</a> 
-      <a href="#item4" className="btn btn-xs bg-cream">4</a> 
-      <a href="#item5" className="btn btn-xs bg-cream">5</a> 
-      {/* <a href="#item6" className="btn btn-xs bg-cream">6</a>  */}
+      <a href="#item1" className="btn btn-xs bg-cream">1</a>
+      <a href="#item2" className="btn btn-xs bg-cream">2</a>
+      <a href="#item3" className="btn btn-xs bg-cream">3</a>
+      <a href="#item4" className="btn btn-xs bg-cream">4</a>
+      <a href="#item5" className="btn btn-xs bg-cream">5</a>
+      <a href="#item6" className="btn btn-xs bg-cream">6</a>
     </div>
       </div>
   </div>

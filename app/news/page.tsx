@@ -1,61 +1,17 @@
-import { Post } from '@prisma/client';
-import News from '@/components/News'; 
-
-interface NewsProps {
-  posts: Post[];
-  count: number;
-  page: number;
+import News from '@/components/News';
+import { getNewsPage, newsPageNumber } from '@/lib/news';
+import { pageMetadata, publicPages } from '@/lib/seo';
+import { notFound } from 'next/navigation';
+export const dynamic = 'force-dynamic';
+type Props = { searchParams: { page?: string | string[] } };
+export function generateMetadata({ searchParams }: Props) {
+  const page = newsPageNumber(searchParams.page);
+  const [title, description] = publicPages['/news'];
+  return pageMetadata(page > 1 ? title + ' – strona ' + page : title, description, page > 1 ? '/news/?page=' + page : '/news/');
 }
-
-
- const getData = async ({page}: {page: number}) => {
-  try {
-    const data = await fetch(`http://localhost:3002/api/news?page=${page}`,{
-      cache: "no-store",
-    });
-    if (!data.ok) {
-      throw new Error("Failed");
-    }
-    const dataJson = await data.json();
-    const postsCasted: Post[] = dataJson.posts;
-    const count:number = dataJson.count;
-    return {postsCasted, count};
-  } 
-  catch (err) {
-    console.log(err);
-    throw new Error('Something went wrong while fetching posts');
-
-  }
-};
-
-
-const getEngData = async ({page}: {page: number}) => {
-  try {
-    const dataEng = await fetch(`http://localhost:3002/api/newsEng?page=${page}`,{
-      cache: "no-store",
-    });
-    if (!dataEng.ok) {
-      throw new Error("Failed");
-    }
-    const dataEngJson = await dataEng.json();
-    const postsEngCasted: Post[] = dataEngJson.posts;
-    const countEng:number = dataEngJson.count;
-    return {postsEngCasted, countEng};
-  } 
-  catch (err) {
-    console.log(err);
-    throw new Error('Something went wrong while fetching posts');
-
-  }
-};
-
-
-export default async function NewsPage({searchParams}: {searchParams: any}) {
-
-  const page = parseInt(searchParams.page) || 1;
-  const {postsEngCasted,countEng} = await getEngData({page});
-  const {postsCasted,count} = await getData({page});
- 
-  
-  return <News posts={postsCasted} page={page} count={count} postsEng={postsEngCasted} countEng={countEng} />
+export default async function NewsPage({ searchParams }: Props) {
+  const page = newsPageNumber(searchParams.page);
+  const data = await getNewsPage(page);
+  if (page > 1 && !data.posts.length && !data.postsEng.length) notFound();
+  return <News {...data} page={page} />;
 }

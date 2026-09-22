@@ -3,24 +3,15 @@ import React from 'react'
 import { CldImage } from 'next-cloudinary';
 import { useLocale } from '../lang/LocaleContext';
 import Link from 'next/link';
-import Head from 'next/head';
-
-
 const ContactUs = () => {
     const { data } = useLocale() || {};
     const address = 'Metalurgiczna 15e, 20-001 Lublin';
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
 
-    const pageTitle = `Skontaktuj się z nami`;
-    const pageDescription = `Znajdź dane kontaktowe do naszego zespołu, w tym adres e-mail, numer telefonu oraz formularz kontaktowy. Jesteśmy tu, aby odpowiedzieć na Twoje pytania i pomóc w każdej sprawie.`;
 
   return (
 <>
-    <Head>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <meta name="keywords" content={`kontakt, kontakt odczynniki, odczynniki chemiczne kontakt`} />
-     </Head>
+
     <section className="bg-white">
     <div className="container px-6 py-12 mx-auto">
         <div className="text-center ">
@@ -40,7 +31,7 @@ const ContactUs = () => {
 
         <div className='flex flex-col mt-5'>
             <div className='flex items-center justify-center'>
-                <h1 className='font-semibold text-6xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_OFFICE}</h1>
+                <h2 className='font-semibold text-6xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_OFFICE}</h2>
             </div>
 
             <div className='flex items-center justify-center'>
@@ -71,7 +62,7 @@ const ContactUs = () => {
                     </div>
         <div className='flex flex-col mt-5 px-10'>
                         <div className='flex items-center justify-left mb-6'>
-                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_TRADE_TEAM}</h1>
+                             <h2 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_TRADE_TEAM}</h2>
                          </div>
 
                     {/* <div className='flex flex-col lg:flex-row lg:flex-wrap gap-16'> */}
@@ -135,7 +126,7 @@ const ContactUs = () => {
 
                 <div className='flex flex-col mt-16'>
                         <div className='flex items-center justify-left mb-6'>
-                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_SETTLEMENT_TEAM}</h1>
+                             <h2 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.OUR_SETTLEMENT_TEAM}</h2>
                          </div>
 
                     <div className='flex flex-col lg:flex-row lg:flex-wrap gap-16'>
@@ -164,7 +155,7 @@ const ContactUs = () => {
 
             <div className='flex flex-col mt-16'>
                         <div className='flex items-center justify-left mb-6'>
-                             <h1 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.ADMINISTRATION}</h1>
+                             <h2 className='font-semibold text-3xl mt-5 ml-6 text-neutral items-center justify-center'>{data?.ADMINISTRATION}</h2>
                          </div>
 
                          <div className='flex flex-col lg:flex-row lg:flex-wrap'>

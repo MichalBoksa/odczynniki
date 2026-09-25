@@ -1,5 +1,9 @@
 # Czynności po wdrożeniu
 
+Status 25.09.2026: własność nie została jeszcze potwierdzona; potrzebne jest zalogowanie właściciela do Google. Najpierw sprawdzić listę istniejących usług, aby nie zakładać, że domena nie była wcześniej dodana.
+
+Jeśli nie ma dostępu do DNS, można dodać usługę z prefiksem URL `https://odczynniki.com.pl/` i wybrać metodę „Tag HTML”. Wygenerowany przez Google tag należy umieścić w metadata strony i wdrożyć, potwierdzić jego obecność w publicznym HTML, a następnie kliknąć weryfikację. Ta metoda nie weryfikuje całej domeny ani jej pozostałych subdomen. Token musi pochodzić z konta właściciela; nie zastępować istniejących tokenów innych właścicieli.
+
 1. W [Google Search Console](https://search.google.com/search-console) dodać usługę domenową `odczynniki.com.pl`.
 2. Zweryfikować własność rekordem TXT w DNS, zgodnie z wartością wyświetloną przez Google. Nie usuwać rekordu po weryfikacji.
 3. Zgłosić `https://odczynniki.com.pl/sitemap.xml`. Najpierw sprawdzić HTTP 200 i poprawny XML, w tym rzeczywiste newsy z MongoDB.

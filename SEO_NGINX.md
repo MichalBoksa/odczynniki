@@ -1,6 +1,38 @@
 # HTTPS i domena bez www
 
-Instrukcja dla administratora VPS. Nie zmieniono konfiguracji serwera ani certyfikatów. Next.js zachowuje `trailingSlash: true`. Canonicale kończą się `/`; pliki `sitemap.xml` i `robots.txt` nie mają końcowego ukośnika.
+## Minimalna poprawka konfiguracji odczytanej z VPS 25.09.2026
+
+Plik: `/etc/nginx/sites-available/odczynniki.com.pl`. Poniższa zmiana została wdrożona 25.09.2026 po zgodzie użytkownika. Pozostawia obecny proxy, limity, timeouty, certyfikaty i domenę `inorg.pl` bez zmian.
+
+Kopia przed zmianą: `/etc/nginx/sites-available/odczynniki.com.pl.backup-seo-20260925T084847Z`. `nginx -t` i reload zakończyły się poprawnie. Wszystkie 14 kontroli HTTP przeszło: trzy warianty domeny dla `/`, kategorii z query string i robots przekierowują 301, a cztery adresy docelowe i `https://inorg.pl/` zwracają 200. Suma kontrolna konfiguracji inorg nie zmieniła się.
+
+Wycofanie: przywrócić powyższą kopię do `/etc/nginx/sites-available/odczynniki.com.pl`, uruchomić `sudo nginx -t`, a po poprawnym teście `sudo systemctl reload nginx`. Nie przywracać starej kopii bez porównania, jeśli później konfiguracja została ponownie zmieniona.
+
+```diff
+ server {
+
+     server_name odczynniki.com.pl www.odczynniki.com.pl;
++
++    if ($host = www.odczynniki.com.pl) {
++        return 301 https://odczynniki.com.pl$request_uri;
++    }
+
+     client_max_body_size 20M;
+@@
+     if ($host = www.odczynniki.com.pl) {
+-        return 301 https://$host$request_uri;
++        return 301 https://odczynniki.com.pl$request_uri;
+@@
+     if ($host = odczynniki.com.pl) {
+-        return 301 https://$host$request_uri;
++        return 301 https://odczynniki.com.pl$request_uri;
+```
+
+Warunek w pierwszym bloku wykonuje wyłącznie `return`, przed przekazaniem żądania do aplikacji. Oba hosty są już obsługiwane przez obecny certyfikat; publiczne HTTPS z www odpowiada bez błędu TLS. Przed zastosowaniem porównać aktualny plik z odczytaną wersją i wykonać kopię. Po zmianie uruchomić `sudo nginx -t`, a dopiero po poprawnym wyniku `sudo systemctl reload nginx`. Sprawdzić trzy warianty przekierowania z query string, działanie domeny bez www, sitemap, robots i niezależnej domeny inorg. Przy błędzie przywrócić kopię i ponownie sprawdzić konfigurację przed reloadem.
+
+## Ogólny wariant konfiguracji
+
+Wariant referencyjny dla administratora VPS; aktualnie wdrożona jest minimalna poprawka powyżej. Certyfikatów nie zmieniono. Next.js zachowuje `trailingSlash: true`. Canonicale kończą się `/`; pliki `sitemap.xml` i `robots.txt` nie mają końcowego ukośnika.
 
 Poniższe bloki należy dopasować do istniejącego vhosta, ścieżek certyfikatów i obsługi ACME. Certyfikat dla przekierowania HTTPS musi obejmować również `www.odczynniki.com.pl`, bo TLS odbywa się przed redirectem. Nie dublować już istniejących bloków `server_name`.
 

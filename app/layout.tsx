@@ -11,6 +11,7 @@ import * as initialData from '@/lang/pl';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: { google: 'DvML1_TfekI7qH1XQ9b1jiQKxLY3aOBhmEp5SKRyybw' },
   title: { default: 'Producent odczynników chemicznych i soli metali | CMOCMI', template: `%s | ${BRAND}` },
   description: HOME_DESCRIPTION,
   openGraph: { siteName: BRAND, locale: 'pl_PL', type: 'website', images: [{ url: LOGO, alt: BRAND }] },

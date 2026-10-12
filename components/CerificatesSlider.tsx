@@ -1,5 +1,6 @@
 "use client";
 import { CldImage } from 'next-cloudinary';
+import Image from 'next/image';
 import React from 'react'
 import { useLocale } from '../lang/LocaleContext';
 import { CERTIFICATES } from '@/constants';
@@ -24,26 +25,28 @@ const CerificatesSlider = () => {
         </div>
 
         <div id="item2" className="carousel-item w-full">
+          <a href="/certificates/csrc-2026.pdf" target="_blank" rel="noopener noreferrer" className="flex w-full items-start justify-center">
+            <Image src="/certificates/csrc-2026.png" width={1132} height={1600} sizes="(max-width: 450px) 100vw, 450px" alt="CSRC / Silk Road Certification — CMOCMI, 20/05/2026/CSRC/SRC/01" className="h-auto w-[450px] max-w-full object-contain" />
+          </a>
+        </div>
+
+        <div id="item3" className="carousel-item w-full">
            <CldImage src={cert.srcGmp} width={450} height={700} alt="Certyfikat GMP+ CMOCMI" className=' mr-auto ml-auto'/>
         </div>
 
-        {/* <div id="item2" className="carousel-item w-full">
-          <CldImage src={cert.srcIso} width={450} height={700} alt="" className="mr-auto ml-auto" />
-        </div>  */}
-
-        <div id="item3" className="carousel-item w-full">
+        <div id="item4" className="carousel-item w-full">
           <CldImage src={cert.srcIso9001} width={450} height={700} alt="Certyfikat ISO 9001 CMOCMI" className="mr-auto ml-auto" />
         </div>
 
-        <div id="item4" className="carousel-item w-full">
+        <div id="item5" className="carousel-item w-full">
         <CldImage src={cert.srcIso14001} width={450} height={700} alt="Certyfikat ISO 14001 CMOCMI" className="mr-auto ml-auto" />
         </div>
 
-        <div id="item5" className="carousel-item w-full">
+        <div id="item6" className="carousel-item w-full">
           <CldImage src={cert.srcIso46001} width={450} height={700} alt="Certyfikat ISO 45001 CMOCMI" className="mr-auto ml-auto" />
         </div>
 
-        <div id="item6" className="carousel-item w-full">
+        <div id="item7" className="carousel-item w-full">
           <CldImage src={cert.srcIso50001} width={450} height={700} alt="Certyfikat ISO 50001 CMOCMI" className="mr-auto ml-auto" />
         </div>
 
@@ -59,6 +62,7 @@ const CerificatesSlider = () => {
       <a href="#item4" className="btn btn-xs bg-cream">4</a>
       <a href="#item5" className="btn btn-xs bg-cream">5</a>
       <a href="#item6" className="btn btn-xs bg-cream">6</a>
+      <a href="#item7" className="btn btn-xs bg-cream">7</a>
     </div>
       </div>
   </div>

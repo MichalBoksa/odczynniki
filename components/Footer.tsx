@@ -1,5 +1,6 @@
 "use client";
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import { CldImage } from 'next-cloudinary';
 import { useLocale } from '../lang/LocaleContext';
@@ -14,6 +15,9 @@ const Footer = () => {
             <CldImage className='rounded object-cover' src="https://res.cloudinary.com/dozgr1muo/image/upload/v1234/midas/d0aiktzryueeujazncph.png" alt="INORG Logo" width={70} height={70} />
         </Link>
       <p>{data?.CMOC}<br/>{data?.MI}</p>
+      <a href="https://excellentbusiness.eu/certificates/20260720080027_72d90765e6a546ef950001bb95df453d" target="_blank" rel="noopener noreferrer" className="mt-2 block w-full max-w-[220px]">
+        <Image src="https://excellentbusiness.eu/certificates/20260720080027_72d90765e6a546ef950001bb95df453d/seal" width={1713} height={685} unoptimized alt="Business Excellent SME — CMOCMI" className="h-auto w-full" />
+      </a>
     </aside> 
     <nav>
       <h2 className="footer-title">{data?.LINKS}</h2>

@@ -66,7 +66,7 @@ export const NAV_LINKS = [
   export const COMPANY_NAME = 'Nazwa firmy';
   export const COMPANY_HEADQUARTERS = 'Siedziba firmy';
   export const PRODUCTION_PLANT = 'Zakład produkcyjny i adres do korespondencji';
-  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, ul. Opackiego 46A/11'
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = 'Polska, 05-090 Raszyn, ul. Wschodnia 5'
 
 
   //CAREERS

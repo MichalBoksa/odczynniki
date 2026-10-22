@@ -66,7 +66,7 @@ export const ABOUT_US_LIST = [
   export const COMPANY_NAME = 'Nombre de la empresa';
   export const COMPANY_HEADQUARTERS = 'Sede de la empresa';
   export const PRODUCTION_PLANT = 'Planta de producción y dirección para correspondencia';
-  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Falenty, calle Opackiego 46A/11';
+  export const REGISTRATION_DETAILS_OFFICE_ADDRESS = 'Polonia, 05-090 Raszyn, calle Wschodnia 5';
 
   // CARRERAS
   export const JOIN_US = 'Únete a nuestro equipo';

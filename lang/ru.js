@@ -66,7 +66,7 @@ export const BUSINESS_PARTNERS = 'Наши бизнес-партнеры';
 export const COMPANY_NAME = 'Название компании';
 export const COMPANY_HEADQUARTERS = 'Штаб-квартира компании';
 export const PRODUCTION_PLANT = 'Производственное предприятие и адрес для корреспонденции';
-export const REGISTRATION_DETAILS_OFFICE_ADDRESS = '05-090 Фаленты, ул. Опакского 46A/11';
+export const REGISTRATION_DETAILS_OFFICE_ADDRESS = 'Польша, 05-090 Raszyn, ул. Wschodnia 5';
 
 
 //КАРЬЕРА

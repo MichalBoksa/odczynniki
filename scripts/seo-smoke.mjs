@@ -15,6 +15,11 @@ async function check(name, fn) {
   catch (error) { failures++; report.push({ name, status: 'FAIL', error: error.message }); }
 }
 const decode = text => text.replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+function hasSchemaType(value, type) {
+  if (!value || typeof value !== 'object') return false;
+  if (Array.isArray(value)) return value.some(item => hasSchemaType(item, type));
+  return [value['@type']].flat().includes(type) || Object.values(value).some(item => hasSchemaType(item, type));
+}
 async function page(path, type) {
   const { status, text } = await request(path);
   assert.equal(status, 200, `${path}: HTTP ${status}`);
@@ -29,9 +34,13 @@ async function page(path, type) {
   assert.match(text, /<meta property="og:url"/);
   const schemas = [...text.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(match => JSON.parse(match[1]));
   if (type) assert.ok(schemas.some(item => item['@type'] === type), `${path}: missing ${type}`);
-  if (type === 'Product') {
-    const product = schemas.find(item => item['@type'] === type);
-    assert.ok(!product.offers && !product.aggregateRating && !product.review);
+  if (type === 'WebPage') {
+    assert.ok(!hasSchemaType(schemas, 'Product'), `${path}: quote-only page must not advertise Product rich results`);
+    assert.ok(hasSchemaType(schemas, 'BreadcrumbList'), `${path}: breadcrumbs missing`);
+    const webPage = schemas.find(item => item['@type'] === type);
+    assert.equal(webPage.url, expected.toString(), `${path}: WebPage URL differs from canonical`);
+    assert.ok(webPage.name && webPage.description, `${path}: WebPage name or description missing`);
+    assert.doesNotMatch(text, /name="robots" content="[^"]*\bnoindex\b/);
     assert.match(text, /CAS/);
     assert.match(text, /href="\/contactUs\//);
   }
@@ -41,7 +50,7 @@ for (const path of publicPaths) await check(path, () => page(path, path === '/' 
 const manifest = JSON.parse(readFileSync('.next/prerender-manifest.json', 'utf8'));
 const productPaths = Object.keys(manifest.routes).filter(path => /^\/products\/[^/]+\/[^/]+\/?$/.test(path));
 await check('product route count', () => assert.equal(productPaths.length, 36));
-for (const path of productPaths) await check(path, () => page(path, 'Product'));
+for (const path of productPaths) await check(path, () => page(path, 'WebPage'));
 for (const category of ['molybdenum','selenium','cobalt','copper','manganese','nickel','zinc','other']) {
   await check(`/products/${category}/`, async () => {
     const path = `/products/${category}/`;

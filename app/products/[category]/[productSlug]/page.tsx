@@ -25,7 +25,8 @@ export default function ProductPage(props: Props) {
   const path = productPath(category.slug, product.slug);
   return <>
     <Breadcrumbs items={[{ name: 'Produkty', href: '/products/' }, { name: category.name, href: category.href }, { name: product.name, href: path }]} />
-    <JsonLd data={{ '@context': 'https://schema.org', '@type': 'Product', name: product.name, description: productDescription(product), url: absoluteUrl(path), category: category.name, image: product.image, sku: product.sku, additionalProperty: [{ '@type': 'PropertyValue', name: 'CAS', value: product.cas }, { '@type': 'PropertyValue', name: 'Wzór chemiczny', value: product.symbol }].filter(item => item.value) }} />
+    {/* Quote-only pages have no public offers or reviews required for Product rich results. */}
+    <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebPage', name: product.name, description: productDescription(product), url: absoluteUrl(path), image: product.image, inLanguage: 'pl' }} />
     <ProductDetails product={product} categoryKey={`${category.slug.toUpperCase()}_PRODUCTS` as keyof LocaleData} categoryName={category.name} categoryHref={category.href} />
   </>;
 }
